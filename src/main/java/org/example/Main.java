@@ -18,5 +18,16 @@ public class Main {
         System.out.println(numSpecial(new int[][]{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}));
         System.out.println(destCity(List.of(List.of("London", "New York"), List.of("New York", "Lima"), List.of("Lima", "Sao Paulo"))));
         System.out.println(isAnagram("anagram", "nagaram") + "; " + isAnagram("rat", "car"));
+
+        SolutionDay7FoodRatings foodRatings = new SolutionDay7FoodRatings(
+                new String[]{"kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"},
+                new String[]{"korean", "japanese", "japanese", "greek", "japanese", "korean"},
+                new int[]{9, 12, 8, 15, 14, 7});
+        System.out.print(foodRatings.highestRated("korean") + "; ");
+        System.out.print(foodRatings.highestRated("japanese") + "; ");
+        foodRatings.changeRating("sushi", 16);
+        System.out.print(foodRatings.highestRated("japanese") + "; ");
+        foodRatings.changeRating("ramen", 16);
+        System.out.println(foodRatings.highestRated("japanese"));
     }
 }
