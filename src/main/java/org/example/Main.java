@@ -10,6 +10,7 @@ import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
+import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,5 +32,6 @@ public class Main {
         foodRatings.changeRating("ramen", 16);
         System.out.println(foodRatings.highestRated("japanese"));
         System.out.println(maxProductDifference(new int[]{5, 6, 2, 7, 4}));
+        System.out.println(Arrays.deepToString(imageSmoother(new int[][]{{100, 200, 100}, {200, 50, 200}, {100, 200, 100}})));
     }
 }
