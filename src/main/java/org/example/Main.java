@@ -9,6 +9,7 @@ import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
+import static org.example.SolutionDay8.maxProductDifference;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +30,6 @@ public class Main {
         System.out.print(foodRatings.highestRated("japanese") + "; ");
         foodRatings.changeRating("ramen", 16);
         System.out.println(foodRatings.highestRated("japanese"));
+        System.out.println(maxProductDifference(new int[]{5, 6, 2, 7, 4}));
     }
 }
