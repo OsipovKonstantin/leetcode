@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.example.SolutionDay1.twoSum;
+import static org.example.SolutionDay10.buyChoco;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
@@ -33,5 +34,6 @@ public class Main {
         System.out.println(foodRatings.highestRated("japanese"));
         System.out.println(maxProductDifference(new int[]{5, 6, 2, 7, 4}));
         System.out.println(Arrays.deepToString(imageSmoother(new int[][]{{100, 200, 100}, {200, 50, 200}, {100, 200, 100}})));
+        System.out.println(buyChoco(new int[]{3, 2, 3}, 3));
     }
 }
