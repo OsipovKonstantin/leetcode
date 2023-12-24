@@ -11,8 +11,6 @@
 ,src/main/java/org/example/SolutionDay10.java,6\0\60bc0b2d1a108498716bbb45947b1feb06d6aaed
 [
 +src/main/java/org/example/SolutionDay6.java,b\6\b6a0999ed11d1b1024f9b89f63ade2c7684070d9
-\
-,src/main/java/org/example/SolutionDay12.java,3\0\300ccaf7f54b825423aa850a672fa3314b8b46db
 f
 6src/main/java/org/example/SolutionDay7FoodRatings.java,2\d\2d8ba4712cc537ed92f451446bac0b4c14d99802
 [
