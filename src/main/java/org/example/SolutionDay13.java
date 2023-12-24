@@ -1,5 +1,7 @@
 package org.example;
 
+import com.github.javaparser.utils.Pair;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,13 +16,13 @@ import java.util.Set;
 //    Input: path = "NESWW"
 //    Output: true
 //    Explanation: Notice that the path visits the origin twice.
-public class SolutionDay13 {
+class SolutionDay13 {
     public static boolean isPathCrossing(String path) {
         int x = 0;
         int y = 0;
-        Set<String> pathSet = new HashSet<>();
+        Set<Pair<Integer, Integer>> pathSet = new HashSet<>();
         for (char c : path.toCharArray()) {
-            pathSet.add(x + " " + y);
+            pathSet.add(new Pair(x, y));
             if (c == 'N') {
                 y++;
             } else if (c == 'S') {
@@ -30,7 +32,7 @@ public class SolutionDay13 {
             } else if (c == 'W') {
                 x--;
             }
-            if (pathSet.contains(x + " " + y)) {
+            if (pathSet.contains(new Pair(x, y))) {
                 return true;
             }
         }
