@@ -9,6 +9,7 @@ import static org.example.SolutionDay11.maxWidthOfVerticalArea;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
+import static org.example.SolutionDay15.numDecodings;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
@@ -43,5 +44,6 @@ public class Main {
         System.out.println(maxScore("1111"));
         System.out.println(isPathCrossing("NESWW"));
         System.out.println(minOperations("0100"));
+        System.out.println(numDecodings("226"));
     }
 }

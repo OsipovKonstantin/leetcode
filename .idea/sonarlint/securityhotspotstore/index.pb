@@ -37,3 +37,7 @@ Q.idea/sonarlint/securityhotspotstore/6/0/60bc0b2d1a108498716bbb45947b1feb06d6aa
 Q.idea/sonarlint/securityhotspotstore/2/d/2d8ba4712cc537ed92f451446bac0b4c14d99802,9\d\9d88dad723661619a62aeda7f6cd1042fa638cd8
 Å
 Q.idea/sonarlint/securityhotspotstore/3/0/300ccaf7f54b825423aa850a672fa3314b8b46db,5\4\545f55c8512650f28616aea18e91bc1c29e5b88e
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+\
+,src/main/java/org/example/SolutionDay12.java,3\0\300ccaf7f54b825423aa850a672fa3314b8b46db
