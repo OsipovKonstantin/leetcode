@@ -19,6 +19,7 @@ import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Fifth.largestOddNumber;
 import static org.example.SolutionDay20Fourth.tree2str;
 import static org.example.SolutionDay20Second.transpose;
+import static org.example.SolutionDay20Seventh.numberOfMatches;
 import static org.example.SolutionDay20Sixth.totalMoney;
 import static org.example.SolutionDay20Third.inorderTraversal;
 import static org.example.SolutionDay3.maxProduct;
@@ -68,5 +69,6 @@ public class Main {
                         new TreeNode(3, null, null))));
         System.out.println(largestOddNumber("52"));
         System.out.println(totalMoney(20));
+        System.out.println(numberOfMatches(14));
     }
 }
