@@ -23,6 +23,7 @@ import static org.example.SolutionDay20Ninh.minTimeToVisitAllPoints;
 import static org.example.SolutionDay20Second.transpose;
 import static org.example.SolutionDay20Seventh.numberOfMatches;
 import static org.example.SolutionDay20Sixth.totalMoney;
+import static org.example.SolutionDay20Tenth.countCharacters;
 import static org.example.SolutionDay20Third.inorderTraversal;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
@@ -74,5 +75,6 @@ public class Main {
         System.out.println(numberOfMatches(14));
         System.out.println(largestGoodInteger("6777133339"));
         System.out.println(minTimeToVisitAllPoints(new int[][]{{1, 1}, {3, 4}, {-1, 0}}));
+        System.out.println(countCharacters(new String[]{"hello", "world", "leetcode"}, "welldonehoneyr"));
     }
 }
