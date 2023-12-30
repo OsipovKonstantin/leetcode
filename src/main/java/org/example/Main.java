@@ -16,6 +16,7 @@ import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
+import static org.example.SolutionDay20Second.transpose;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -55,5 +56,6 @@ public class Main {
         System.out.println(getLengthOfOptimalCompression("aabbaa", 2));
         System.out.println(minDifficulty(new int[]{1, 7, 1, 7, 1}, 3));
         System.out.println(makeEqual(new String[]{"abc", "aabc", "bc"}));
+        System.out.println(Arrays.deepToString(transpose(new int[][]{{1, 2, 3}, {4, 5, 6}})));
     }
 }
