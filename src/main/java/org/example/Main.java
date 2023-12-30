@@ -19,6 +19,7 @@ import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
 import static org.example.SolutionDay20Fifth.largestOddNumber;
 import static org.example.SolutionDay20Fourth.tree2str;
+import static org.example.SolutionDay20Ninh.minTimeToVisitAllPoints;
 import static org.example.SolutionDay20Second.transpose;
 import static org.example.SolutionDay20Seventh.numberOfMatches;
 import static org.example.SolutionDay20Sixth.totalMoney;
@@ -72,5 +73,6 @@ public class Main {
         System.out.println(totalMoney(20));
         System.out.println(numberOfMatches(14));
         System.out.println(largestGoodInteger("6777133339"));
+        System.out.println(minTimeToVisitAllPoints(new int[][]{{1, 1}, {3, 4}, {-1, 0}}));
     }
 }
