@@ -16,6 +16,7 @@ import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
+import static org.example.SolutionDay20Fifth.largestOddNumber;
 import static org.example.SolutionDay20Fourth.tree2str;
 import static org.example.SolutionDay20Second.transpose;
 import static org.example.SolutionDay20Third.inorderTraversal;
@@ -64,5 +65,6 @@ public class Main {
         System.out.println(tree2str(
                 new TreeNode(1, new TreeNode(2, new TreeNode(4, null, null), null),
                         new TreeNode(3, null, null))));
+        System.out.println(largestOddNumber("52"));
     }
 }
