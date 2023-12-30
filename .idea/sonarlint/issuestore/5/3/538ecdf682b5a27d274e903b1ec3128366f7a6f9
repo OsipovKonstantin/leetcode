@@ -1,0 +1,8 @@
+
+m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾èÆÉ8Â°Ë1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(Ë¿Üúÿÿÿÿ8Ø¹¸Ë1
+o
+java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ì‡ßÆ8ì°Ë1
+@
+java:S16594"#Declare "count" on a separate line.(¾èÆÉ8ø°Ë1

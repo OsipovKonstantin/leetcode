@@ -39,3 +39,5 @@ Q.idea/sonarlint/securityhotspotstore/2/d/2d8ba4712cc537ed92f451446bac0b4c14d998
 ,src/main/java/org/example/SolutionDay17.java,1\8\18a5c2193587057fddb98f644ed03cc204f393ba
 \
 ,src/main/java/org/example/SolutionDay16.java,1\5\153b7cc062d25f5f17efce8e4c106e05a68bd945
+\
+,src/main/java/org/example/SolutionDay18.java,5\3\538ecdf682b5a27d274e903b1ec3128366f7a6f9
