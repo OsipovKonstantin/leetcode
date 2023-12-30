@@ -16,6 +16,7 @@ import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
+import static org.example.SolutionDay20Eighth.largestGoodInteger;
 import static org.example.SolutionDay20Fifth.largestOddNumber;
 import static org.example.SolutionDay20Fourth.tree2str;
 import static org.example.SolutionDay20Second.transpose;
@@ -70,5 +71,6 @@ public class Main {
         System.out.println(largestOddNumber("52"));
         System.out.println(totalMoney(20));
         System.out.println(numberOfMatches(14));
+        System.out.println(largestGoodInteger("6777133339"));
     }
 }
