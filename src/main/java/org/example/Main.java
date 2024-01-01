@@ -26,6 +26,7 @@ import static org.example.SolutionDay20Sixth.totalMoney;
 import static org.example.SolutionDay20Tenth.countCharacters;
 import static org.example.SolutionDay20Third.inorderTraversal;
 import static org.example.SolutionDay21.maxLengthBetweenEqualCharacters;
+import static org.example.SolutionDay21Fourth.hammingWeight;
 import static org.example.SolutionDay21Second.arrayStringsAreEqual;
 import static org.example.SolutionDay21Third.minimumOneBitOperations;
 import static org.example.SolutionDay3.maxProduct;
@@ -82,5 +83,6 @@ public class Main {
         System.out.println(maxLengthBetweenEqualCharacters("abca"));
         System.out.println(arrayStringsAreEqual(new String[]{"ab", "c"}, new String[]{"a", "bc"}));
         System.out.println(minimumOneBitOperations(6));
+        System.out.println(hammingWeight(-3));
     }
 }

@@ -1,0 +1,5 @@
+
+u	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(›ç¶Ù8ÓáøâË1
+y	java:S127'"XRefactor the code in order to not assign to this loop counter from within the loop body.( æƒ«ıÿÿÿÿ8ÓáøâË1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(«ÕßÀûÿÿÿÿ8ƒëÿâË1
