@@ -29,6 +29,7 @@ import static org.example.SolutionDay21.maxLengthBetweenEqualCharacters;
 import static org.example.SolutionDay21Fourth.hammingWeight;
 import static org.example.SolutionDay21Second.arrayStringsAreEqual;
 import static org.example.SolutionDay21Third.minimumOneBitOperations;
+import static org.example.SolutionDay22.findContentChildren;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -84,5 +85,6 @@ public class Main {
         System.out.println(arrayStringsAreEqual(new String[]{"ab", "c"}, new String[]{"a", "bc"}));
         System.out.println(minimumOneBitOperations(6));
         System.out.println(hammingWeight(-3));
+        System.out.println(findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
     }
 }
