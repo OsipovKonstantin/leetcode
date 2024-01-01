@@ -31,6 +31,7 @@ import static org.example.SolutionDay21Second.arrayStringsAreEqual;
 import static org.example.SolutionDay21Third.minimumOneBitOperations;
 import static org.example.SolutionDay22.findContentChildren;
 import static org.example.SolutionDay22Second.numberOfWays;
+import static org.example.SolutionDay22Third.knightDialer;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -88,5 +89,6 @@ public class Main {
         System.out.println(hammingWeight(-3));
         System.out.println(findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
         System.out.println(numberOfWays("SSPPSPSPPPPSSSPSPPSPPSPPSS"));
+        System.out.println(knightDialer(3131));
     }
 }
