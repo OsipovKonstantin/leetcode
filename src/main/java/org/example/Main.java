@@ -33,6 +33,7 @@ import static org.example.SolutionDay22.findContentChildren;
 import static org.example.SolutionDay22Second.numberOfWays;
 import static org.example.SolutionDay22Third.knightDialer;
 import static org.example.SolutionDay23.largestSubmatrix;
+import static org.example.SolutionDay23Fourth.maxCoins;
 import static org.example.SolutionDay23Second.findMatrix;
 import static org.example.SolutionDay23Third.getSumAbsoluteDifferences;
 import static org.example.SolutionDay3.maxProduct;
@@ -98,6 +99,7 @@ public class Main {
         System.out.println(largestSubmatrix(new int[][]{{0, 0, 1}, {1, 1, 1}, {1, 0, 1}}));
         System.out.println(findMatrix(new int[]{1, 3, 4, 1, 2, 3, 1}));
         System.out.println(Arrays.toString(getSumAbsoluteDifferences(new int[]{1, 4, 6, 8, 10})));
+        System.out.println(maxCoins(new int[]{9, 8, 7, 6, 5, 1, 2, 3, 4}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
