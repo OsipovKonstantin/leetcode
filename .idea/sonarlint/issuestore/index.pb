@@ -1,20 +1,4 @@
 
-[
-+src/main/java/org/example/SolutionDay8.java,5\0\505fbc8c9548927144033e1c059a270558a3069e
-[
-+src/main/java/org/example/SolutionDay9.java,7\e\7ed2b843823d48ec6a659d42707828ee9f65532c
-\
-,src/main/java/org/example/SolutionDay11.java,b\4\b4e38ffbdefc9be3032db6298722fc4dce44bc52
-[
-+src/main/java/org/example/SolutionDay5.java,7\8\78b2fc23ef0a48ddc5e58990c96b79d1a0844cc8
-\
-,src/main/java/org/example/SolutionDay10.java,6\0\60bc0b2d1a108498716bbb45947b1feb06d6aaed
-[
-+src/main/java/org/example/SolutionDay6.java,b\6\b6a0999ed11d1b1024f9b89f63ade2c7684070d9
-f
-6src/main/java/org/example/SolutionDay7FoodRatings.java,2\d\2d8ba4712cc537ed92f451446bac0b4c14d99802
-[
-+src/main/java/org/example/SolutionDay4.java,1\0\10732b5e1a502387c81630849114bc826e741406
 Å
 Q.idea/sonarlint/securityhotspotstore/1/0/10732b5e1a502387c81630849114bc826e741406,b\3\b38a34f981196e9defbd1bffa79ec3ea6f2b90a5
 Å
@@ -34,8 +18,6 @@ Q.idea/sonarlint/securityhotspotstore/2/d/2d8ba4712cc537ed92f451446bac0b4c14d998
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 \
-,src/main/java/org/example/SolutionDay12.java,3\0\300ccaf7f54b825423aa850a672fa3314b8b46db
-\
 ,src/main/java/org/example/SolutionDay16.java,1\5\153b7cc062d25f5f17efce8e4c106e05a68bd945
 \
 ,src/main/java/org/example/SolutionDay17.java,1\8\18a5c2193587057fddb98f644ed03cc204f393ba
@@ -43,8 +25,6 @@ Q.idea/sonarlint/securityhotspotstore/2/d/2d8ba4712cc537ed92f451446bac0b4c14d998
 ,src/main/java/org/example/SolutionDay18.java,5\3\538ecdf682b5a27d274e903b1ec3128366f7a6f9
 \
 ,src/main/java/org/example/SolutionDay15.java,2\7\276c44d6bf5b63d3acab4fd0ba0f5173b5dd01f3
-\
-,src/main/java/org/example/SolutionDay13.java,e\c\ec5995901c6fe8dcc9e2d397d4a3cfc710fa6aa5
 \
 ,src/main/java/org/example/SolutionDay19.java,d\b\dbbbbcbf47b162043843148c38be9a676c4f2207
 Å
