@@ -36,6 +36,7 @@ import static org.example.SolutionDay23.largestSubmatrix;
 import static org.example.SolutionDay23Fifth.checkArithmeticSubarrays;
 import static org.example.SolutionDay23Fourth.maxCoins;
 import static org.example.SolutionDay23Second.findMatrix;
+import static org.example.SolutionDay23Sixth.findDiagonalOrder;
 import static org.example.SolutionDay23Third.getSumAbsoluteDifferences;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
@@ -102,6 +103,8 @@ public class Main {
         System.out.println(Arrays.toString(getSumAbsoluteDifferences(new int[]{1, 4, 6, 8, 10})));
         System.out.println(maxCoins(new int[]{9, 8, 7, 6, 5, 1, 2, 3, 4}));
         System.out.println(checkArithmeticSubarrays(new int[]{4, 6, 5, 9, 3, 7}, new int[]{0, 0, 2}, new int[]{2, 3, 5}));
+        System.out.println(Arrays.toString(findDiagonalOrder(List.of(List.of(1, 2, 3, 4, 5), List.of(6, 7),
+                List.of(8), List.of(9, 10, 11), List.of(12, 13, 14, 15, 16)))));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
