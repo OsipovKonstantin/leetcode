@@ -33,6 +33,7 @@ import static org.example.SolutionDay22.findContentChildren;
 import static org.example.SolutionDay22Second.numberOfWays;
 import static org.example.SolutionDay22Third.knightDialer;
 import static org.example.SolutionDay23.largestSubmatrix;
+import static org.example.SolutionDay23Second.findMatrix;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -42,6 +43,8 @@ import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
     public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+
         System.out.println(Arrays.toString(twoSum(new int[]{1, 6, 3, 10}, 9)));
         System.out.println(findSpecialInteger(new int[]{1, 2, 2, 6, 6, 6, 6, 7, 10}));
         System.out.println(maxProduct(new int[]{1, 5, 4, 5}));
@@ -92,5 +95,9 @@ public class Main {
         System.out.println(numberOfWays("SSPPSPSPPPPSSSPSPPSPPSPPSS"));
         System.out.println(knightDialer(3131));
         System.out.println(largestSubmatrix(new int[][]{{0, 0, 1}, {1, 1, 1}, {1, 0, 1}}));
+        System.out.println(findMatrix(new int[]{1, 3, 4, 1, 2, 3, 1}));
+
+        long end = System.currentTimeMillis();
+        System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
     }
 }
