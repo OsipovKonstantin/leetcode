@@ -1,20 +1,4 @@
 
-Å
-Q.idea/sonarlint/securityhotspotstore/1/0/10732b5e1a502387c81630849114bc826e741406,b\3\b38a34f981196e9defbd1bffa79ec3ea6f2b90a5
-Å
-Q.idea/sonarlint/securityhotspotstore/b/4/b4e38ffbdefc9be3032db6298722fc4dce44bc52,c\e\ce1e1213073ba5b9b1c6e4930a97697d0d468702
-Å
-Q.idea/sonarlint/securityhotspotstore/b/6/b6a0999ed11d1b1024f9b89f63ade2c7684070d9,e\f\ef85000847c52aef19146d098df58e97fd794cb7
-Å
-Q.idea/sonarlint/securityhotspotstore/7/8/78b2fc23ef0a48ddc5e58990c96b79d1a0844cc8,c\3\c3f23b7d19db617011421b501b554e2ffecbeb36
-Å
-Q.idea/sonarlint/securityhotspotstore/7/e/7ed2b843823d48ec6a659d42707828ee9f65532c,4\4\44505e3b29c25a553e8aa71933ab839c698c8f2e
-Å
-Q.idea/sonarlint/securityhotspotstore/5/0/505fbc8c9548927144033e1c059a270558a3069e,0\a\0a7b8284c3d3ec0058bb243974a0434622221c76
-Å
-Q.idea/sonarlint/securityhotspotstore/6/0/60bc0b2d1a108498716bbb45947b1feb06d6aaed,0\d\0d029c478e55876263a59df9e63b691649f79c11
-Å
-Q.idea/sonarlint/securityhotspotstore/2/d/2d8ba4712cc537ed92f451446bac0b4c14d99802,9\d\9d88dad723661619a62aeda7f6cd1042fa638cd8
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 \
@@ -69,8 +53,6 @@ Q.idea/sonarlint/securityhotspotstore/1/7/17a37135f06c9838987758b17595dcf4d74bc3
 Q.idea/sonarlint/securityhotspotstore/7/d/7d5febd2f3c288eb357cf3587ade19b4e4f3591b,c\6\c684ed27fa47ac801cc89f35555effc138e4c31f
 Å
 Q.idea/sonarlint/securityhotspotstore/0/3/0308f95544e109d7fc5d9ee67ae2497017723a03,b\c\bc747ec27b4176adc17b4a43485977761ba4fa43
-Å
-Q.idea/sonarlint/securityhotspotstore/e/c/ec5995901c6fe8dcc9e2d397d4a3cfc710fa6aa5,9\b\9bcc8cfc1de07b99f04f3152d5dea493c7711121
 w
 G.idea/sonarlint/issuestore/2/7/276c44d6bf5b63d3acab4fd0ba0f5173b5dd01f3,9\3\933601cca3786ce8755d8602c8b1ffd4a7b0fa4d
 Å
@@ -179,3 +161,7 @@ f
 +src/main/java/org/example/SolutionDay9.java,7\e\7ed2b843823d48ec6a659d42707828ee9f65532c
 b
 2src/main/java/org/example/SolutionDay23Fourth.java,8\b\8bf630688f3a02bc323519464a7921c8dbd9f3c4
+a
+1src/main/java/org/example/SolutionDay23Fifth.java,a\1\a125f6d91220d1b3616f00fab20dcdac13c0aac5
+a
+1src/main/java/org/example/SolutionDay23Sixth.java,7\7\77a049a7bd69b3ab5dddaf3f442ceb68698fb8cf
