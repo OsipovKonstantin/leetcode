@@ -39,6 +39,7 @@ import static org.example.SolutionDay23Second.findMatrix;
 import static org.example.SolutionDay23Sixth.findDiagonalOrder;
 import static org.example.SolutionDay23Third.getSumAbsoluteDifferences;
 import static org.example.SolutionDay24.numberOfBeams;
+import static org.example.SolutionDay24Fourth.reductionOperations;
 import static org.example.SolutionDay24Second.countNicePairs;
 import static org.example.SolutionDay24Third.garbageCollection;
 import static org.example.SolutionDay3.maxProduct;
@@ -111,6 +112,7 @@ public class Main {
         System.out.println(numberOfBeams(new String[]{"011001", "000000", "010100", "001000"}));
         System.out.println(countNicePairs(new int[]{13, 10, 35, 24, 76}));
         System.out.println(garbageCollection(new String[]{"MMM", "PGM", "GP"}, new int[]{3, 10}));
+        System.out.println(reductionOperations(new int[]{1, 1, 2, 2, 3}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
