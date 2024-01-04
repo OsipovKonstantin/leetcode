@@ -115,6 +115,7 @@ public class Main {
         System.out.println(garbageCollection(new String[]{"MMM", "PGM", "GP"}, new int[]{3, 10}));
         System.out.println(reductionOperations(new int[]{1, 1, 2, 2, 3}));
         System.out.println(maxFrequency(new int[]{1, 4, 8, 13}, 5));
+        System.out.println(SolutionDay25Second.minOperations(new int[]{2, 3, 3, 2, 2, 4, 2, 3, 4}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
