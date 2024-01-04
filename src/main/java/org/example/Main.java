@@ -42,6 +42,7 @@ import static org.example.SolutionDay24.numberOfBeams;
 import static org.example.SolutionDay24Fourth.reductionOperations;
 import static org.example.SolutionDay24Second.countNicePairs;
 import static org.example.SolutionDay24Third.garbageCollection;
+import static org.example.SolutionDay25.maxFrequency;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -113,6 +114,7 @@ public class Main {
         System.out.println(countNicePairs(new int[]{13, 10, 35, 24, 76}));
         System.out.println(garbageCollection(new String[]{"MMM", "PGM", "GP"}, new int[]{3, 10}));
         System.out.println(reductionOperations(new int[]{1, 1, 2, 2, 3}));
+        System.out.println(maxFrequency(new int[]{1, 4, 8, 13}, 5));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
