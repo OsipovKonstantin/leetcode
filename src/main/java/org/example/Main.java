@@ -43,6 +43,7 @@ import static org.example.SolutionDay24Fourth.reductionOperations;
 import static org.example.SolutionDay24Second.countNicePairs;
 import static org.example.SolutionDay24Third.garbageCollection;
 import static org.example.SolutionDay25.maxFrequency;
+import static org.example.SolutionDay25Fourth.findDifferentBinaryString;
 import static org.example.SolutionDay25Third.minPairSum;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
@@ -118,6 +119,7 @@ public class Main {
         System.out.println(maxFrequency(new int[]{1, 4, 8, 13}, 5));
         System.out.println(SolutionDay25Second.minOperations(new int[]{2, 3, 3, 2, 2, 4, 2, 3, 4}));
         System.out.println(minPairSum(new int[]{3, 5, 2, 3}));
+        System.out.println(findDifferentBinaryString(new String[]{"111", "011", "001"}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
