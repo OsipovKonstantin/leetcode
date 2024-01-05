@@ -48,6 +48,7 @@ import static org.example.SolutionDay25Fourth.findDifferentBinaryString;
 import static org.example.SolutionDay25Sixth.countPalindromicSubsequence;
 import static org.example.SolutionDay25Third.minPairSum;
 import static org.example.SolutionDay26.sortVowels;
+import static org.example.SolutionDay26Second.lengthOfLIS;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -126,6 +127,7 @@ public class Main {
         System.out.println(maximumElementAfterDecrementingAndRearranging(new int[]{100, 1, 100}));
         System.out.println(countPalindromicSubsequence("bbcbaba"));
         System.out.println(sortVowels("lEetcOde"));
+        System.out.println(lengthOfLIS(new int[]{0, 1, 0, 3, 2, 3}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
