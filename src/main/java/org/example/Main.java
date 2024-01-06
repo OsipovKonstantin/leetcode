@@ -50,6 +50,7 @@ import static org.example.SolutionDay25Third.minPairSum;
 import static org.example.SolutionDay26.sortVowels;
 import static org.example.SolutionDay26Second.lengthOfLIS;
 import static org.example.SolutionDay26Third.numBusesToDestination;
+import static org.example.SolutionDay27.jobScheduling;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -130,6 +131,7 @@ public class Main {
         System.out.println(sortVowels("lEetcOde"));
         System.out.println(lengthOfLIS(new int[]{0, 1, 0, 3, 2, 3}));
         System.out.println(numBusesToDestination(new int[][]{{1, 2, 7}, {3, 6, 7}}, 1, 6));
+        System.out.println(jobScheduling(new int[]{1, 2, 3, 4, 6}, new int[]{3, 5, 10, 6, 9}, new int[]{20, 20, 100, 70, 60}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
