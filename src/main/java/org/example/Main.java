@@ -133,6 +133,14 @@ public class Main {
         System.out.println(numBusesToDestination(new int[][]{{1, 2, 7}, {3, 6, 7}}, 1, 6));
         System.out.println(jobScheduling(new int[]{1, 2, 3, 4, 6}, new int[]{3, 5, 10, 6, 9}, new int[]{20, 20, 100, 70, 60}));
 
+        SolutionDay27Second.Graph graph =
+                new SolutionDay27Second.Graph(4, new int[][]{{0, 2, 5}, {0, 1, 2}, {1, 2, 1}, {3, 0, 3}});
+        int firstPath = graph.shortestPath(3, 2);
+        int secondPath = graph.shortestPath(0, 3);
+        graph.addEdge(new int[]{1, 3, 4});
+        int thirdPath = graph.shortestPath(0, 3);
+        System.out.println(firstPath + " " + secondPath + " " + thirdPath);
+
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
     }
