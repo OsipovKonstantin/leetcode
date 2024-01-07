@@ -152,6 +152,17 @@ public class Main {
         System.out.println(isReachableAtTime(2, 4, 7, 7, 6));
         System.out.println(eliminateMaximum(new int[]{1, 1, 2, 3}, new int[]{1, 1, 1, 1}));
 
+        SolutionDay28Sixth seatManager = new SolutionDay28Sixth(5);
+        int seatOne = seatManager.reserve();
+        int seatTwo = seatManager.reserve();
+        seatManager.unreserve(2);
+        int seatThree = seatManager.reserve();
+        int seatFour = seatManager.reserve();
+        int seatFive = seatManager.reserve();
+        int seatSix = seatManager.reserve();
+        seatManager.unreserve(5);
+        System.out.println(String.format("%s, %s, %s, %s, %s, %s", seatOne, seatTwo, seatThree, seatFour, seatFive, seatSix));
+
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
     }
