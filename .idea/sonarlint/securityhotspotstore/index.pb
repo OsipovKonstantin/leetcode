@@ -185,7 +185,3 @@ b
 2src/main/java/org/example/SolutionDay25Fourth.java,c\4\c44dab2adcebbb9f99a6bb5a163ef4cec51398a9
 a
 1src/main/java/org/example/SolutionDay25Fifth.java,9\8\989dd9b127dd94747ebfb12818cdcaff4aef9e0f
-a
-1src/main/java/org/example/SolutionDay25Sixth.java,1\0\10c5c6b1933b6a87a18d41b932c2f070f5d0c6be
-\
-,src/main/java/org/example/SolutionDay26.java,8\1\81c21f79258bcd439baaad49c159b4d0b688ec49

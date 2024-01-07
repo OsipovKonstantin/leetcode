@@ -51,6 +51,7 @@ import static org.example.SolutionDay26.sortVowels;
 import static org.example.SolutionDay26Second.lengthOfLIS;
 import static org.example.SolutionDay26Third.numBusesToDestination;
 import static org.example.SolutionDay27.jobScheduling;
+import static org.example.SolutionDay28.restoreArray;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -140,6 +141,8 @@ public class Main {
         graph.addEdge(new int[]{1, 3, 4});
         int thirdPath = graph.shortestPath(0, 3);
         System.out.println(firstPath + " " + secondPath + " " + thirdPath);
+
+        System.out.println(Arrays.toString(restoreArray(new int[][]{{2, 1}, {3, 4}, {3, 2}})));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
