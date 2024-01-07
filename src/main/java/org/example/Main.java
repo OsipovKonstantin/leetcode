@@ -52,6 +52,7 @@ import static org.example.SolutionDay26Second.lengthOfLIS;
 import static org.example.SolutionDay26Third.numBusesToDestination;
 import static org.example.SolutionDay27.jobScheduling;
 import static org.example.SolutionDay28.restoreArray;
+import static org.example.SolutionDay28Fifth.eliminateMaximum;
 import static org.example.SolutionDay28Fourth.isReachableAtTime;
 import static org.example.SolutionDay28Second.numberOfArithmeticSlices;
 import static org.example.SolutionDay28Third.countHomogenous;
@@ -149,6 +150,7 @@ public class Main {
         System.out.println(numberOfArithmeticSlices(new int[]{2, 4, 6, 8, 10}));
         System.out.println(countHomogenous("abbcccaa"));
         System.out.println(isReachableAtTime(2, 4, 7, 7, 6));
+        System.out.println(eliminateMaximum(new int[]{1, 1, 2, 3}, new int[]{1, 1, 1, 1}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
