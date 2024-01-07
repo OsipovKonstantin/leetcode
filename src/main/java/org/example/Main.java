@@ -53,6 +53,7 @@ import static org.example.SolutionDay26Third.numBusesToDestination;
 import static org.example.SolutionDay27.jobScheduling;
 import static org.example.SolutionDay28.restoreArray;
 import static org.example.SolutionDay28Second.numberOfArithmeticSlices;
+import static org.example.SolutionDay28Third.countHomogenous;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -145,6 +146,7 @@ public class Main {
 
         System.out.println(Arrays.toString(restoreArray(new int[][]{{2, 1}, {3, 4}, {3, 2}})));
         System.out.println(numberOfArithmeticSlices(new int[]{2, 4, 6, 8, 10}));
+        System.out.println(countHomogenous("abbcccaa"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
