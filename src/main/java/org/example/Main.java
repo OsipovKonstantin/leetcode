@@ -57,6 +57,7 @@ import static org.example.SolutionDay28Fourth.isReachableAtTime;
 import static org.example.SolutionDay28Second.numberOfArithmeticSlices;
 import static org.example.SolutionDay28Third.countHomogenous;
 import static org.example.SolutionDay29.rangeSumBST;
+import static org.example.SolutionDay29Fourth.buildArray;
 import static org.example.SolutionDay29Second.getWinner;
 import static org.example.SolutionDay29Third.getLastMoment;
 import static org.example.SolutionDay3.maxProduct;
@@ -171,6 +172,7 @@ public class Main {
 
         System.out.println(getWinner(new int[]{2, 1, 3, 5, 4, 6, 7}, 2));
         System.out.println(getLastMoment(4, new int[]{4, 3}, new int[]{0, 1}));
+        System.out.println(buildArray(new int[]{1, 3}, 3));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
