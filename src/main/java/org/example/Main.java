@@ -57,6 +57,7 @@ import static org.example.SolutionDay28Fourth.isReachableAtTime;
 import static org.example.SolutionDay28Second.numberOfArithmeticSlices;
 import static org.example.SolutionDay28Third.countHomogenous;
 import static org.example.SolutionDay29.rangeSumBST;
+import static org.example.SolutionDay29Eighth.sortByBits;
 import static org.example.SolutionDay29Fifth.averageOfSubtree;
 import static org.example.SolutionDay29Fourth.buildArray;
 import static org.example.SolutionDay29Second.getWinner;
@@ -182,6 +183,7 @@ public class Main {
         System.out.println(Arrays.toString(
                 findMode(new TreeNode(1, null, new TreeNode(2, new TreeNode(2), null)))));
         System.out.println(Arrays.toString(findArray(new int[]{5, 2, 0, 3, 1})));
+        System.out.println(Arrays.toString(sortByBits(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8})));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
