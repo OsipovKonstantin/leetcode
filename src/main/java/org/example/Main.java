@@ -60,6 +60,7 @@ import static org.example.SolutionDay29.rangeSumBST;
 import static org.example.SolutionDay29Fifth.averageOfSubtree;
 import static org.example.SolutionDay29Fourth.buildArray;
 import static org.example.SolutionDay29Second.getWinner;
+import static org.example.SolutionDay29Sixth.findMode;
 import static org.example.SolutionDay29Third.getLastMoment;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
@@ -177,6 +178,8 @@ public class Main {
         System.out.println(averageOfSubtree(new TreeNode(4,
                 new TreeNode(8, new TreeNode(0), new TreeNode(1)),
                 new TreeNode(5, null, new TreeNode(6)))));
+        System.out.println(Arrays.toString(
+                findMode(new TreeNode(1, null, new TreeNode(2, new TreeNode(2), null)))));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
