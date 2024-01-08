@@ -57,6 +57,7 @@ import static org.example.SolutionDay28Fourth.isReachableAtTime;
 import static org.example.SolutionDay28Second.numberOfArithmeticSlices;
 import static org.example.SolutionDay28Third.countHomogenous;
 import static org.example.SolutionDay29.rangeSumBST;
+import static org.example.SolutionDay29Second.getWinner;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
@@ -166,6 +167,8 @@ public class Main {
         System.out.println(rangeSumBST(new TreeNode(10,
                 new TreeNode(5, new TreeNode(3), new TreeNode(7)),
                 new TreeNode(15, null, new TreeNode(18))), 7, 15));
+
+        System.out.println(getWinner(new int[]{2, 1, 3, 5, 4, 6, 7}, 2));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
