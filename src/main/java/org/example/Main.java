@@ -66,6 +66,7 @@ import static org.example.SolutionDay29Sixth.findMode;
 import static org.example.SolutionDay29Third.getLastMoment;
 import static org.example.SolutionDay3.maxProduct;
 import static org.example.SolutionDay30.leafSimilar;
+import static org.example.SolutionDay30Second.poorPigs;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -187,6 +188,7 @@ public class Main {
         System.out.println(Arrays.toString(sortByBits(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8})));
         System.out.println(leafSimilar(new TreeNode(1, new TreeNode(2), new TreeNode(3)),
                 new TreeNode(1, new TreeNode(3), new TreeNode(2))));
+        System.out.println(poorPigs(1000, 15, 60));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
