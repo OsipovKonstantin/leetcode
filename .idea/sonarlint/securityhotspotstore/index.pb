@@ -223,3 +223,5 @@ b
 2src/main/java/org/example/SolutionDay29Eighth.java,3\4\3432c075e5b94508f3cda93e2e1874914e5978f2
 \
 ,src/main/java/org/example/SolutionDay30.java,3\a\3a1c20f8cacca45c534bfb368ad01baf099ae581
+a
+1src/main/java/org/example/SolutionDay30Third.java,e\9\e98010627d2685832fda31eb213c3773ed110cec

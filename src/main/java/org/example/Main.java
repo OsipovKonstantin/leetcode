@@ -70,6 +70,7 @@ import static org.example.SolutionDay30Fourth.longestPalindrome;
 import static org.example.SolutionDay30Second.poorPigs;
 import static org.example.SolutionDay30Third.countVowelPermutation;
 import static org.example.SolutionDay31.amountOfTime;
+import static org.example.SolutionDay32.maxAncestorDiff;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -197,6 +198,9 @@ public class Main {
         System.out.println(amountOfTime(new TreeNode(1, new TreeNode(5, null,
                 new TreeNode(4, new TreeNode(9), new TreeNode(2))),
                 new TreeNode(3, new TreeNode(10), new TreeNode(6))), 3));
+        System.out.println(maxAncestorDiff(new TreeNode(1, null,
+                new TreeNode(2, null,
+                        new TreeNode(0, new TreeNode(3), null)))));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
