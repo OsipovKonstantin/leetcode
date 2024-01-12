@@ -73,6 +73,7 @@ import static org.example.SolutionDay31.amountOfTime;
 import static org.example.SolutionDay32.maxAncestorDiff;
 import static org.example.SolutionDay32Second.numFactoredBinaryTrees;
 import static org.example.SolutionDay33.halvesAreAlike;
+import static org.example.SolutionDay33Second.kthGrammar;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -205,6 +206,7 @@ public class Main {
                         new TreeNode(0, new TreeNode(3), null)))));
         System.out.println(numFactoredBinaryTrees(new int[]{2, 4, 5, 10}));
         System.out.println(halvesAreAlike("textbook"));
+        System.out.println(kthGrammar(2, 2));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
