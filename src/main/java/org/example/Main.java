@@ -73,6 +73,7 @@ import static org.example.SolutionDay31.amountOfTime;
 import static org.example.SolutionDay32.maxAncestorDiff;
 import static org.example.SolutionDay32Second.numFactoredBinaryTrees;
 import static org.example.SolutionDay33.halvesAreAlike;
+import static org.example.SolutionDay33Fourth.isPowerOfFour;
 import static org.example.SolutionDay33Second.kthGrammar;
 import static org.example.SolutionDay33Third.largestValues;
 import static org.example.SolutionDay4.numSpecial;
@@ -211,6 +212,7 @@ public class Main {
         System.out.println(largestValues(new TreeNode(1,
                 new TreeNode(3, new TreeNode(5), new TreeNode(3)),
                 new TreeNode(2, null, new TreeNode(9)))));
+        System.out.println(isPowerOfFour(5));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
