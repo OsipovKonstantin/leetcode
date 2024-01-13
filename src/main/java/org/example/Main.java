@@ -78,6 +78,7 @@ import static org.example.SolutionDay33Fourth.isPowerOfFour;
 import static org.example.SolutionDay33Second.kthGrammar;
 import static org.example.SolutionDay33Third.largestValues;
 import static org.example.SolutionDay34.minSteps;
+import static org.example.SolutionDay34Fifth.backspaceCompare;
 import static org.example.SolutionDay34Second.maximumScore;
 import static org.example.SolutionDay34Third.constrainedSubsetSum;
 import static org.example.SolutionDay4.numSpecial;
@@ -231,6 +232,8 @@ public class Main {
         while (nestedIterator.hasNext())
             integerList.add(nestedIterator.next());
         System.out.println(integerList);
+
+        System.out.println(backspaceCompare("ab#c", "ad#c"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
