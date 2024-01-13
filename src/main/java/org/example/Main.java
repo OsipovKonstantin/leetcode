@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -219,6 +220,17 @@ public class Main {
         System.out.println(minSteps("leetcode", "practice"));
         System.out.println(maximumScore(new int[]{1, 4, 3, 7, 4, 5}, 3));
         System.out.println(constrainedSubsetSum(new int[]{10, -2, -10, -5, 20}, 2));
+
+        List<NestedInteger> nestedIntegerList = Arrays.asList(
+                new NestedIntegerImpl(Arrays.asList(new NestedIntegerImpl(1),
+                        new NestedIntegerImpl(1))), new NestedIntegerImpl(2),
+                new NestedIntegerImpl(Arrays.asList(new NestedIntegerImpl(1),
+                        new NestedIntegerImpl(1))));
+        SolutionDay34Fourth nestedIterator = new SolutionDay34Fourth(nestedIntegerList);
+        List<Integer> integerList = new ArrayList<>();
+        while (nestedIterator.hasNext())
+            integerList.add(nestedIterator.next());
+        System.out.println(integerList);
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
