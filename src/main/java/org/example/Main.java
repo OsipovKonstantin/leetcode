@@ -78,6 +78,7 @@ import static org.example.SolutionDay33Second.kthGrammar;
 import static org.example.SolutionDay33Third.largestValues;
 import static org.example.SolutionDay34.minSteps;
 import static org.example.SolutionDay34Second.maximumScore;
+import static org.example.SolutionDay34Third.constrainedSubsetSum;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -217,6 +218,7 @@ public class Main {
         System.out.println(isPowerOfFour(5));
         System.out.println(minSteps("leetcode", "practice"));
         System.out.println(maximumScore(new int[]{1, 4, 3, 7, 4, 5}, 3));
+        System.out.println(constrainedSubsetSum(new int[]{10, -2, -10, -5, 20}, 2));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
