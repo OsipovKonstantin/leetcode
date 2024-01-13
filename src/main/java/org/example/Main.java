@@ -76,6 +76,7 @@ import static org.example.SolutionDay33.halvesAreAlike;
 import static org.example.SolutionDay33Fourth.isPowerOfFour;
 import static org.example.SolutionDay33Second.kthGrammar;
 import static org.example.SolutionDay33Third.largestValues;
+import static org.example.SolutionDay34.minSteps;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -213,6 +214,7 @@ public class Main {
                 new TreeNode(3, new TreeNode(5), new TreeNode(3)),
                 new TreeNode(2, null, new TreeNode(9)))));
         System.out.println(isPowerOfFour(5));
+        System.out.println(minSteps("leetcode", "practice"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
