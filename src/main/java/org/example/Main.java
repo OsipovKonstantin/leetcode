@@ -82,6 +82,7 @@ import static org.example.SolutionDay34Fifth.backspaceCompare;
 import static org.example.SolutionDay34Second.maximumScore;
 import static org.example.SolutionDay34Third.constrainedSubsetSum;
 import static org.example.SolutionDay35.minimumTime;
+import static org.example.SolutionDay35Fourth.onesMinusZeros;
 import static org.example.SolutionDay35Second.closeStrings;
 import static org.example.SolutionDay35Third.validateBinaryTreeNodes;
 import static org.example.SolutionDay4.numSpecial;
@@ -240,6 +241,7 @@ public class Main {
         System.out.println(minimumTime(5, new int[][]{{1, 5}, {2, 5}, {3, 5}, {3, 4}, {4, 5}}, new int[]{1, 2, 3, 4, 5}));
         System.out.println(closeStrings("cabbba", "abbccc"));
         System.out.println(validateBinaryTreeNodes(4, new int[]{1, -1, 3, -1}, new int[]{2, 3, -1, -1}));
+        System.out.println(Arrays.deepToString(onesMinusZeros(new int[][]{{0, 1, 1}, {1, 0, 1}, {0, 0, 1}})));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
