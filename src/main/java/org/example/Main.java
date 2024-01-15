@@ -87,6 +87,7 @@ import static org.example.SolutionDay35Fourth.onesMinusZeros;
 import static org.example.SolutionDay35Second.closeStrings;
 import static org.example.SolutionDay35Third.validateBinaryTreeNodes;
 import static org.example.SolutionDay36.findWinners;
+import static org.example.SolutionDay36Fourth.minCostClimbingStairs;
 import static org.example.SolutionDay36Second.numWays;
 import static org.example.SolutionDay36Third.paintWalls;
 import static org.example.SolutionDay4.numSpecial;
@@ -251,6 +252,7 @@ public class Main {
                 new int[][]{{1, 3}, {2, 3}, {3, 6}, {5, 6}, {5, 7}, {4, 5}, {4, 8}, {4, 9}, {10, 4}, {10, 9}}));
         System.out.println(numWays(3, 2));
         System.out.println(paintWalls(new int[]{2, 3, 4, 2}, new int[]{1, 1, 1, 1}));
+        System.out.println(minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
