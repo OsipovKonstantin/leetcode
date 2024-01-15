@@ -86,6 +86,7 @@ import static org.example.SolutionDay35Fifth.getRow;
 import static org.example.SolutionDay35Fourth.onesMinusZeros;
 import static org.example.SolutionDay35Second.closeStrings;
 import static org.example.SolutionDay35Third.validateBinaryTreeNodes;
+import static org.example.SolutionDay36.findWinners;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -244,6 +245,8 @@ public class Main {
         System.out.println(validateBinaryTreeNodes(4, new int[]{1, -1, 3, -1}, new int[]{2, 3, -1, -1}));
         System.out.println(Arrays.deepToString(onesMinusZeros(new int[][]{{0, 1, 1}, {1, 0, 1}, {0, 0, 1}})));
         System.out.println(getRow(3));
+        System.out.println(findWinners(
+                new int[][]{{1, 3}, {2, 3}, {3, 6}, {5, 6}, {5, 7}, {4, 5}, {4, 8}, {4, 9}, {10, 4}, {10, 9}}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
