@@ -270,6 +270,7 @@ public class Main {
 
         System.out.println(Arrays.toString(fullBloomFlowers(
                 new int[][]{{1, 6}, {3, 7}, {9, 12}, {4, 13}}, new int[]{2, 3, 7, 11})));
+        System.out.println(SolutionDay37Fourth.minOperations(new int[]{1, 2, 3, 5, 6}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
