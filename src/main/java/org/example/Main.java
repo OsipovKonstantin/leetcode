@@ -91,6 +91,7 @@ import static org.example.SolutionDay36Fourth.minCostClimbingStairs;
 import static org.example.SolutionDay36Second.numWays;
 import static org.example.SolutionDay36Third.paintWalls;
 import static org.example.SolutionDay37.findInMountainArray;
+import static org.example.SolutionDay37Third.fullBloomFlowers;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -266,6 +267,9 @@ public class Main {
         int param7 = randomizedSet.getRandom();
         System.out.println(String.format("%b, %b, %b, %d, %b, %b, %d",
                 param1, param2, param3, param4, param5, param6, param7));
+
+        System.out.println(Arrays.toString(fullBloomFlowers(
+                new int[][]{{1, 6}, {3, 7}, {9, 12}, {4, 13}}, new int[]{2, 3, 7, 11})));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
