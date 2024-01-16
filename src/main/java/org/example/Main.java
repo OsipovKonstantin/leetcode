@@ -90,6 +90,7 @@ import static org.example.SolutionDay36.findWinners;
 import static org.example.SolutionDay36Fourth.minCostClimbingStairs;
 import static org.example.SolutionDay36Second.numWays;
 import static org.example.SolutionDay36Third.paintWalls;
+import static org.example.SolutionDay37.findInMountainArray;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -253,6 +254,7 @@ public class Main {
         System.out.println(numWays(3, 2));
         System.out.println(paintWalls(new int[]{2, 3, 4, 2}, new int[]{1, 1, 1, 1}));
         System.out.println(minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
+        System.out.println(findInMountainArray(3, new MountainArrayImpl(new int[]{1, 2, 3, 4, 5, 3, 1})));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
