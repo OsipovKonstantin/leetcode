@@ -256,6 +256,17 @@ public class Main {
         System.out.println(minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
         System.out.println(findInMountainArray(3, new MountainArrayImpl(new int[]{1, 2, 3, 4, 5, 3, 1})));
 
+        SolutionDay37Second randomizedSet = new SolutionDay37Second();
+        boolean param1 = randomizedSet.insert(1);
+        boolean param2 = randomizedSet.remove(2);
+        boolean param3 = randomizedSet.insert(2);
+        int param4 = randomizedSet.getRandom();
+        boolean param5 = randomizedSet.remove(1);
+        boolean param6 = randomizedSet.insert(2);
+        int param7 = randomizedSet.getRandom();
+        System.out.println(String.format("%b, %b, %b, %d, %b, %b, %d",
+                param1, param2, param3, param4, param5, param6, param7));
+
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
     }
