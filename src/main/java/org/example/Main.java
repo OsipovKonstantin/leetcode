@@ -283,6 +283,17 @@ public class Main {
         System.out.println(numOfArrays(2, 3, 1));
         System.out.println(integerBreak(10));
         System.out.println(majorityElement(new int[]{3, 2, 3}));
+        SolutionDay38Sixth myHashMap = new SolutionDay38Sixth();
+        myHashMap.put(1, 1);
+        myHashMap.put(2, 2);
+        int day38param1 = myHashMap.get(1);
+        int day38param2 = myHashMap.get(3);
+        myHashMap.put(2, 1);
+        int day38param3 = myHashMap.get(2);
+        myHashMap.remove(2);
+        int day38param4 = myHashMap.get(2);
+        System.out.println(String.format("%d, %d, %d, %d", day38param1, day38param2, day38param3, day38param4));
+
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
