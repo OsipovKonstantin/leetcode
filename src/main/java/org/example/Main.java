@@ -94,6 +94,7 @@ import static org.example.SolutionDay37.findInMountainArray;
 import static org.example.SolutionDay37Fifth.searchRange;
 import static org.example.SolutionDay37Third.fullBloomFlowers;
 import static org.example.SolutionDay38.maxDotProduct;
+import static org.example.SolutionDay38Second.uniqueOccurrences;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -275,6 +276,7 @@ public class Main {
         System.out.println(SolutionDay37Fourth.minOperations(new int[]{1, 2, 3, 5, 6}));
         System.out.println(Arrays.toString(searchRange(new int[]{5, 7, 7, 8, 8, 10}, 8)));
         System.out.println(maxDotProduct(new int[]{2, 1, -2, 5}, new int[]{3, 0, -6}));
+        System.out.println(uniqueOccurrences(new int[]{1, 2, 2, 1, 1, 3}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
