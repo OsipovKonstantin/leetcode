@@ -99,6 +99,7 @@ import static org.example.SolutionDay38Fourth.integerBreak;
 import static org.example.SolutionDay38Second.uniqueOccurrences;
 import static org.example.SolutionDay38Third.numOfArrays;
 import static org.example.SolutionDay39.climbStairs;
+import static org.example.SolutionDay39Second.numIdenticalPairs;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -296,6 +297,7 @@ public class Main {
         System.out.println(String.format("%d, %d, %d, %d", day38param1, day38param2, day38param3, day38param4));
 
         System.out.println(climbStairs(3));
+        System.out.println(numIdenticalPairs(new int[]{1, 2, 3, 1, 1, 3}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
