@@ -99,6 +99,7 @@ import static org.example.SolutionDay38Fourth.integerBreak;
 import static org.example.SolutionDay38Second.uniqueOccurrences;
 import static org.example.SolutionDay38Third.numOfArrays;
 import static org.example.SolutionDay39.climbStairs;
+import static org.example.SolutionDay39Fifth.find132pattern;
 import static org.example.SolutionDay39Fourth.reverseWords;
 import static org.example.SolutionDay39Second.numIdenticalPairs;
 import static org.example.SolutionDay39Third.winnerOfGame;
@@ -302,6 +303,7 @@ public class Main {
         System.out.println(numIdenticalPairs(new int[]{1, 2, 3, 1, 1, 3}));
         System.out.println(winnerOfGame("ABBBBBBBAAA"));
         System.out.println(reverseWords("Let's take LeetCode contest"));
+        System.out.println(find132pattern(new int[]{3, 1, 4, 2}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
