@@ -106,6 +106,7 @@ import static org.example.SolutionDay39Seventh.sortArrayByParity;
 import static org.example.SolutionDay39Sixth.isMonotonic;
 import static org.example.SolutionDay39Third.winnerOfGame;
 import static org.example.SolutionDay4.numSpecial;
+import static org.example.SolutionDay40.decodeAtIndex;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -308,6 +309,7 @@ public class Main {
         System.out.println(find132pattern(new int[]{3, 1, 4, 2}));
         System.out.println(isMonotonic(new int[]{6, 5, 4, 4}));
         System.out.println(Arrays.toString(sortArrayByParity(new int[]{3, 1, 2, 4})));
+        System.out.println(decodeAtIndex("leet2code3", 10));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
