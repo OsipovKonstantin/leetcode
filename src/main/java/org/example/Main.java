@@ -108,6 +108,7 @@ import static org.example.SolutionDay39Third.winnerOfGame;
 import static org.example.SolutionDay4.numSpecial;
 import static org.example.SolutionDay40.decodeAtIndex;
 import static org.example.SolutionDay40Second.minFallingPathSum;
+import static org.example.SolutionDay40Third.removeDuplicateLetters;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -312,6 +313,7 @@ public class Main {
         System.out.println(Arrays.toString(sortArrayByParity(new int[]{3, 1, 2, 4})));
         System.out.println(decodeAtIndex("leet2code3", 10));
         System.out.println(minFallingPathSum(new int[][]{{2, 1, 3}, {6, 5, 4}, {7, 8, 9}}));
+        System.out.println(removeDuplicateLetters("cbacdcbc"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
