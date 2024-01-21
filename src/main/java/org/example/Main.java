@@ -110,6 +110,7 @@ import static org.example.SolutionDay40.decodeAtIndex;
 import static org.example.SolutionDay40Second.minFallingPathSum;
 import static org.example.SolutionDay40Third.removeDuplicateLetters;
 import static org.example.SolutionDay41.sumSubarrayMins;
+import static org.example.SolutionDay41Fourth.longestStrChain;
 import static org.example.SolutionDay41Second.findTheDifference;
 import static org.example.SolutionDay41Third.champagneTower;
 import static org.example.SolutionDay5.destCity;
@@ -320,6 +321,7 @@ public class Main {
         System.out.println(sumSubarrayMins(new int[]{3, 1, 2, 4}));
         System.out.println(findTheDifference("abcd", "abcde"));
         System.out.println(champagneTower(2, 1, 1));
+        System.out.println(longestStrChain(new String[]{"a","b","ba","bca","bda","bdca"}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
