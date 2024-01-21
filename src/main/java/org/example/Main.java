@@ -114,6 +114,7 @@ import static org.example.SolutionDay41Fourth.longestStrChain;
 import static org.example.SolutionDay41Second.findTheDifference;
 import static org.example.SolutionDay41Third.champagneTower;
 import static org.example.SolutionDay42.rob;
+import static org.example.SolutionDay42Second.isSubsequence;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -324,6 +325,7 @@ public class Main {
         System.out.println(champagneTower(2, 1, 1));
         System.out.println(longestStrChain(new String[]{"a", "b", "ba", "bca", "bda", "bdca"}));
         System.out.println(rob(new int[]{2, 7, 9, 3, 1}));
+        System.out.println(isSubsequence("axc", "ahbgdc"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
