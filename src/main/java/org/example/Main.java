@@ -116,6 +116,7 @@ import static org.example.SolutionDay41Third.champagneTower;
 import static org.example.SolutionDay42.rob;
 import static org.example.SolutionDay42Second.isSubsequence;
 import static org.example.SolutionDay42Third.findMedianSortedArrays;
+import static org.example.SolutionDay43.findDuplicate;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -329,6 +330,7 @@ public class Main {
         System.out.println(isSubsequence("axc", "ahbgdc"));
         System.out.println(findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4}));
         System.out.println(SolutionDay42Fourth.minOperations(new int[]{3, 2, 20, 1, 1, 3}, 10));
+        System.out.println(findDuplicate(new int[]{3, 1, 3, 4, 2}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
