@@ -328,6 +328,7 @@ public class Main {
         System.out.println(rob(new int[]{2, 7, 9, 3, 1}));
         System.out.println(isSubsequence("axc", "ahbgdc"));
         System.out.println(findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4}));
+        System.out.println(SolutionDay42Fourth.minOperations(new int[]{3, 2, 20, 1, 1, 3}, 10));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
