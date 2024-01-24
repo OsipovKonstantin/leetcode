@@ -122,6 +122,7 @@ import static org.example.SolutionDay43Third.kWeakestRows;
 import static org.example.SolutionDay44.shortestPathLength;
 import static org.example.SolutionDay44Second.maxLength;
 import static org.example.SolutionDay44Third.minimumEffortPath;
+import static org.example.SolutionDay45.pseudoPalindromicPaths;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -342,6 +343,9 @@ public class Main {
         System.out.println(shortestPathLength(new int[][]{{1, 2, 3}, {0}, {0}, {0}}));
         System.out.println(maxLength(List.of("cha", "r", "act", "ers")));
         System.out.println(minimumEffortPath(new int[][]{{1, 2, 2}, {3, 8, 2}, {5, 3, 5}}));
+        System.out.println(pseudoPalindromicPaths(new TreeNode(2,
+                new TreeNode(3, new TreeNode(3), new TreeNode(1)),
+                new TreeNode(1, null, new TreeNode(1)))));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
