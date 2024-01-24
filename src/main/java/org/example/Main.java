@@ -123,6 +123,7 @@ import static org.example.SolutionDay44.shortestPathLength;
 import static org.example.SolutionDay44Second.maxLength;
 import static org.example.SolutionDay44Third.minimumEffortPath;
 import static org.example.SolutionDay45.pseudoPalindromicPaths;
+import static org.example.SolutionDay45Second.minCostConnectPoints;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -346,6 +347,7 @@ public class Main {
         System.out.println(pseudoPalindromicPaths(new TreeNode(2,
                 new TreeNode(3, new TreeNode(3), new TreeNode(1)),
                 new TreeNode(1, null, new TreeNode(1)))));
+        System.out.println(minCostConnectPoints(new int[][]{{0, 0}, {2, 2}, {3, 10}, {5, 2}, {7, 0}}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
