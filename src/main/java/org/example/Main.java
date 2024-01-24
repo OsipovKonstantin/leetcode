@@ -121,6 +121,7 @@ import static org.example.SolutionDay43Second.findErrorNums;
 import static org.example.SolutionDay43Third.kWeakestRows;
 import static org.example.SolutionDay44.shortestPathLength;
 import static org.example.SolutionDay44Second.maxLength;
+import static org.example.SolutionDay44Third.minimumEffortPath;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -340,6 +341,7 @@ public class Main {
                 {1, 1, 0, 0, 0}, {1, 1, 1, 1, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 0, 0}, {1, 1, 1, 1, 1}}, 3)));
         System.out.println(shortestPathLength(new int[][]{{1, 2, 3}, {0}, {0}, {0}}));
         System.out.println(maxLength(List.of("cha", "r", "act", "ers")));
+        System.out.println(minimumEffortPath(new int[][]{{1, 2, 2}, {3, 8, 2}, {5, 3, 5}}));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
