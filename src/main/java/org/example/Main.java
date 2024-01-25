@@ -127,6 +127,7 @@ import static org.example.SolutionDay45Second.minCostConnectPoints;
 import static org.example.SolutionDay45Third.findItinerary;
 import static org.example.SolutionDay46.longestCommonSubsequence;
 import static org.example.SolutionDay46Second.candy;
+import static org.example.SolutionDay46Third.minDeletions;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -356,6 +357,7 @@ public class Main {
                 List.of("SFO", "SJC"), List.of("LHR", "SFO"))));
         System.out.println(longestCommonSubsequence("abcde", "ace"));
         System.out.println(candy(new int[]{1, 0, 2}));
+        System.out.println(minDeletions("ceabaacb"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
