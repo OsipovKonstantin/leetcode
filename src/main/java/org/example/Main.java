@@ -126,6 +126,7 @@ import static org.example.SolutionDay45.pseudoPalindromicPaths;
 import static org.example.SolutionDay45Second.minCostConnectPoints;
 import static org.example.SolutionDay45Third.findItinerary;
 import static org.example.SolutionDay46.longestCommonSubsequence;
+import static org.example.SolutionDay46Fifth.countOrders;
 import static org.example.SolutionDay46Fourth.groupThePeople;
 import static org.example.SolutionDay46Second.candy;
 import static org.example.SolutionDay46Third.minDeletions;
@@ -360,6 +361,7 @@ public class Main {
         System.out.println(candy(new int[]{1, 0, 2}));
         System.out.println(minDeletions("ceabaacb"));
         System.out.println(groupThePeople(new int[]{2, 1, 3, 3, 3, 2}));
+        System.out.println(countOrders(3));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
