@@ -125,6 +125,7 @@ import static org.example.SolutionDay44Third.minimumEffortPath;
 import static org.example.SolutionDay45.pseudoPalindromicPaths;
 import static org.example.SolutionDay45Second.minCostConnectPoints;
 import static org.example.SolutionDay45Third.findItinerary;
+import static org.example.SolutionDay46.longestCommonSubsequence;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -352,6 +353,7 @@ public class Main {
 
         System.out.println(findItinerary(List.of(List.of("MUC", "LHR"), List.of("JFK", "MUC"),
                 List.of("SFO", "SJC"), List.of("LHR", "SFO"))));
+        System.out.println(longestCommonSubsequence("abcde", "ace"));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
