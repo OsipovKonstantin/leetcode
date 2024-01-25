@@ -129,6 +129,7 @@ import static org.example.SolutionDay46.longestCommonSubsequence;
 import static org.example.SolutionDay46Fifth.countOrders;
 import static org.example.SolutionDay46Fourth.groupThePeople;
 import static org.example.SolutionDay46Second.candy;
+import static org.example.SolutionDay46Sixth.combinationSum4;
 import static org.example.SolutionDay46Third.minDeletions;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
@@ -362,6 +363,7 @@ public class Main {
         System.out.println(minDeletions("ceabaacb"));
         System.out.println(groupThePeople(new int[]{2, 1, 3, 3, 3, 2}));
         System.out.println(countOrders(3));
+        System.out.println(combinationSum4(new int[]{1, 2, 3}, 4));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
