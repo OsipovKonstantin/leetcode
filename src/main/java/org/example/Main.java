@@ -133,6 +133,7 @@ import static org.example.SolutionDay46Sixth.combinationSum4;
 import static org.example.SolutionDay46Third.minDeletions;
 import static org.example.SolutionDay47.findPaths;
 import static org.example.SolutionDay47Second.generate;
+import static org.example.SolutionDay47Third.reverseBetween;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -368,6 +369,28 @@ public class Main {
         System.out.println(combinationSum4(new int[]{1, 2, 3}, 4));
         System.out.println(findPaths(2, 2, 2, 0, 0));
         System.out.println(generate(5));
+
+        SolutionDay47Third.ListNode listNode = new SolutionDay47Third.ListNode(5);
+        listNode = new SolutionDay47Third.ListNode(4, listNode);
+        listNode = new SolutionDay47Third.ListNode(3, listNode);
+        listNode = new SolutionDay47Third.ListNode(2, listNode);
+        listNode = new SolutionDay47Third.ListNode(1, listNode);
+        StringBuilder sb = new StringBuilder();
+        sb.append(listNode.val + " ");
+        SolutionDay47Third.ListNode pointer = listNode;
+        while (pointer.next != null) {
+            pointer = pointer.next;
+            sb.append(pointer.val + " ");
+        }
+        reverseBetween(listNode, 2, 4);
+        StringBuilder reversedBetweenSb = new StringBuilder();
+        reversedBetweenSb.append(listNode.val + " ");
+        pointer = listNode;
+        while (pointer.next != null) {
+            pointer = pointer.next;
+            reversedBetweenSb.append(pointer.val + " ");
+        }
+        System.out.println(sb + " " + reversedBetweenSb);
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
