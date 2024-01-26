@@ -131,6 +131,7 @@ import static org.example.SolutionDay46Fourth.groupThePeople;
 import static org.example.SolutionDay46Second.candy;
 import static org.example.SolutionDay46Sixth.combinationSum4;
 import static org.example.SolutionDay46Third.minDeletions;
+import static org.example.SolutionDay47.findPaths;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -364,6 +365,7 @@ public class Main {
         System.out.println(groupThePeople(new int[]{2, 1, 3, 3, 3, 2}));
         System.out.println(countOrders(3));
         System.out.println(combinationSum4(new int[]{1, 2, 3}, 4));
+        System.out.println(findPaths(2, 2, 2, 0, 0));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
