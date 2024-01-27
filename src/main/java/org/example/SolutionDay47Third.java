@@ -1,6 +1,6 @@
 package org.example;
 
-//    medium #linkedlist
+//    medium #linkedlist. Reversion of values in linked list easier than links. Here is second, more advance approach
 //    https://leetcode.com/problems/reverse-linked-list-ii
 //    Given the head of a singly linked list and two integers left and right where left <= right, reverse the nodes
 //    of the list from position left to position right, and return the reversed list.
@@ -12,22 +12,20 @@ package org.example;
 //    Output: [5]
 public class SolutionDay47Third {
     public static ListNode reverseBetween(ListNode head, int left, int right) {
-        ListNode first = head;
-        for (int i = 1; i < left; i++) {
-            first = first.next;
+        ListNode dummy = new ListNode(0, head);
+        ListNode pre = dummy;
+        for (int i = 0; i < left - 1; i++) {
+            pre = pre.next;
         }
-        int[] arr = new int[right - left + 1];
-        arr[0] = first.val;
-        ListNode last = first;
-        for (int j = 1; j < arr.length; j++) {
-            last = last.next;
-            arr[j] = last.val;
+        ListNode curr = pre.next;
+        ListNode next = pre.next.next;
+        for (int j = 0; j < right - left; j++) {
+            curr.next = next.next;
+            next.next = pre.next;
+            pre.next = next;
+            next = curr.next;
         }
-        for (int k = arr.length - 1; k >= 0; k--) {
-            first.val = arr[k];
-            first = first.next;
-        }
-        return head;
+        return dummy.next;
     }
 
     //it was done before solution of task
