@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.ListNode;
+
 //    easy #design a hashmap. Here we implemented map with hash function, but on the leetcode.com easy solution was to
 //     store data in array int[1000001]
 //    https://leetcode.com/problems/design-hashmap
@@ -76,17 +78,5 @@ public class SolutionDay38Sixth {
 
     private int hash(int key) {
         return (int) ((long) key * multiplier % size);
-    }
-}
-
-class ListNode {
-    int key;
-    int val;
-    ListNode next;
-
-    public ListNode(int key, int val, ListNode next) {
-        this.key = key;
-        this.val = val;
-        this.next = next;
     }
 }

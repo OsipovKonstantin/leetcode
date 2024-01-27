@@ -1,7 +1,10 @@
 package org.example;
 
+import org.example.datastructures.ListNode;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 import static org.example.SolutionDay1.twoSum;
@@ -135,6 +138,7 @@ import static org.example.SolutionDay47.findPaths;
 import static org.example.SolutionDay47Second.generate;
 import static org.example.SolutionDay47Third.reverseBetween;
 import static org.example.SolutionDay48.kInversePairs;
+import static org.example.SolutionDay48Second.splitListToParts;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -371,14 +375,14 @@ public class Main {
         System.out.println(findPaths(2, 2, 2, 0, 0));
         System.out.println(generate(5));
 
-        SolutionDay47Third.ListNode listNode = new SolutionDay47Third.ListNode(5);
-        listNode = new SolutionDay47Third.ListNode(4, listNode);
-        listNode = new SolutionDay47Third.ListNode(3, listNode);
-        listNode = new SolutionDay47Third.ListNode(2, listNode);
-        listNode = new SolutionDay47Third.ListNode(1, listNode);
+        ListNode listNode = new ListNode(5);
+        listNode = new ListNode(4, listNode);
+        listNode = new ListNode(3, listNode);
+        listNode = new ListNode(2, listNode);
+        listNode = new ListNode(1, listNode);
         StringBuilder sb = new StringBuilder();
         sb.append(listNode.val + " ");
-        SolutionDay47Third.ListNode pointer = listNode;
+        ListNode pointer = listNode;
         while (pointer.next != null) {
             pointer = pointer.next;
             sb.append(pointer.val + " ");
@@ -394,6 +398,18 @@ public class Main {
         System.out.println(sb + " " + reversedBetweenSb);
 
         System.out.println(kInversePairs(3, 1));
+
+        ListNode[] linkedLists = splitListToParts(listNode, 3);
+        List<List<Integer>> linkedListsVal = new ArrayList<>();
+        for(int i = 0; i < linkedLists.length; i++) {
+            linkedListsVal.add(new ArrayList<>());
+            ListNode cur = linkedLists[i];
+            while(cur!=null) {
+                linkedListsVal.get(i).add(cur.val);
+                cur = cur.next;
+            }
+        }
+        System.out.println(linkedListsVal);
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));

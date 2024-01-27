@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.ListNode;
+
 //    medium #linkedlist. Reversion of values in linked list easier than links. Here is second, more advance approach
 //    https://leetcode.com/problems/reverse-linked-list-ii
 //    Given the head of a singly linked list and two integers left and right where left <= right, reverse the nodes
@@ -26,23 +28,5 @@ public class SolutionDay47Third {
             next = curr.next;
         }
         return dummy.next;
-    }
-
-    //it was done before solution of task
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }
