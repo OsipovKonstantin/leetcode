@@ -1,10 +1,10 @@
 package org.example;
 
 import org.example.datastructures.ListNode;
+import org.example.datastructures.NodeWithRandom;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 import static org.example.SolutionDay1.twoSum;
@@ -139,6 +139,7 @@ import static org.example.SolutionDay47Second.generate;
 import static org.example.SolutionDay47Third.reverseBetween;
 import static org.example.SolutionDay48.kInversePairs;
 import static org.example.SolutionDay48Second.splitListToParts;
+import static org.example.SolutionDay48Third.copyRandomList;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -401,15 +402,22 @@ public class Main {
 
         ListNode[] linkedLists = splitListToParts(listNode, 3);
         List<List<Integer>> linkedListsVal = new ArrayList<>();
-        for(int i = 0; i < linkedLists.length; i++) {
+        for (int i = 0; i < linkedLists.length; i++) {
             linkedListsVal.add(new ArrayList<>());
             ListNode cur = linkedLists[i];
-            while(cur!=null) {
+            while (cur != null) {
                 linkedListsVal.get(i).add(cur.val);
                 cur = cur.next;
             }
         }
         System.out.println(linkedListsVal);
+
+        NodeWithRandom nwr = new NodeWithRandom(5);
+        nwr.next = new NodeWithRandom(4);
+        nwr.random = nwr.next;
+        NodeWithRandom newNwr = copyRandomList(nwr);
+        newNwr.random = null;
+        System.out.println(nwr.equals(newNwr));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
