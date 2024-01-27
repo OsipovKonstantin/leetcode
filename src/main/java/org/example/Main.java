@@ -134,6 +134,7 @@ import static org.example.SolutionDay46Third.minDeletions;
 import static org.example.SolutionDay47.findPaths;
 import static org.example.SolutionDay47Second.generate;
 import static org.example.SolutionDay47Third.reverseBetween;
+import static org.example.SolutionDay48.kInversePairs;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -391,6 +392,8 @@ public class Main {
             reversedBetweenSb.append(pointer.val + " ");
         }
         System.out.println(sb + " " + reversedBetweenSb);
+
+        System.out.println(kInversePairs(3, 1));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
