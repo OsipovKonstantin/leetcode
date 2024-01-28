@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
 import static org.example.SolutionDay11.maxWidthOfVerticalArea;
@@ -418,6 +419,7 @@ public class Main {
         NodeWithRandom newNwr = copyRandomList(nwr);
         newNwr.random = null;
         System.out.println(nwr.equals(newNwr));
+        System.out.println(hasCycle(listNode));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
