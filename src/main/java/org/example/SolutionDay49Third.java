@@ -21,17 +21,15 @@ import java.util.Map;
 //    -107 <= k <= 107
 public class SolutionDay49Third {
     public static int subarraySum(int[] nums, int k) {
-        int n = nums.length;
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0,1);
+        Map<Integer, Integer> prefixSums = new HashMap<>();
+        prefixSums.put(0, 1);
         int ans = 0;
-        int sum = 0;
-        for(int num: nums) {
-            sum += num;
-            if(map.containsKey(sum-k)){
-                ans+=map.get(sum-k);
-            }
-            map.put(sum, map.getOrDefault(sum, 0)+1);
+        int curSum = 0;
+        for (int num : nums) {
+            curSum += num;
+            int diff = curSum - k;
+            ans += prefixSums.getOrDefault(diff, 0);
+            prefixSums.put(curSum, prefixSums.getOrDefault(curSum, 0) + 1);
         }
         return ans;
     }
