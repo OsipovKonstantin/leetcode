@@ -141,6 +141,7 @@ import static org.example.SolutionDay47Third.reverseBetween;
 import static org.example.SolutionDay48.kInversePairs;
 import static org.example.SolutionDay48Second.splitListToParts;
 import static org.example.SolutionDay48Third.copyRandomList;
+import static org.example.SolutionDay49Second.uniquePaths;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -420,6 +421,7 @@ public class Main {
         newNwr.random = null;
         System.out.println(nwr.equals(newNwr));
         System.out.println(hasCycle(listNode));
+        System.out.println(uniquePaths(3, 7));
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
