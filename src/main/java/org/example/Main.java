@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.datastructures.ListNode;
+import org.example.datastructures.MyQueue;
 import org.example.datastructures.NodeWithRandom;
 
 import java.util.ArrayList;
@@ -426,6 +427,14 @@ public class Main {
         System.out.println(uniquePaths(3, 7));
         System.out.println(subarraySum(new int[]{1, 1, 1}, 2));
         System.out.println(numSubmatrixSumTarget(new int[][]{{0, 1, 0}, {1, 1, 1}, {0, 1, 0}}, 0));
+
+        MyQueue myQueue = new MyQueue();
+        myQueue.push(1);
+        myQueue.push(2);
+        int int1 = myQueue.peek();
+        int int2 = myQueue.pop();
+        boolean boolean1 = myQueue.empty();
+        System.out.println(int1 + " " + int2 + " " + boolean1);
 
         long end = System.currentTimeMillis();
         System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
