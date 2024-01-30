@@ -149,6 +149,7 @@ import static org.example.SolutionDay49Second.uniquePaths;
 import static org.example.SolutionDay49Third.subarraySum;
 import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay51Second.minExtraChar;
+import static org.example.SolutionDay51Third.countBits;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -439,6 +440,7 @@ public class Main {
         boolean boolean1 = myQueue.empty();
         System.out.println(int1 + " " + int2 + " " + boolean1);
         System.out.println(minExtraChar("sayhelloworld", new String[]{"hello", "world"}));
+        System.out.println(Arrays.toString(countBits(5)));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
