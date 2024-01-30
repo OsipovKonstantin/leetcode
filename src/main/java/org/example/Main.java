@@ -4,6 +4,8 @@ import org.example.datastructures.ListNode;
 import org.example.datastructures.MyQueue;
 import org.example.datastructures.NodeWithRandom;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -146,13 +148,14 @@ import static org.example.SolutionDay49Fourth.numSubmatrixSumTarget;
 import static org.example.SolutionDay49Second.uniquePaths;
 import static org.example.SolutionDay49Third.subarraySum;
 import static org.example.SolutionDay5.destCity;
+import static org.example.SolutionDay51Second.minExtraChar;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
     public static void main(String[] args) {
-        long start = System.currentTimeMillis();
+        Instant start = Instant.now();
 
         System.out.println(Arrays.toString(twoSum(new int[]{1, 6, 3, 10}, 9)));
         System.out.println(findSpecialInteger(new int[]{1, 2, 2, 6, 6, 6, 6, 7, 10}));
@@ -435,8 +438,10 @@ public class Main {
         int int2 = myQueue.pop();
         boolean boolean1 = myQueue.empty();
         System.out.println(int1 + " " + int2 + " " + boolean1);
+        System.out.println(minExtraChar("sayhelloworld", new String[]{"hello", "world"}));
 
-        long end = System.currentTimeMillis();
-        System.out.println(String.format("длительность всех задач в миллисекундах %d", end - start));
+        Instant end = Instant.now();
+        System.out.println(String.format("длительность всех задач в миллисекундах %d",
+                Duration.between(start, end).toMillis()));
     }
 }
