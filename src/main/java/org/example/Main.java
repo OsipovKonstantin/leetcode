@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.datastructures.ListNode;
 import org.example.datastructures.MyQueue;
+import org.example.datastructures.MyStack;
 import org.example.datastructures.NodeWithRandom;
 
 import java.time.Duration;
@@ -449,6 +450,14 @@ public class Main {
         System.out.println(Arrays.toString(dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73})));
         System.out.println(minimumReplacement(new int[]{3, 9, 3}));
         System.out.println(bestClosingTime("YYNY"));
+
+        MyStack myStack = new MyStack();
+        myStack.push(1);
+        myStack.push(2);
+        int myStackInt1 = myStack.top();
+        int myStackInt2 = myStack.pop();
+        boolean myStackBoolean = myStack.empty();
+        System.out.println(myStackInt1 + " " + myStackInt2 + " " + myStackBoolean);
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
