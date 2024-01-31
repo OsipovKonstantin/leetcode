@@ -154,6 +154,7 @@ import static org.example.SolutionDay51Third.countBits;
 import static org.example.SolutionDay52.minTaps;
 import static org.example.SolutionDay52Fourth.bestClosingTime;
 import static org.example.SolutionDay52Second.dailyTemperatures;
+import static org.example.SolutionDay52Sixth.canCross;
 import static org.example.SolutionDay52Third.minimumReplacement;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -458,6 +459,8 @@ public class Main {
         int myStackInt2 = myStack.pop();
         boolean myStackBoolean = myStack.empty();
         System.out.println(myStackInt1 + " " + myStackInt2 + " " + myStackBoolean);
+
+        System.out.println(canCross(new int[]{0, 1, 3, 5, 6, 8, 12, 17}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
