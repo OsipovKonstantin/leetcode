@@ -151,6 +151,7 @@ import static org.example.SolutionDay5.destCity;
 import static org.example.SolutionDay51Second.minExtraChar;
 import static org.example.SolutionDay51Third.countBits;
 import static org.example.SolutionDay52.minTaps;
+import static org.example.SolutionDay52Second.dailyTemperatures;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -443,6 +444,7 @@ public class Main {
         System.out.println(minExtraChar("sayhelloworld", new String[]{"hello", "world"}));
         System.out.println(Arrays.toString(countBits(5)));
         System.out.println(minTaps(5, new int[]{3, 4, 1, 1, 0, 0}));
+        System.out.println(Arrays.toString(dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
