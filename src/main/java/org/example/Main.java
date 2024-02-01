@@ -157,6 +157,7 @@ import static org.example.SolutionDay52Second.dailyTemperatures;
 import static org.example.SolutionDay52Sixth.canCross;
 import static org.example.SolutionDay52Third.minimumReplacement;
 import static org.example.SolutionDay53.divideArray;
+import static org.example.SolutionDay53Second.findLongestChain;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -463,6 +464,7 @@ public class Main {
 
         System.out.println(canCross(new int[]{0, 1, 3, 5, 6, 8, 12, 17}));
         System.out.println(Arrays.deepToString(divideArray(new int[]{1, 3, 4, 8, 7, 9, 3, 5, 1}, 2)));
+        System.out.println(findLongestChain(new int[][]{{1, 2}, {2, 3}, {3, 4}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
