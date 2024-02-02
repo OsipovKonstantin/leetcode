@@ -1,6 +1,7 @@
 package org.example;
 
 //    medium #dynamic programming (very good task to make it second time after a while). Tabulation approach
+//    Time complexity O(n*m), where n - number of chars in s1, m - number of chars in s2
 //    https://leetcode.com/problems/interleaving-string
 //    Given strings s1, s2, and s3, find whether s3 is formed by an interleaving of s1 and s2.
 //    An interleaving of two strings s and t is a configuration where s and t are divided into n and m
