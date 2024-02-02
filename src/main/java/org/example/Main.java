@@ -160,6 +160,7 @@ import static org.example.SolutionDay53.divideArray;
 import static org.example.SolutionDay53Second.findLongestChain;
 import static org.example.SolutionDay53Third.isInterleave;
 import static org.example.SolutionDay54.sequentialDigits;
+import static org.example.SolutionDay54Second.fullJustify;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -469,6 +470,8 @@ public class Main {
         System.out.println(findLongestChain(new int[][]{{1, 2}, {2, 3}, {3, 4}}));
         System.out.println(isInterleave("aabcc", "dbbca", "aadbbcbcac"));
         System.out.println(sequentialDigits(100, 300));
+        System.out.println(fullJustify(new String[]{"This", "is", "an", "example", "of", "text", "justification."},
+                16));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
