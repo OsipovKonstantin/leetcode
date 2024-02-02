@@ -160,6 +160,8 @@ import static org.example.SolutionDay53.divideArray;
 import static org.example.SolutionDay53Second.findLongestChain;
 import static org.example.SolutionDay53Third.isInterleave;
 import static org.example.SolutionDay54.sequentialDigits;
+import static org.example.SolutionDay54Fifth.repeatedSubstringPattern;
+import static org.example.SolutionDay54Fourth.convertToTitle;
 import static org.example.SolutionDay54Second.fullJustify;
 import static org.example.SolutionDay54Third.reorganizeString;
 import static org.example.SolutionDay6.isAnagram;
@@ -474,6 +476,8 @@ public class Main {
         System.out.println(fullJustify(new String[]{"This", "is", "an", "example", "of", "text", "justification."},
                 16));
         System.out.println(reorganizeString("aab"));
+        System.out.println(convertToTitle(701));
+        System.out.println(repeatedSubstringPattern("abcabcabcabc"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
