@@ -41,7 +41,18 @@ public class SolutionDay55Third {
         }
 
         //find MST weight. It will be used further to find critical and pseudocritical edges
-        int mstWeight = MST(n, edges, graph, 0);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]);
+        PriorityQueue<int[]> excludePQ = new PriorityQueue<>((a, b) -> a[2] - b[2]);
+        int includedEdge = 0;
+
+        Set<Integer> visited = new HashSet<>();
+        Set<Integer> excludeVisited = new HashSet<>();
+        Set<Integer> includeVisited = new HashSet<>();
+
+        visited.add(0);
+        for (int[] node : graph.get(0))
+            pq.offer(node);
+        int mstWeight = MST(n, edges, graph, pq, visited);
 
         //create beforehand ans list with critical and pseudocritical edges
         List<List<Integer>> ans = new ArrayList<>();
@@ -58,15 +69,25 @@ public class SolutionDay55Third {
                 for (int j = 0; j < size; j++) {
                     int[] temp = nodeList.get(j);
                     int edge = temp[1];
-
-                    nodeList.remove(temp);
-                    if (MST(n, edges, graph, i) != mstWeight) {
+                    excludePQ.clear();
+                    excludeVisited.clear();
+                    excludeVisited.add(i);
+                    for (int[] node : nodeList)
+                        if (!Arrays.equals(node, temp)) excludePQ.offer(node);
+                    if (MST(n, edges, graph, excludePQ, excludeVisited) != mstWeight)
                         critical.add(edge);
-                    }
-                    nodeList.add(0, temp);
-                    if (MSTWithSpecificEdge(n, edges, graph, i, edge) == mstWeight) {
+
+                    PriorityQueue<int[]> includePQ = new PriorityQueue<>((a, b) -> {
+                        if (a[1] == edge) return -1;
+                        else if (b[1] == edge) return 1;
+                        else return a[2] - b[2];
+                    });
+                    includeVisited.clear();
+                    includeVisited.add(i);
+                    for (int[] node : nodeList)
+                        includePQ.offer(node);
+                    if (MST(n, edges, graph, includePQ, includeVisited) == mstWeight)
                         if (!critical.contains(edge)) pseudoCritical.add(edge);
-                    }
                 }
             }
         }
@@ -80,71 +101,28 @@ public class SolutionDay55Third {
         return ans;
     }
 
-    private static int MST(int n, int[][] edges, Map<Integer, List<int[]>> graph, int from) {
-        Set<Integer> visited = new HashSet<>();
-        visited.add(from);
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]);
-        for (int[] element : graph.get(from)) {
-            pq.offer(element);
-        }
-        int ans = 0;
+    private static int MST(int n, int[][] edges, Map<Integer, List<int[]>> graph, PriorityQueue<int[]> pq,
+                           Set<Integer> visited) {
+        int mstWeight = 0;
         while (visited.size() != n && !pq.isEmpty()) {
             int[] cur = pq.poll();
             int node = cur[0];
+            int edge = cur[1];
             int weight = cur[2];
             if (visited.contains(node)) {
                 continue;
             }
-            ans += weight;
+            mstWeight += weight;
             visited.add(node);
             for (int[] params : graph.get(node)) {
                 int newNode = params[0];
                 int newEdge = params[1];
                 int newWeight = edges[newEdge][2];
-                if (!visited.contains( newNode)) {
+                if (!visited.contains(newNode)) {
                     pq.offer(new int[]{newNode, newEdge, newWeight});
                 }
             }
         }
-        return ans;
-    }
-
-    private static int MSTWithSpecificEdge(int n, int[][] edges, Map<Integer, List<int[]>> graph, int from,
-                                           int firstEdge) {
-
-        Set<Integer> visited = new HashSet<>();
-        visited.add(from);
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> {
-            if (a[1] == firstEdge) {
-                return -1;
-            } else if (b[1] == firstEdge) {
-                return 1;
-            } else {
-                return a[2] - b[2];
-            }
-        });
-        for (int[] element : graph.get(from)) {
-            pq.offer(element);
-        }
-        int ans = 0;
-        while (visited.size() != n) {
-            int[] cur = pq.poll();
-            int node = cur[0];
-            int weight = cur[2];
-            if (visited.contains(node)) {
-                continue;
-            }
-            ans += weight;
-            visited.add(node);
-            for (int[] params : graph.get(node)) {
-                int newNode = params[0];
-                int newEdge = params[1];
-                int newWeight = edges[newEdge][2];
-                if (!visited.contains( newNode)) {
-                    pq.offer(new int[]{newNode, newEdge, newWeight});
-                }
-            }
-        }
-        return ans;
+        return mstWeight;
     }
 }

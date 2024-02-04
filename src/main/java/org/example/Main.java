@@ -167,6 +167,7 @@ import static org.example.SolutionDay54Third.reorganizeString;
 import static org.example.SolutionDay55.sortItems;
 import static org.example.SolutionDay55Second.maxSumAfterPartitioning;
 import static org.example.SolutionDay55Third.findCriticalAndPseudoCriticalEdges;
+import static org.example.SolutionDay56.minWindow;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -486,6 +487,7 @@ public class Main {
         System.out.println(maxSumAfterPartitioning(new int[]{1, 15, 7, 9, 2, 5, 10}, 3));
         System.out.println(findCriticalAndPseudoCriticalEdges(5,
                 new int[][]{{0, 1, 1}, {1, 2, 1}, {2, 3, 2}, {0, 3, 2}, {0, 4, 3}, {3, 4, 3}, {1, 4, 6}}));
+        System.out.println(minWindow("ADOBECODEBANC", "ABC"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
