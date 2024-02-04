@@ -26,21 +26,22 @@ import java.util.Map;
 public class SolutionDay56 {
     public static String minWindow(String s, String t) {
         int sLen = s.length();
-        int tLen = t.length();
         char[] sChars = s.toCharArray();
         char[] tChars = t.toCharArray();
-        int counter = t.length();
         Map<Character, Integer> tFreq = new HashMap<>();
         int[] ans = new int[2];
         Arrays.fill(ans, -1);
         for (char c : tChars)
             tFreq.put(c, tFreq.getOrDefault(c, 0) + 1);
+
         int start = 0;
+        int counter = t.length();
         for (int end = 0; end < sLen; end++) {
             char c = sChars[end];
             if (tFreq.containsKey(c)) {
-                if (tFreq.get(c) > 0) counter--;
-                tFreq.put(c, tFreq.get(c) - 1);
+                int freq = tFreq.get(c);
+                if (freq > 0) counter--;
+                tFreq.put(c, freq - 1);
             }
 
             while (counter == 0) {
@@ -51,8 +52,9 @@ public class SolutionDay56 {
                 start++;
                 char prevChar = sChars[start - 1];
                 if (tFreq.containsKey(prevChar)) {
-                    if (tFreq.get(prevChar) == 0) counter++;
-                    tFreq.put(prevChar, tFreq.get(prevChar) + 1);
+                    int prevFreq = tFreq.get(prevChar);
+                    if (prevFreq == 0) counter++;
+                    tFreq.put(prevChar, prevFreq + 1);
                 }
             }
         }
