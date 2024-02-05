@@ -174,6 +174,7 @@ import static org.example.SolutionDay57.maxSlidingWindow;
 import static org.example.SolutionDay57Fifth.validPartition;
 import static org.example.SolutionDay57Fourth.findKthLargest;
 import static org.example.SolutionDay57Second.firstUniqChar;
+import static org.example.SolutionDay57Seventh.change;
 import static org.example.SolutionDay57Sixth.uniquePathsWithObstacles;
 import static org.example.SolutionDay57Third.partition;
 import static org.example.SolutionDay6.isAnagram;
@@ -506,6 +507,7 @@ public class Main {
         System.out.println(findKthLargest(new int[]{3, 2, 1, 5, 6, 4}, 2));
         System.out.println(validPartition(new int[]{4, 4, 4, 5, 6}));
         System.out.println(uniquePathsWithObstacles(new int[][]{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}));
+        System.out.println(change(5, new int[]{1, 2, 5}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
