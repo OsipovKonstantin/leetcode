@@ -171,6 +171,7 @@ import static org.example.SolutionDay56.minWindow;
 import static org.example.SolutionDay56Second.maximalNetworkRank;
 import static org.example.SolutionDay56Third.updateMatrix;
 import static org.example.SolutionDay57.maxSlidingWindow;
+import static org.example.SolutionDay57Fifth.validPartition;
 import static org.example.SolutionDay57Fourth.findKthLargest;
 import static org.example.SolutionDay57Second.firstUniqChar;
 import static org.example.SolutionDay57Third.partition;
@@ -502,6 +503,7 @@ public class Main {
         System.out.println(partition(new ListNode(5, new ListNode(4, new ListNode(3, new ListNode(2,
                 new ListNode(1))))), 3).asList());
         System.out.println(findKthLargest(new int[]{3, 2, 1, 5, 6, 4}, 2));
+        System.out.println(validPartition(new int[]{4, 4, 4, 5, 6}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
