@@ -170,6 +170,7 @@ import static org.example.SolutionDay55Third.findCriticalAndPseudoCriticalEdges;
 import static org.example.SolutionDay56.minWindow;
 import static org.example.SolutionDay56Second.maximalNetworkRank;
 import static org.example.SolutionDay56Third.updateMatrix;
+import static org.example.SolutionDay57.maxSlidingWindow;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -492,6 +493,7 @@ public class Main {
         System.out.println(minWindow("ADOBECODEBANC", "ABC"));
         System.out.println(maximalNetworkRank(4, new int[][]{{0, 1}, {0, 3}, {1, 2}, {1, 3}}));
         System.out.println(Arrays.deepToString(updateMatrix(new int[][]{{0, 0, 0}, {0, 1, 0}, {1, 1, 1}})));
+        System.out.println(Arrays.toString(maxSlidingWindow(new int[]{1, 3, -1, -3, 5, 3, 6, 7}, 3)));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
