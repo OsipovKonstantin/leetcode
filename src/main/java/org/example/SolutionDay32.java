@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.TreeNode;
+
 //    medium. #binary tree. This solution has O(n) time complexity meanwhile one with hashmap outside recursion O(n^2)
 //    https://leetcode.com/problems/maximum-difference-between-node-and-ancestor
 //    Given the root of a binary tree, find the maximum value v for which there exist different nodes a and b where

@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.TreeNode;
+
 //    medium. traversing binary tree and tracking number of nodes and sum of them.
 //     int[] with 2 elements seems faster than Pair<Integer,Integer>
 //    https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree

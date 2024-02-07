@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.TreeNode;
+
 //    easy. Traversing of binary search tree (values in nodes are integers). Recursion is one of the fastest approach
 //    https://leetcode.com/problems/range-sum-of-bst
 //    Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes

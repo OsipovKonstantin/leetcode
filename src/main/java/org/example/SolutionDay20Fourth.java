@@ -17,6 +17,8 @@ package org.example;
 //    Explanation: Almost the same as the first example, except we cannot omit the first parenthesis pair to break the
 //    one-to-one mapping relationship between the input and the output.
 
+import org.example.datastructures.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.TreeNode;
+
 import java.util.*;
 
 //    medium. #Binary tree; #traversion with saving parent. 2 maps first is value: currNode, second is value: parentNode

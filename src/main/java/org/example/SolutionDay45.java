@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.TreeNode;
+
 //    medium #bitmask (used for numbers less than 32 (int) or 64 (long)) #recursive preorder traversal of a binary tree
 //    Idea behind a bitmask is to convert a small number to 2^number (or 1 << number) to store in one variable bitMask
 //    array of numbers. Here we store occurrence of digits in bitMask. If the occurrence is even we delete this number
