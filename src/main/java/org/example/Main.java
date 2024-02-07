@@ -181,6 +181,7 @@ import static org.example.SolutionDay58.groupAnagrams;
 import static org.example.SolutionDay58Second.search;
 import static org.example.SolutionDay58Third.minimizeMax;
 import static org.example.SolutionDay59.searchMatrix;
+import static org.example.SolutionDay59Third.frequencySort;
 import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
@@ -517,6 +518,7 @@ public class Main {
         System.out.println(minimizeMax(new int[]{10, 1, 2, 7, 1, 3}, 2));
         System.out.println(searchMatrix(new int[][]{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}}, 3));
         System.out.println(SolutionDay58Fourth.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
+        System.out.println(frequencySort("tree"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
