@@ -182,6 +182,8 @@ import static org.example.SolutionDay59.searchMatrix;
 import static org.example.SolutionDay59Fourth.generateTrees;
 import static org.example.SolutionDay59Third.frequencySort;
 import static org.example.SolutionDay6.isAnagram;
+import static org.example.SolutionDay60.wordBreak;
+import static org.example.SolutionDay60Second.letterCombinations;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -519,6 +521,8 @@ public class Main {
         System.out.println(SolutionDay58Fourth.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
         System.out.println(frequencySort("tree"));
         System.out.println(generateTrees(3).stream().map(TreeNode::asList).collect(Collectors.toList()));
+        System.out.println(wordBreak("leetcode", List.of("leet", "code")));
+        System.out.println(letterCombinations("23"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
