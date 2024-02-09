@@ -185,6 +185,7 @@ import static org.example.SolutionDay6.isAnagram;
 import static org.example.SolutionDay60.wordBreak;
 import static org.example.SolutionDay60Second.letterCombinations;
 import static org.example.SolutionDay60Third.numSquares;
+import static org.example.SolutionDay61.largestDivisibleSubset;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -525,6 +526,7 @@ public class Main {
         System.out.println(wordBreak("leetcode", List.of("leet", "code")));
         System.out.println(letterCombinations("23"));
         System.out.println(numSquares(12));
+        System.out.println(largestDivisibleSubset(new int[]{1, 2, 3}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
