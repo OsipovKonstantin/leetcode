@@ -187,6 +187,7 @@ import static org.example.SolutionDay60Second.letterCombinations;
 import static org.example.SolutionDay60Third.numSquares;
 import static org.example.SolutionDay61.largestDivisibleSubset;
 import static org.example.SolutionDay62.countSubstrings;
+import static org.example.SolutionDay62Fourth.minimumDeleteSum;
 import static org.example.SolutionDay62Second.permute;
 import static org.example.SolutionDay62Third.combine;
 import static org.example.SolutionDay8.maxProductDifference;
@@ -533,6 +534,7 @@ public class Main {
         System.out.println(countSubstrings("aaa"));
         System.out.println(permute(new int[]{1, 2, 3}));
         System.out.println(combine(4, 2));
+        System.out.println(minimumDeleteSum("sea", "eat"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
