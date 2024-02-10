@@ -188,6 +188,7 @@ import static org.example.SolutionDay60Third.numSquares;
 import static org.example.SolutionDay61.largestDivisibleSubset;
 import static org.example.SolutionDay62.countSubstrings;
 import static org.example.SolutionDay62Second.permute;
+import static org.example.SolutionDay62Third.combine;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -531,6 +532,7 @@ public class Main {
         System.out.println(largestDivisibleSubset(new int[]{1, 2, 3}));
         System.out.println(countSubstrings("aaa"));
         System.out.println(permute(new int[]{1, 2, 3}));
+        System.out.println(combine(4, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
