@@ -2,8 +2,9 @@ package org.example;
 
 import java.util.Arrays;
 
-//    medium #dynamic programming. Recursive approach with memoization. Time complexity is O(n^2),
-//    space complexity is O(n^2), where n is size of array nums
+//    medium #dynamic programming #minmax. Recursive approach with memoization.
+//    Time complexity is O(n^2), where n is size of array nums
+//    space complexity is O(n^2)
 //    https://leetcode.com/problems/predict-the-winner
 //    You are given an integer array nums. Two players are playing a game with this array: player 1 and player 2.
 //    Player 1 and player 2 take turns, with player 1 starting first. Both players start the game with a score of 0.
