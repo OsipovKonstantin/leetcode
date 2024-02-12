@@ -545,6 +545,7 @@ public class Main {
         System.out.println(soupServings(100));
         System.out.println(predictTheWinner(new int[]{1, 5, 2}));
         System.out.println(maxRunTime(2, new int[]{3, 3, 3}));
+        System.out.println(SolutionDay64Second.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
