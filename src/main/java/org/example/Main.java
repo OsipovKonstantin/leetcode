@@ -194,6 +194,7 @@ import static org.example.SolutionDay62Third.combine;
 import static org.example.SolutionDay63.cherryPickup;
 import static org.example.SolutionDay63Second.soupServings;
 import static org.example.SolutionDay63Third.predictTheWinner;
+import static org.example.SolutionDay64.maxRunTime;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -543,6 +544,7 @@ public class Main {
         System.out.println(cherryPickup(new int[][]{{3, 1, 1}, {2, 5, 1}, {1, 5, 5}, {2, 1, 1}}));
         System.out.println(soupServings(100));
         System.out.println(predictTheWinner(new int[]{1, 5, 2}));
+        System.out.println(maxRunTime(2, new int[]{3, 3, 3}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
