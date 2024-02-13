@@ -198,6 +198,7 @@ import static org.example.SolutionDay64.maxRunTime;
 import static org.example.SolutionDay64Third.minSpeedOnTime;
 import static org.example.SolutionDay65.peakIndexInMountainArray;
 import static org.example.SolutionDay65Second.myPow;
+import static org.example.SolutionDay65Third.firstPalindrome;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -552,6 +553,7 @@ public class Main {
         System.out.println(minSpeedOnTime(new int[]{1, 3, 2}, 2.7));
         System.out.println(peakIndexInMountainArray(new int[]{0, 2, 1, 0}));
         System.out.println(myPow(2, 10));
+        System.out.println(firstPalindrome(new String[]{"abc", "car", "ada", "racecar", "cool"}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
