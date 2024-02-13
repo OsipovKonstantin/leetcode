@@ -196,6 +196,8 @@ import static org.example.SolutionDay63Second.soupServings;
 import static org.example.SolutionDay63Third.predictTheWinner;
 import static org.example.SolutionDay64.maxRunTime;
 import static org.example.SolutionDay64Third.minSpeedOnTime;
+import static org.example.SolutionDay65.peakIndexInMountainArray;
+import static org.example.SolutionDay65Second.myPow;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -548,6 +550,8 @@ public class Main {
         System.out.println(maxRunTime(2, new int[]{3, 3, 3}));
         System.out.println(SolutionDay64Second.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
         System.out.println(minSpeedOnTime(new int[]{1, 3, 2}, 2.7));
+        System.out.println(peakIndexInMountainArray(new int[]{0, 2, 1, 0}));
+        System.out.println(myPow(2, 10));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
