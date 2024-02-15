@@ -203,6 +203,7 @@ import static org.example.SolutionDay66.allPossibleFBT;
 import static org.example.SolutionDay66Second.rearrangeArray;
 import static org.example.SolutionDay66Third.knightProbability;
 import static org.example.SolutionDay67.findNumberOfLIS;
+import static org.example.SolutionDay67Second.asteroidCollision;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -562,6 +563,7 @@ public class Main {
         System.out.println(Arrays.toString(rearrangeArray(new int[]{3, 1, -2, -5, 2, -4})));
         System.out.println(knightProbability(3, 2, 0, 0));
         System.out.println(findNumberOfLIS(new int[]{1, 3, 5, 4, 7}));
+        System.out.println(Arrays.toString(asteroidCollision(new int[]{5, 10, -5})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
