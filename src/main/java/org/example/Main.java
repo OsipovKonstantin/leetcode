@@ -571,6 +571,18 @@ public class Main {
         System.out.println(eraseOverlapIntervals(new int[][]{{1, 2}, {2, 3}, {3, 4}, {1, 3}}));
         System.out.println(findLeastNumOfUniqueInts(new int[]{5, 5, 4}, 1));
 
+        LRUCache lruCache = new LRUCache(2);
+        lruCache.put(1,1);
+        lruCache.put(2,2);
+        int lru1 = lruCache.get(1);
+        lruCache.put(3,3);
+        int lru2 = lruCache.get(2);
+        lruCache.put(4,4);
+        int lru3 = lruCache.get(1);
+        int lru4 = lruCache.get(3);
+        int lru5 = lruCache.get(3);
+        System.out.println(String.format("%s %s %s %s %s", lru1, lru2, lru3, lru4, lru5));
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
