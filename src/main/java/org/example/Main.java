@@ -205,6 +205,7 @@ import static org.example.SolutionDay66Third.knightProbability;
 import static org.example.SolutionDay67.findNumberOfLIS;
 import static org.example.SolutionDay67Second.asteroidCollision;
 import static org.example.SolutionDay67Third.largestPerimeter;
+import static org.example.SolutionDay68.eraseOverlapIntervals;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -566,6 +567,7 @@ public class Main {
         System.out.println(findNumberOfLIS(new int[]{1, 3, 5, 4, 7}));
         System.out.println(Arrays.toString(asteroidCollision(new int[]{5, 10, -5})));
         System.out.println(largestPerimeter(new int[]{1, 12, 1, 2, 5, 50, 3}));
+        System.out.println(eraseOverlapIntervals(new int[][]{{1, 2}, {2, 3}, {3, 4}, {1, 3}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
