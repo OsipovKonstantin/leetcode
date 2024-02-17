@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-//    hard #dynamic programming. Recursive approach with memoization
+//    hard  #bitmask (solution of this task only with bitmask) #dynamic programming. Recursive approach with memoization
 //    Time complexity is O(2^n) or so. Space complexity is O(2^n) to store 1D array memo
 //    https://leetcode.com/problems/smallest-sufficient-team
 //    In a project, you have a list of required skills req_skills, and a list of people. The ith person people[i]
