@@ -210,6 +210,7 @@ import static org.example.SolutionDay68Second.findLeastNumOfUniqueInts;
 import static org.example.SolutionDay69.addTwoNumbers;
 import static org.example.SolutionDay69Second.furthestBuilding;
 import static org.example.SolutionDay69Third.smallestSufficientTeam;
+import static org.example.SolutionDay70.maxValue;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -588,8 +589,9 @@ public class Main {
         System.out.println(addTwoNumbers(new ListNode(2, new ListNode(4, new ListNode(3))),
                 new ListNode(5, new ListNode(6, new ListNode(4)))).asList());
         System.out.println(furthestBuilding(new int[]{4, 2, 7, 6, 9, 14, 12}, 5, 1));
-        System.out.println(Arrays.toString(smallestSufficientTeam(new String[]{"java","nodejs","reactjs"},
-                List.of(List.of("java"),List.of("nodejs"),List.of("nodejs","reactjs")))));
+        System.out.println(Arrays.toString(smallestSufficientTeam(new String[]{"java", "nodejs", "reactjs"},
+                List.of(List.of("java"), List.of("nodejs"), List.of("nodejs", "reactjs")))));
+        System.out.println(maxValue(new int[][]{{1, 2, 4}, {3, 4, 3}, {2, 3, 1}}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
