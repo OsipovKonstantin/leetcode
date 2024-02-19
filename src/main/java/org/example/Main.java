@@ -215,6 +215,7 @@ import static org.example.SolutionDay70Second.mostBooked;
 import static org.example.SolutionDay70Third.longestSubsequence;
 import static org.example.SolutionDay71.canFinish;
 import static org.example.SolutionDay71Second.isPowerOfTwo;
+import static org.example.SolutionDay71Third.eventualSafeNodes;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -600,7 +601,7 @@ public class Main {
         System.out.println(longestSubsequence(new int[]{1, 2, 3, 4}, 1));
         System.out.println(canFinish(2, new int[][]{{1, 0}, {0, 1}}));
         System.out.println(isPowerOfTwo(16));
-
+        System.out.println(eventualSafeNodes(new int[][]{{1, 2}, {2, 3}, {5}, {0}, {5}, {}, {}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
