@@ -213,6 +213,7 @@ import static org.example.SolutionDay69Third.smallestSufficientTeam;
 import static org.example.SolutionDay70.maxValue;
 import static org.example.SolutionDay70Second.mostBooked;
 import static org.example.SolutionDay70Third.longestSubsequence;
+import static org.example.SolutionDay71.canFinish;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -596,6 +597,7 @@ public class Main {
         System.out.println(maxValue(new int[][]{{1, 2, 4}, {3, 4, 3}, {2, 3, 1}}, 2));
         System.out.println(mostBooked(2, new int[][]{{0, 10}, {1, 5}, {2, 7}, {3, 4}}));
         System.out.println(longestSubsequence(new int[]{1, 2, 3, 4}, 1));
+        System.out.println(canFinish(2, new int[][]{{1, 0}, {0, 1}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
