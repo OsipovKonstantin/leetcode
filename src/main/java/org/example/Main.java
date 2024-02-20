@@ -217,6 +217,7 @@ import static org.example.SolutionDay71.canFinish;
 import static org.example.SolutionDay71Second.isPowerOfTwo;
 import static org.example.SolutionDay71Third.eventualSafeNodes;
 import static org.example.SolutionDay72.distanceK;
+import static org.example.SolutionDay72Second.missingNumber;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -606,7 +607,8 @@ public class Main {
 
         TreeNode target = new TreeNode(5, new TreeNode(6), new TreeNode(2, new TreeNode(7), new TreeNode(4)));
         TreeNode root = new TreeNode(3, target, new TreeNode(1, new TreeNode(0), new TreeNode(8)));
-        System.out.println(distanceK(root, target,2));
+        System.out.println(distanceK(root, target, 2));
+        System.out.println(missingNumber(new int[]{3, 0, 1}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
