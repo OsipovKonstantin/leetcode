@@ -216,6 +216,7 @@ import static org.example.SolutionDay70Third.longestSubsequence;
 import static org.example.SolutionDay71.canFinish;
 import static org.example.SolutionDay71Second.isPowerOfTwo;
 import static org.example.SolutionDay71Third.eventualSafeNodes;
+import static org.example.SolutionDay72.distanceK;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -602,6 +603,10 @@ public class Main {
         System.out.println(canFinish(2, new int[][]{{1, 0}, {0, 1}}));
         System.out.println(isPowerOfTwo(16));
         System.out.println(eventualSafeNodes(new int[][]{{1, 2}, {2, 3}, {5}, {0}, {5}, {}, {}}));
+
+        TreeNode target = new TreeNode(5, new TreeNode(6), new TreeNode(2, new TreeNode(7), new TreeNode(4)));
+        TreeNode root = new TreeNode(3, target, new TreeNode(1, new TreeNode(0), new TreeNode(8)));
+        System.out.println(distanceK(root, target,2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
