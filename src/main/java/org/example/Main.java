@@ -221,6 +221,7 @@ import static org.example.SolutionDay72Second.missingNumber;
 import static org.example.SolutionDay72Third.minDepth;
 import static org.example.SolutionDay73.largestVariance;
 import static org.example.SolutionDay73Second.rangeBitwiseAnd;
+import static org.example.SolutionDay73Third.putMarbles;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -616,6 +617,7 @@ public class Main {
                 new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
         System.out.println(largestVariance("aababbb"));
         System.out.println(rangeBitwiseAnd(5, 7));
+        System.out.println(putMarbles(new int[]{1, 3, 5, 1}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
