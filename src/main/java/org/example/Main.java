@@ -220,6 +220,7 @@ import static org.example.SolutionDay72.distanceK;
 import static org.example.SolutionDay72Second.missingNumber;
 import static org.example.SolutionDay72Third.minDepth;
 import static org.example.SolutionDay73.largestVariance;
+import static org.example.SolutionDay73Second.rangeBitwiseAnd;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -614,6 +615,7 @@ public class Main {
         System.out.println(minDepth(new TreeNode(3, new TreeNode(9),
                 new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
         System.out.println(largestVariance("aababbb"));
+        System.out.println(rangeBitwiseAnd(5, 7));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
