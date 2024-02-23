@@ -227,6 +227,7 @@ import static org.example.SolutionDay74Second.findJudge;
 import static org.example.SolutionDay74Third.minSubArrayLen;
 import static org.example.SolutionDay75.longestSubarray;
 import static org.example.SolutionDay75Second.findCheapestPrice;
+import static org.example.SolutionDay75Third.singleNumber;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -628,6 +629,7 @@ public class Main {
         System.out.println(minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
         System.out.println(longestSubarray(new int[]{0, 1, 1, 1, 0, 1, 1, 0, 1}));
         System.out.println(findCheapestPrice(3, new int[][]{{0, 1, 100}, {1, 2, 100}, {0, 2, 500}}, 0, 2, 1));
+        System.out.println(singleNumber(new int[]{0, 1, 0, 1, 0, 1, 99}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
