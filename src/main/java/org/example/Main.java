@@ -225,6 +225,7 @@ import static org.example.SolutionDay73Third.putMarbles;
 import static org.example.SolutionDay74.maxConsecutiveAnswers;
 import static org.example.SolutionDay74Second.findJudge;
 import static org.example.SolutionDay74Third.minSubArrayLen;
+import static org.example.SolutionDay75.longestSubarray;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -624,6 +625,7 @@ public class Main {
         System.out.println(maxConsecutiveAnswers("TTFF", 2));
         System.out.println(findJudge(3, new int[][]{{1, 3}, {2, 3}}));
         System.out.println(minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
+        System.out.println(longestSubarray(new int[]{0, 1, 1, 1, 0, 1, 1, 0, 1}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
