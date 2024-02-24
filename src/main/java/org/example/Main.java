@@ -229,6 +229,7 @@ import static org.example.SolutionDay75.longestSubarray;
 import static org.example.SolutionDay75Second.findCheapestPrice;
 import static org.example.SolutionDay75Third.singleNumber;
 import static org.example.SolutionDay76.buddyStrings;
+import static org.example.SolutionDay76Second.findAllPeople;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -632,6 +633,7 @@ public class Main {
         System.out.println(findCheapestPrice(3, new int[][]{{0, 1, 100}, {1, 2, 100}, {0, 2, 500}}, 0, 2, 1));
         System.out.println(singleNumber(new int[]{0, 1, 0, 1, 0, 1, 99}));
         System.out.println(buddyStrings("ba", "ab"));
+        System.out.println(findAllPeople(5, new int[][]{{3, 4, 2}, {1, 2, 1}, {2, 3, 1}}, 1));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
