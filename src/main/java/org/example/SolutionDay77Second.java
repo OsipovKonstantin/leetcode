@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.datastructures.UnionFind;
+
 //    hard #union find (disjoint set) #graph #number theory (sieve of Eratosthenes)
 //    Time complexity is O(n*log(max)), where n is length of nums array, max is maximum number in nums array
 //    Space complexity is O(max)
