@@ -232,6 +232,7 @@ import static org.example.SolutionDay76.buddyStrings;
 import static org.example.SolutionDay76Second.findAllPeople;
 import static org.example.SolutionDay76Third.maximumRequests;
 import static org.example.SolutionDay77.distributeCookies;
+import static org.example.SolutionDay77Second.canTraverseAllPairs;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -638,6 +639,7 @@ public class Main {
         System.out.println(findAllPeople(5, new int[][]{{3, 4, 2}, {1, 2, 1}, {2, 3, 1}}, 1));
         System.out.println(maximumRequests(3, new int[][]{{0, 0}, {1, 2}, {2, 1}}));
         System.out.println(distributeCookies(new int[]{8, 15, 10, 20, 8}, 2));
+        System.out.println(canTraverseAllPairs(new int[]{2, 3, 6}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
