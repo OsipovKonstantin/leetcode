@@ -236,6 +236,7 @@ import static org.example.SolutionDay77Second.canTraverseAllPairs;
 import static org.example.SolutionDay77Third.latestDayToCross;
 import static org.example.SolutionDay78.shortestPathAllKeys;
 import static org.example.SolutionDay78Second.maxProbability;
+import static org.example.SolutionDay78Third.isSameTree;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -647,6 +648,9 @@ public class Main {
         System.out.println(shortestPathAllKeys(new String[]{"@..aA", "..B#.", "....b"}));
         System.out.println(maxProbability(3, new int[][]{{0, 1}, {1, 2}, {0, 2}}, new double[]{0.5, 0.5, 0.2},
                 0, 2));
+
+        System.out.println(isSameTree(new TreeNode(1, new TreeNode(2), new TreeNode(3)),
+                new TreeNode(1, new TreeNode(2), new TreeNode(3))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
