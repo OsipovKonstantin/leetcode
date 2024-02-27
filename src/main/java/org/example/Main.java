@@ -238,6 +238,7 @@ import static org.example.SolutionDay78.shortestPathAllKeys;
 import static org.example.SolutionDay78Second.maxProbability;
 import static org.example.SolutionDay78Third.isSameTree;
 import static org.example.SolutionDay79.kSmallestPairs;
+import static org.example.SolutionDay79Second.diameterOfBinaryTree;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay9.imageSmoother;
 
@@ -653,6 +654,8 @@ public class Main {
         System.out.println(isSameTree(new TreeNode(1, new TreeNode(2), new TreeNode(3)),
                 new TreeNode(1, new TreeNode(2), new TreeNode(3))));
         System.out.println(kSmallestPairs(new int[]{1,7,11}, new int[]{2,4,6}, 3));
+        System.out.println(diameterOfBinaryTree(new TreeNode(1,new TreeNode(2,
+                new TreeNode(4), new TreeNode(5)), new TreeNode(3))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
