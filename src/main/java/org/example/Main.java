@@ -242,6 +242,7 @@ import static org.example.SolutionDay79Second.diameterOfBinaryTree;
 import static org.example.SolutionDay79Third.totalCost;
 import static org.example.SolutionDay8.maxProductDifference;
 import static org.example.SolutionDay80.countRoutes;
+import static org.example.SolutionDay80Second.tallestBillboard;
 import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
@@ -660,6 +661,7 @@ public class Main {
                 new TreeNode(4), new TreeNode(5)), new TreeNode(3))));
         System.out.println(totalCost(new int[]{17, 12, 10, 2, 7, 2, 11, 20, 8}, 3, 4));
         System.out.println(countRoutes(new int[]{2, 3, 6, 8, 4}, 1, 3, 5));
+        System.out.println(tallestBillboard(new int[]{1,2,3,4,5,6}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
