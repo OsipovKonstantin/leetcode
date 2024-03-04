@@ -248,6 +248,7 @@ import static org.example.SolutionDay81.maximumOddBinaryNumber;
 import static org.example.SolutionDay82.sortedSquares;
 import static org.example.SolutionDay83.removeNthFromEnd;
 import static org.example.SolutionDay84.bagOfTokensScore;
+import static org.example.SolutionDay84Second.longestArithSeqLength;
 import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
@@ -673,6 +674,7 @@ public class Main {
         System.out.println(removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3,
                 new ListNode(4, new ListNode(5))))), 2).asList());
         System.out.println(bagOfTokensScore(new int[]{100, 200, 300, 400}, 200));
+        System.out.println(longestArithSeqLength(new int[]{3, 6, 9, 12}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
