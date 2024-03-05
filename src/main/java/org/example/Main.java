@@ -250,6 +250,7 @@ import static org.example.SolutionDay83.removeNthFromEnd;
 import static org.example.SolutionDay84.bagOfTokensScore;
 import static org.example.SolutionDay84Second.longestArithSeqLength;
 import static org.example.SolutionDay84Third.maxProfit;
+import static org.example.SolutionDay85.minimumLength;
 import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
@@ -677,6 +678,7 @@ public class Main {
         System.out.println(bagOfTokensScore(new int[]{100, 200, 300, 400}, 200));
         System.out.println(longestArithSeqLength(new int[]{3, 6, 9, 12}));
         System.out.println(maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
+        System.out.println(minimumLength("cabaabac"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
