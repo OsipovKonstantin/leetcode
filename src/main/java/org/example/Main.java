@@ -679,6 +679,7 @@ public class Main {
         System.out.println(longestArithSeqLength(new int[]{3, 6, 9, 12}));
         System.out.println(maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
         System.out.println(minimumLength("cabaabac"));
+        System.out.println(SolutionDay85Second.minCost(new int[]{1, 3, 5, 2}, new int[]{2, 3, 1, 14}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
