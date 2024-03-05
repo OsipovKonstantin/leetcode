@@ -251,6 +251,7 @@ import static org.example.SolutionDay84.bagOfTokensScore;
 import static org.example.SolutionDay84Second.longestArithSeqLength;
 import static org.example.SolutionDay84Third.maxProfit;
 import static org.example.SolutionDay85.minimumLength;
+import static org.example.SolutionDay85Third.getAverages;
 import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
@@ -680,6 +681,7 @@ public class Main {
         System.out.println(maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
         System.out.println(minimumLength("cabaabac"));
         System.out.println(SolutionDay85Second.minCost(new int[]{1, 3, 5, 2}, new int[]{2, 3, 1, 14}));
+        System.out.println(Arrays.toString(getAverages(new int[]{7, 4, 3, 9, 1, 8, 5, 2, 6}, 3)));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
