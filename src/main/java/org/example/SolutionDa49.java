@@ -23,20 +23,12 @@ import org.example.datastructures.ListNode;
 //    Explanation: There is no cycle in the linked list.
 public class SolutionDa49 {
     public static boolean hasCycle(ListNode head) {
-        if (head == null) {
-            return false;
-        }
         ListNode tortoise = head;
-        ListNode hare = head.next;
-        while (hare != null) {
-            if (hare == tortoise) {
-                return true;
-            }
-            tortoise = tortoise.next;
-            if (hare.next == null) {
-                return false;
-            }
+        ListNode hare = head;
+        while (hare != null && hare.next != null) {
             hare = hare.next.next;
+            tortoise = tortoise.next;
+            if (hare == tortoise) return true;
         }
         return false;
     }

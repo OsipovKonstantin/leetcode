@@ -252,7 +252,9 @@ import static org.example.SolutionDay84Second.longestArithSeqLength;
 import static org.example.SolutionDay84Third.maxProfit;
 import static org.example.SolutionDay85.minimumLength;
 import static org.example.SolutionDay85Third.getAverages;
+import static org.example.SolutionDay86Second.largestAltitude;
 import static org.example.SolutionDay9.imageSmoother;
+import static org.example.SolutionDay86.countPaths;
 
 public class Main {
     public static void main(String[] args) {
@@ -682,6 +684,8 @@ public class Main {
         System.out.println(minimumLength("cabaabac"));
         System.out.println(SolutionDay85Second.minCost(new int[]{1, 3, 5, 2}, new int[]{2, 3, 1, 14}));
         System.out.println(Arrays.toString(getAverages(new int[]{7, 4, 3, 9, 1, 8, 5, 2, 6}, 3)));
+        System.out.println(largestAltitude(new int[]{-5, 1, 5, 0, -7}));
+        System.out.println(countPaths(new int[][]{{1, 1}, {3, 4}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
