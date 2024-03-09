@@ -256,6 +256,7 @@ import static org.example.SolutionDay86.countPaths;
 import static org.example.SolutionDay86Second.largestAltitude;
 import static org.example.SolutionDay87.middleNode;
 import static org.example.SolutionDay88.maxFrequencyElements;
+import static org.example.SolutionDay88Second.getCommon;
 import static org.example.SolutionDay9.imageSmoother;
 
 public class Main {
@@ -691,6 +692,7 @@ public class Main {
         System.out.println(middleNode(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
                 new ListNode(5)))))).asList());
         System.out.println(maxFrequencyElements(new int[]{1, 2, 2, 3, 1, 4}));
+        System.out.println(getCommon(new int[]{1, 2, 3}, new int[]{2, 4}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
