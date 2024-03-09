@@ -252,10 +252,11 @@ import static org.example.SolutionDay84Second.longestArithSeqLength;
 import static org.example.SolutionDay84Third.maxProfit;
 import static org.example.SolutionDay85.minimumLength;
 import static org.example.SolutionDay85Third.getAverages;
+import static org.example.SolutionDay86.countPaths;
 import static org.example.SolutionDay86Second.largestAltitude;
 import static org.example.SolutionDay87.middleNode;
+import static org.example.SolutionDay88.maxFrequencyElements;
 import static org.example.SolutionDay9.imageSmoother;
-import static org.example.SolutionDay86.countPaths;
 
 public class Main {
     public static void main(String[] args) {
@@ -689,6 +690,7 @@ public class Main {
         System.out.println(countPaths(new int[][]{{1, 1}, {3, 4}}));
         System.out.println(middleNode(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
                 new ListNode(5)))))).asList());
+        System.out.println(maxFrequencyElements(new int[]{1, 2, 2, 3, 1, 4}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
