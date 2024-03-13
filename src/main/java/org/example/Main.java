@@ -261,6 +261,7 @@ import static org.example.SolutionDay89.intersection;
 import static org.example.SolutionDay9.imageSmoother;
 import static org.example.SolutionDay90.customSortString;
 import static org.example.SolutionDay91.removeZeroSumSublists;
+import static org.example.SolutionDay92.pivotInteger;
 
 public class Main {
     public static void main(String[] args) {
@@ -700,6 +701,7 @@ public class Main {
         System.out.println(customSortString("cba", "abcd"));
         System.out.println(removeZeroSumSublists(new ListNode(1, new ListNode(2, new ListNode(3,
                 new ListNode(-3, new ListNode(4)))))).asList());
+        System.out.println(pivotInteger(8));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
