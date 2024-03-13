@@ -260,6 +260,7 @@ import static org.example.SolutionDay88Second.getCommon;
 import static org.example.SolutionDay89.intersection;
 import static org.example.SolutionDay9.imageSmoother;
 import static org.example.SolutionDay90.customSortString;
+import static org.example.SolutionDay91.removeZeroSumSublists;
 
 public class Main {
     public static void main(String[] args) {
@@ -697,6 +698,8 @@ public class Main {
         System.out.println(getCommon(new int[]{1, 2, 3}, new int[]{2, 4}));
         System.out.println(Arrays.toString(intersection(new int[]{1, 2, 2, 1}, new int[]{2, 2})));
         System.out.println(customSortString("cba", "abcd"));
+        System.out.println(removeZeroSumSublists(new ListNode(1, new ListNode(2, new ListNode(3,
+                new ListNode(-3, new ListNode(4)))))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
