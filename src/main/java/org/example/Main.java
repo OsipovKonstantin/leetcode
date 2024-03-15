@@ -263,6 +263,7 @@ import static org.example.SolutionDay90.customSortString;
 import static org.example.SolutionDay91.removeZeroSumSublists;
 import static org.example.SolutionDay92.pivotInteger;
 import static org.example.SolutionDay93.numSubarraysWithSum;
+import static org.example.SolutionDay94.productExceptSelf;
 
 public class Main {
     public static void main(String[] args) {
@@ -704,6 +705,7 @@ public class Main {
                 new ListNode(-3, new ListNode(4)))))).asList());
         System.out.println(pivotInteger(8));
         System.out.println(numSubarraysWithSum(new int[]{1, 0, 1, 0, 1}, 2));
+        System.out.println(Arrays.toString(productExceptSelf(new int[]{1, 2, 3, 4})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
