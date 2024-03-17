@@ -264,6 +264,7 @@ import static org.example.SolutionDay91.removeZeroSumSublists;
 import static org.example.SolutionDay92.pivotInteger;
 import static org.example.SolutionDay93.numSubarraysWithSum;
 import static org.example.SolutionDay94.productExceptSelf;
+import static org.example.SolutionDay95.findMaxLength;
 
 public class Main {
     public static void main(String[] args) {
@@ -706,6 +707,7 @@ public class Main {
         System.out.println(pivotInteger(8));
         System.out.println(numSubarraysWithSum(new int[]{1, 0, 1, 0, 1}, 2));
         System.out.println(Arrays.toString(productExceptSelf(new int[]{1, 2, 3, 4})));
+        System.out.println(findMaxLength(new int[]{0, 1, 0}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
