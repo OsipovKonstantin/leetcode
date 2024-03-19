@@ -267,6 +267,7 @@ import static org.example.SolutionDay94.productExceptSelf;
 import static org.example.SolutionDay95.findMaxLength;
 import static org.example.SolutionDay96.insert;
 import static org.example.SolutionDay97.findMinArrowShots;
+import static org.example.SolutionDay98.leastInterval;
 
 public class Main {
     public static void main(String[] args) {
@@ -712,6 +713,7 @@ public class Main {
         System.out.println(findMaxLength(new int[]{0, 1, 0}));
         System.out.println(Arrays.deepToString(insert(new int[][]{{1, 3}, {6, 9}}, new int[]{2, 5})));
         System.out.println(findMinArrowShots(new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}}));
+        System.out.println(leastInterval(new char[]{'A', 'A', 'A', 'B', 'B', 'B'}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
