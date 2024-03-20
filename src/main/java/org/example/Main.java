@@ -268,6 +268,7 @@ import static org.example.SolutionDay95.findMaxLength;
 import static org.example.SolutionDay96.insert;
 import static org.example.SolutionDay97.findMinArrowShots;
 import static org.example.SolutionDay98.leastInterval;
+import static org.example.SolutionDay99.mergeInBetween;
 
 public class Main {
     public static void main(String[] args) {
@@ -714,6 +715,9 @@ public class Main {
         System.out.println(Arrays.deepToString(insert(new int[][]{{1, 3}, {6, 9}}, new int[]{2, 5})));
         System.out.println(findMinArrowShots(new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}}));
         System.out.println(leastInterval(new char[]{'A', 'A', 'A', 'B', 'B', 'B'}, 2));
+        System.out.println(mergeInBetween(new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3,
+                new ListNode(4, new ListNode(5, new ListNode(6))))))), 2, 5, new ListNode(1000000,
+                new ListNode(1000001, new ListNode(1000002, new ListNode(1000003, new ListNode(1000004)))))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
