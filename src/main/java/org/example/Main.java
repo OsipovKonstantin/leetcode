@@ -14,6 +14,7 @@ import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
 import static org.example.SolutionDay100.reverseList;
 import static org.example.SolutionDay101.isPalindrome;
+import static org.example.SolutionDay102.reorderList;
 import static org.example.SolutionDay11.maxWidthOfVerticalArea;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
@@ -723,6 +724,10 @@ public class Main {
         System.out.println(reverseList(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
                 new ListNode(5)))))).asList());
         System.out.println(isPalindrome(new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(1))))));
+
+        ListNode listNode102 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+        reorderList(listNode102);
+        System.out.println(listNode102.asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
