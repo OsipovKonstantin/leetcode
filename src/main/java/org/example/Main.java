@@ -16,6 +16,7 @@ import static org.example.SolutionDay100.reverseList;
 import static org.example.SolutionDay101.isPalindrome;
 import static org.example.SolutionDay102.reorderList;
 import static org.example.SolutionDay103.findDuplicates;
+import static org.example.SolutionDay104.firstMissingPositive;
 import static org.example.SolutionDay11.maxWidthOfVerticalArea;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
@@ -730,6 +731,7 @@ public class Main {
         reorderList(listNode102);
         System.out.println(listNode102.asList());
         System.out.println(findDuplicates(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
+        System.out.println(firstMissingPositive(new int[]{1, 2, 0}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
