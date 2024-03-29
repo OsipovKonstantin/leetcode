@@ -18,6 +18,7 @@ import static org.example.SolutionDay102.reorderList;
 import static org.example.SolutionDay103.findDuplicates;
 import static org.example.SolutionDay104.firstMissingPositive;
 import static org.example.SolutionDay105.maxSubarrayLength;
+import static org.example.SolutionDay106.countSubarrays;
 import static org.example.SolutionDay11.maxWidthOfVerticalArea;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
@@ -734,6 +735,7 @@ public class Main {
         System.out.println(findDuplicates(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
         System.out.println(firstMissingPositive(new int[]{1, 2, 0}));
         System.out.println(maxSubarrayLength(new int[]{1, 2, 3, 1, 2, 3, 1, 2}, 2));
+        System.out.println(countSubarrays(new int[]{1, 4, 2, 1}, 3));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
