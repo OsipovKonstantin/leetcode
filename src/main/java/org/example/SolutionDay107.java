@@ -1,6 +1,6 @@
 package org.example;
 
-//    medium #slidingwindow
+//    medium #sliding window
 //    Time complexity is O(n)
 //    Space complexity is O(1)
 //    https://leetcode.com/problems/subarray-product-less-than-k

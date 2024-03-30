@@ -3,7 +3,7 @@ package org.example;
 import java.util.HashMap;
 import java.util.Map;
 
-//    medium #slidingwindow
+//    medium #sliding window
 //    Time complexity is O(n)
 //    Space complexity is O(n), because we can store up to n elements in map
 //    https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency

@@ -20,6 +20,7 @@ import static org.example.SolutionDay104.firstMissingPositive;
 import static org.example.SolutionDay105.maxSubarrayLength;
 import static org.example.SolutionDay106.countSubarrays;
 import static org.example.SolutionDay107.numSubarrayProductLessThanK;
+import static org.example.SolutionDay108.subarraysWithKDistinct;
 import static org.example.SolutionDay11.maxWidthOfVerticalArea;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
@@ -738,6 +739,7 @@ public class Main {
         System.out.println(maxSubarrayLength(new int[]{1, 2, 3, 1, 2, 3, 1, 2}, 2));
         System.out.println(countSubarrays(new int[]{1, 4, 2, 1}, 3));
         System.out.println(numSubarrayProductLessThanK(new int[]{10, 5, 2, 6}, 100));
+        System.out.println(subarraysWithKDistinct(new int[]{1, 2, 1, 2, 3}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
