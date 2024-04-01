@@ -742,6 +742,7 @@ public class Main {
         System.out.println(numSubarrayProductLessThanK(new int[]{10, 5, 2, 6}, 100));
         System.out.println(subarraysWithKDistinct(new int[]{1, 2, 1, 2, 3}, 2));
         System.out.println(lengthOfLastWord("Hello world"));
+        System.out.println(SolutionDay110.countSubarrays(new int[]{1, 3, 5, 2, 7, 5}, 1, 5));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
