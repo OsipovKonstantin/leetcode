@@ -23,6 +23,7 @@ import static org.example.SolutionDay107.numSubarrayProductLessThanK;
 import static org.example.SolutionDay108.subarraysWithKDistinct;
 import static org.example.SolutionDay109.lengthOfLastWord;
 import static org.example.SolutionDay11.maxWidthOfVerticalArea;
+import static org.example.SolutionDay111.minRemoveToMakeValid;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
@@ -743,6 +744,7 @@ public class Main {
         System.out.println(subarraysWithKDistinct(new int[]{1, 2, 1, 2, 3}, 2));
         System.out.println(lengthOfLastWord("Hello world"));
         System.out.println(SolutionDay110.countSubarrays(new int[]{1, 3, 5, 2, 7, 5}, 1, 5));
+        System.out.println(minRemoveToMakeValid("lee(t(c)o)de)"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
