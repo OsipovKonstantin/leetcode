@@ -27,6 +27,7 @@ import static org.example.SolutionDay111.minRemoveToMakeValid;
 import static org.example.SolutionDay112.makeGood;
 import static org.example.SolutionDay113.checkValidString;
 import static org.example.SolutionDay114.maxDepth;
+import static org.example.SolutionDay115.countStudents;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
@@ -751,6 +752,7 @@ public class Main {
         System.out.println(makeGood("abBAcC"));
         System.out.println(checkValidString("(*))"));
         System.out.println(maxDepth("(1)+((2))+(((3)))"));
+        System.out.println(countStudents(new int[]{1, 1, 1, 0, 0, 1}, new int[]{1, 0, 0, 0, 1, 1}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
