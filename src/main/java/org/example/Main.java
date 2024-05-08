@@ -33,6 +33,7 @@ import static org.example.SolutionDay117.islandPerimeter;
 import static org.example.SolutionDay118.sumNumbers;
 import static org.example.SolutionDay119.trap;
 import static org.example.SolutionDay12.maxScore;
+import static org.example.SolutionDay120.findRelativeRanks;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay15.numDecodings;
@@ -761,6 +762,7 @@ public class Main {
         System.out.println(islandPerimeter(new int[][]{{0, 1, 0, 0}, {1, 1, 1, 0}, {0, 1, 0, 0}, {1, 1, 0, 0}}));
         System.out.println(sumNumbers(new TreeNode(1, new TreeNode(2), new TreeNode(3))));
         System.out.println(trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
+        System.out.println(Arrays.toString(findRelativeRanks(new int[]{10, 3, 8, 9, 4})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
