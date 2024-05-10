@@ -35,6 +35,7 @@ import static org.example.SolutionDay119.trap;
 import static org.example.SolutionDay12.maxScore;
 import static org.example.SolutionDay120.findRelativeRanks;
 import static org.example.SolutionDay121.maximumHappinessSum;
+import static org.example.SolutionDay122.kthSmallestPrimeFraction;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay15.numDecodings;
@@ -765,6 +766,7 @@ public class Main {
         System.out.println(trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
         System.out.println(Arrays.toString(findRelativeRanks(new int[]{10, 3, 8, 9, 4})));
         System.out.println(maximumHappinessSum(new int[]{1, 2, 3}, 2));
+        System.out.println(Arrays.toString(kthSmallestPrimeFraction(new int[]{1, 2, 3, 5}, 3)));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
