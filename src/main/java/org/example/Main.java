@@ -38,6 +38,7 @@ import static org.example.SolutionDay121.maximumHappinessSum;
 import static org.example.SolutionDay122.kthSmallestPrimeFraction;
 import static org.example.SolutionDay123.mincostToHireWorkers;
 import static org.example.SolutionDay124.largestLocal;
+import static org.example.SolutionDay125.getMaximumGold;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay15.numDecodings;
@@ -771,6 +772,7 @@ public class Main {
         System.out.println(Arrays.toString(kthSmallestPrimeFraction(new int[]{1, 2, 3, 5}, 3)));
         System.out.println(mincostToHireWorkers(new int[]{10, 20, 5}, new int[]{70, 50, 30}, 2));
         System.out.println(Arrays.deepToString(largestLocal(new int[][]{{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4}, {6, 2, 2, 2}})));
+        System.out.println(getMaximumGold(new int[][]{{0, 6, 0}, {5, 8, 7}, {0, 9, 0}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
