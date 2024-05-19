@@ -42,6 +42,7 @@ import static org.example.SolutionDay125.getMaximumGold;
 import static org.example.SolutionDay126.maximumSafenessFactor;
 import static org.example.SolutionDay127.evaluateTree;
 import static org.example.SolutionDay128.removeLeafNodes;
+import static org.example.SolutionDay129.maximumValueSum;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay15.numDecodings;
@@ -780,6 +781,7 @@ public class Main {
         System.out.println(evaluateTree(new TreeNode(0)));
         System.out.println(removeLeafNodes(new TreeNode(1, new TreeNode(2, new TreeNode(2,
                 new TreeNode(2, null, null), null), null), null), 2).asList());
+        System.out.println(maximumValueSum(new int[]{2, 3}, 7, new int[][]{{0, 1}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
