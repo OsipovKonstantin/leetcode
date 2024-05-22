@@ -786,6 +786,7 @@ public class Main {
         System.out.println(maximumValueSum(new int[]{2, 3}, 7, new int[][]{{0, 1}}));
         System.out.println(subsetXORSum(new int[]{5, 1, 6}));
         System.out.println(subsets(new int[]{1, 2, 3}));
+        System.out.println(SolutionDay132.partition("aab"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
