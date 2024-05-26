@@ -7,8 +7,10 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
+import static org.example.BulbGrid.switchBulbs;
 import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
@@ -46,6 +48,7 @@ import static org.example.SolutionDay129.maximumValueSum;
 import static org.example.SolutionDay13.isPathCrossing;
 import static org.example.SolutionDay130.subsetXORSum;
 import static org.example.SolutionDay131.subsets;
+import static org.example.SolutionDay134.checkRecord;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay15.numDecodings;
 import static org.example.SolutionDay16.numRollsToTarget;
@@ -302,7 +305,7 @@ import static org.example.SolutionDay98.leastInterval;
 import static org.example.SolutionDay99.mergeInBetween;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         Instant start = Instant.now();
 
         System.out.println(Arrays.toString(twoSum(new int[]{1, 6, 3, 10}, 9)));
@@ -788,6 +791,7 @@ public class Main {
         System.out.println(subsets(new int[]{1, 2, 3}));
         System.out.println(SolutionDay132.partition("aab"));
         System.out.println(SolutionDay133.wordBreak("catsanddog", Arrays.asList("cat","cats","and","sand","dog")));
+        System.out.println(checkRecord(2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
