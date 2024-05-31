@@ -798,7 +798,8 @@ public class Main {
         System.out.println(specialArray(new int[]{0, 4, 3, 0, 4}));
         System.out.println(equalSubstring("abcd", "cdef", 3));
         System.out.println(numSteps("1101"));
-        System.out.println(countTriplets(new int[]{2,3,1,6,7}));
+        System.out.println(countTriplets(new int[]{2, 3, 1, 6, 7}));
+        System.out.println(Arrays.toString(SolutionDay139.singleNumber(new int[]{1, 2, 1, 3, 2, 5})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
