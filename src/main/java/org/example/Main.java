@@ -51,6 +51,7 @@ import static org.example.SolutionDay134.checkRecord;
 import static org.example.SolutionDay135.specialArray;
 import static org.example.SolutionDay136.equalSubstring;
 import static org.example.SolutionDay137.numSteps;
+import static org.example.SolutionDay138.countTriplets;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay15.numDecodings;
 import static org.example.SolutionDay16.numRollsToTarget;
@@ -797,6 +798,7 @@ public class Main {
         System.out.println(specialArray(new int[]{0, 4, 3, 0, 4}));
         System.out.println(equalSubstring("abcd", "cdef", 3));
         System.out.println(numSteps("1101"));
+        System.out.println(countTriplets(new int[]{2,3,1,6,7}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
