@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
-import static org.example.FactorialTail.zeroes;
 import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
@@ -56,6 +55,7 @@ import static org.example.SolutionDay138.countTriplets;
 import static org.example.SolutionDay14.minOperations;
 import static org.example.SolutionDay140.scoreOfString;
 import static org.example.SolutionDay141.reverseString;
+import static org.example.SolutionDay142.appendCharacters;
 import static org.example.SolutionDay15.numDecodings;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
@@ -807,6 +807,7 @@ public class Main {
         char[] s = "Hello".toCharArray();
         reverseString(s);
         System.out.println(s);
+        System.out.println(appendCharacters("coaching", "coding"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
