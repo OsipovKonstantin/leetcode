@@ -808,6 +808,7 @@ public class Main {
         reverseString(s);
         System.out.println(s);
         System.out.println(appendCharacters("coaching", "coding"));
+        System.out.println(SolutionDay143.longestPalindrome("abccccdd"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
