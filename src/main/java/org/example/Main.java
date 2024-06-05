@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
+import static org.example.SolutionDa144.commonChars;
 import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
@@ -809,6 +810,7 @@ public class Main {
         System.out.println(s);
         System.out.println(appendCharacters("coaching", "coding"));
         System.out.println(SolutionDay143.longestPalindrome("abccccdd"));
+        System.out.println(commonChars(new String[]{"bella", "label", "roller"}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
