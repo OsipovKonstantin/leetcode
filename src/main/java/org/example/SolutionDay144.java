@@ -15,7 +15,7 @@ import java.util.List;
 //    Example 2:
 //    Input: words = ["cool","lock","cook"]
 //    Output: ["c","o"]
-public class SolutionDa144 {
+public class SolutionDay144 {
         public static List<String> commonChars(String[] words) {
             int n = words.length;
             int[] curChars = new int[26];
