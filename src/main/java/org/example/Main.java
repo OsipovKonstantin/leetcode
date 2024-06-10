@@ -61,6 +61,7 @@ import static org.example.SolutionDay145.isNStraightHand;
 import static org.example.SolutionDay146.replaceWords;
 import static org.example.SolutionDay147.checkSubarraySum;
 import static org.example.SolutionDay148.subarraysDivByK;
+import static org.example.SolutionDay149.heightChecker;
 import static org.example.SolutionDay15.numDecodings;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
@@ -819,6 +820,7 @@ public class Main {
         System.out.println(replaceWords(Arrays.asList("cat", "bat", "rat"), "the cattle was rattled by the battery"));
         System.out.println(checkSubarraySum(new int[]{23, 6, 4, 7}, 13));
         System.out.println(subarraysDivByK(new int[]{4, 5, 0, -2, -3, 1}, 5));
+        System.out.println(heightChecker(new int[]{1, 1, 4, 2, 1, 3}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
