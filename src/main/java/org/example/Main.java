@@ -63,6 +63,7 @@ import static org.example.SolutionDay147.checkSubarraySum;
 import static org.example.SolutionDay148.subarraysDivByK;
 import static org.example.SolutionDay149.heightChecker;
 import static org.example.SolutionDay15.numDecodings;
+import static org.example.SolutionDay150.relativeSortArray;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
@@ -821,6 +822,7 @@ public class Main {
         System.out.println(checkSubarraySum(new int[]{23, 6, 4, 7}, 13));
         System.out.println(subarraysDivByK(new int[]{4, 5, 0, -2, -3, 1}, 5));
         System.out.println(heightChecker(new int[]{1, 1, 4, 2, 1, 3}));
+        System.out.println(Arrays.toString(relativeSortArray(new int[]{2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19}, new int[]{2, 1, 4, 3, 9, 6})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
