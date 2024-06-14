@@ -66,6 +66,7 @@ import static org.example.SolutionDay15.numDecodings;
 import static org.example.SolutionDay150.relativeSortArray;
 import static org.example.SolutionDay151.sortColors;
 import static org.example.SolutionDay152.minMovesToSeat;
+import static org.example.SolutionDay153.minIncrementForUnique;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
@@ -830,6 +831,7 @@ public class Main {
         sortColors(sortingColors);
         System.out.println(Arrays.toString(sortingColors));
         System.out.println(minMovesToSeat(new int[]{3, 1, 5}, new int[]{2, 7, 4}));
+        System.out.println(minIncrementForUnique(new int[]{3, 2, 1, 2, 1, 7}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
