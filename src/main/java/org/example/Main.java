@@ -69,6 +69,7 @@ import static org.example.SolutionDay152.minMovesToSeat;
 import static org.example.SolutionDay153.minIncrementForUnique;
 import static org.example.SolutionDay154.findMaximizedCapital;
 import static org.example.SolutionDay155.minPatches;
+import static org.example.SolutionDay156.maxProfitAssignment;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
@@ -836,6 +837,7 @@ public class Main {
         System.out.println(minIncrementForUnique(new int[]{3, 2, 1, 2, 1, 7}));
         System.out.println(findMaximizedCapital(2, 0, new int[]{1, 2, 3}, new int[]{0, 1, 1}));
         System.out.println(minPatches(new int[]{1, 5, 10}, 20));
+        System.out.println(maxProfitAssignment(new int[]{2, 4, 6, 8, 10}, new int[]{10, 20, 30, 40, 50}, new int[]{4, 5, 6, 7}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
