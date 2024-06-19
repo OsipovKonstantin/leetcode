@@ -70,6 +70,7 @@ import static org.example.SolutionDay153.minIncrementForUnique;
 import static org.example.SolutionDay154.findMaximizedCapital;
 import static org.example.SolutionDay155.minPatches;
 import static org.example.SolutionDay156.maxProfitAssignment;
+import static org.example.SolutionDay157.minDays;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
@@ -331,7 +332,8 @@ public class Main {
         System.out.println(findSpecialInteger(new int[]{1, 2, 2, 6, 6, 6, 6, 7, 10}));
         System.out.println(maxProduct(new int[]{1, 5, 4, 5}));
         System.out.println(numSpecial(new int[][]{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}));
-        System.out.println(destCity(List.of(List.of("London", "New York"), List.of("New York", "Lima"), List.of("Lima", "Sao Paulo"))));
+        System.out.println(destCity(List.of(List.of("London", "New York"), List.of("New York", "Lima"),
+                List.of("Lima", "Sao Paulo"))));
         System.out.println(isAnagram("anagram", "nagaram") + "; " + isAnagram("rat", "car"));
 
         SolutionDay7FoodRatings foodRatings = new SolutionDay7FoodRatings(
@@ -345,7 +347,8 @@ public class Main {
         foodRatings.changeRating("ramen", 16);
         System.out.println(foodRatings.highestRated("japanese"));
         System.out.println(maxProductDifference(new int[]{5, 6, 2, 7, 4}));
-        System.out.println(Arrays.deepToString(imageSmoother(new int[][]{{100, 200, 100}, {200, 50, 200}, {100, 200, 100}})));
+        System.out.println(Arrays.deepToString(imageSmoother(new int[][]{{100, 200, 100}, {200, 50, 200},
+                {100, 200, 100}})));
         System.out.println(buyChoco(new int[]{3, 2, 3}, 3));
         System.out.println(maxWidthOfVerticalArea(new int[][]{{3, 1}, {9, 0}, {1, 0}, {1, 4}, {5, 3}, {8, 8}}));
         System.out.println(maxScore("1111"));
@@ -359,7 +362,8 @@ public class Main {
         System.out.println(makeEqual(new String[]{"abc", "aabc", "bc"}));
         System.out.println(Arrays.deepToString(transpose(new int[][]{{1, 2, 3}, {4, 5, 6}})));
         System.out.println(inorderTraversal(
-                new TreeNode(1, null, new TreeNode(2, new TreeNode(3, null, null), null))));
+                new TreeNode(1, null, new TreeNode(2, new TreeNode(3, null, null),
+                        null))));
         System.out.println(tree2str(
                 new TreeNode(1, new TreeNode(2, new TreeNode(4, null, null), null),
                         new TreeNode(3, null, null))));
@@ -380,7 +384,8 @@ public class Main {
         System.out.println(findMatrix(new int[]{1, 3, 4, 1, 2, 3, 1}));
         System.out.println(Arrays.toString(getSumAbsoluteDifferences(new int[]{1, 4, 6, 8, 10})));
         System.out.println(maxCoins(new int[]{9, 8, 7, 6, 5, 1, 2, 3, 4}));
-        System.out.println(checkArithmeticSubarrays(new int[]{4, 6, 5, 9, 3, 7}, new int[]{0, 0, 2}, new int[]{2, 3, 5}));
+        System.out.println(checkArithmeticSubarrays(new int[]{4, 6, 5, 9, 3, 7}, new int[]{0, 0, 2},
+                new int[]{2, 3, 5}));
         System.out.println(Arrays.toString(findDiagonalOrder(List.of(List.of(1, 2, 3, 4, 5), List.of(6, 7),
                 List.of(8), List.of(9, 10, 11), List.of(12, 13, 14, 15, 16)))));
         System.out.println(numberOfBeams(new String[]{"011001", "000000", "010100", "001000"}));
@@ -396,7 +401,8 @@ public class Main {
         System.out.println(sortVowels("lEetcOde"));
         System.out.println(lengthOfLIS(new int[]{0, 1, 0, 3, 2, 3}));
         System.out.println(numBusesToDestination(new int[][]{{1, 2, 7}, {3, 6, 7}}, 1, 6));
-        System.out.println(jobScheduling(new int[]{1, 2, 3, 4, 6}, new int[]{3, 5, 10, 6, 9}, new int[]{20, 20, 100, 70, 60}));
+        System.out.println(jobScheduling(new int[]{1, 2, 3, 4, 6}, new int[]{3, 5, 10, 6, 9}, new int[]{20, 20, 100,
+                70, 60}));
 
         SolutionDay27Second.Graph graph =
                 new SolutionDay27Second.Graph(4, new int[][]{{0, 2, 5}, {0, 1, 2}, {1, 2, 1}, {3, 0, 3}});
@@ -421,7 +427,8 @@ public class Main {
         int seatFive = seatManager.reserve();
         int seatSix = seatManager.reserve();
         seatManager.unreserve(5);
-        System.out.println(String.format("%s, %s, %s, %s, %s, %s", seatOne, seatTwo, seatThree, seatFour, seatFive, seatSix));
+        System.out.println(String.format("%s, %s, %s, %s, %s, %s", seatOne, seatTwo, seatThree, seatFour, seatFive,
+                seatSix));
         System.out.println(rangeSumBST(new TreeNode(10,
                 new TreeNode(5, new TreeNode(3), new TreeNode(7)),
                 new TreeNode(15, null, new TreeNode(18))), 7, 15));
@@ -470,7 +477,8 @@ public class Main {
         System.out.println(integerList);
 
         System.out.println(backspaceCompare("ab#c", "ad#c"));
-        System.out.println(minimumTime(5, new int[][]{{1, 5}, {2, 5}, {3, 5}, {3, 4}, {4, 5}}, new int[]{1, 2, 3, 4, 5}));
+        System.out.println(minimumTime(5, new int[][]{{1, 5}, {2, 5}, {3, 5}, {3, 4}, {4, 5}},
+                new int[]{1, 2, 3, 4, 5}));
         System.out.println(closeStrings("cabbba", "abbccc"));
         System.out.println(validateBinaryTreeNodes(4, new int[]{1, -1, 3, -1}, new int[]{2, 3, -1, -1}));
         System.out.println(Arrays.deepToString(onesMinusZeros(new int[][]{{0, 1, 1}, {1, 0, 1}, {0, 0, 1}})));
@@ -707,7 +715,8 @@ public class Main {
         System.out.println(isPowerOfTwo(16));
         System.out.println(eventualSafeNodes(new int[][]{{1, 2}, {2, 3}, {5}, {0}, {5}, {}, {}}));
 
-        TreeNode target = new TreeNode(5, new TreeNode(6), new TreeNode(2, new TreeNode(7), new TreeNode(4)));
+        TreeNode target = new TreeNode(5, new TreeNode(6), new TreeNode(2, new TreeNode(7),
+                new TreeNode(4)));
         TreeNode root = new TreeNode(3, target, new TreeNode(1, new TreeNode(0), new TreeNode(8)));
         System.out.println(distanceK(root, target, 2));
         System.out.println(missingNumber(new int[]{3, 0, 1}));
@@ -769,13 +778,18 @@ public class Main {
         System.out.println(findMinArrowShots(new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}}));
         System.out.println(leastInterval(new char[]{'A', 'A', 'A', 'B', 'B', 'B'}, 2));
         System.out.println(mergeInBetween(new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3,
-                new ListNode(4, new ListNode(5, new ListNode(6))))))), 2, 5, new ListNode(1000000,
-                new ListNode(1000001, new ListNode(1000002, new ListNode(1000003, new ListNode(1000004)))))).asList());
-        System.out.println(reverseList(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
+                new ListNode(4, new ListNode(5, new ListNode(6))))))), 2, 5,
+                new ListNode(1000000,
+                new ListNode(1000001, new ListNode(1000002, new ListNode(1000003,
+                        new ListNode(1000004)))))).asList());
+        System.out.println(reverseList(new ListNode(1, new ListNode(2, new ListNode(3,
+                new ListNode(4,
                 new ListNode(5)))))).asList());
-        System.out.println(isPalindrome(new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(1))))));
+        System.out.println(isPalindrome(new ListNode(1, new ListNode(2, new ListNode(2,
+                new ListNode(1))))));
 
-        ListNode listNode102 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+        ListNode listNode102 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
+                new ListNode(5)))));
         reorderList(listNode102);
         System.out.println(listNode102.asList());
         System.out.println(findDuplicates(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
@@ -799,9 +813,11 @@ public class Main {
         System.out.println(maximumHappinessSum(new int[]{1, 2, 3}, 2));
         System.out.println(Arrays.toString(kthSmallestPrimeFraction(new int[]{1, 2, 3, 5}, 3)));
         System.out.println(mincostToHireWorkers(new int[]{10, 20, 5}, new int[]{70, 50, 30}, 2));
-        System.out.println(Arrays.deepToString(largestLocal(new int[][]{{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4}, {6, 2, 2, 2}})));
+        System.out.println(Arrays.deepToString(largestLocal(new int[][]{{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4},
+                {6, 2, 2, 2}})));
         System.out.println(getMaximumGold(new int[][]{{0, 6, 0}, {5, 8, 7}, {0, 9, 0}}));
-        System.out.println(maximumSafenessFactor(Arrays.asList(Arrays.asList(0, 0, 1), Arrays.asList(0, 0, 0), Arrays.asList(0, 0, 0))));
+        System.out.println(maximumSafenessFactor(Arrays.asList(Arrays.asList(0, 0, 1), Arrays.asList(0, 0, 0),
+                Arrays.asList(0, 0, 0))));
         System.out.println(evaluateTree(new TreeNode(0)));
         System.out.println(removeLeafNodes(new TreeNode(1, new TreeNode(2, new TreeNode(2,
                 new TreeNode(2, null, null), null), null), null), 2).asList());
@@ -824,11 +840,13 @@ public class Main {
         System.out.println(SolutionDay143.longestPalindrome("abccccdd"));
         System.out.println(commonChars(new String[]{"bella", "label", "roller"}));
         System.out.println(isNStraightHand(new int[]{1, 2, 3, 6, 2, 3, 4, 7, 8}, 3));
-        System.out.println(replaceWords(Arrays.asList("cat", "bat", "rat"), "the cattle was rattled by the battery"));
+        System.out.println(replaceWords(Arrays.asList("cat", "bat", "rat"),
+                "the cattle was rattled by the battery"));
         System.out.println(checkSubarraySum(new int[]{23, 6, 4, 7}, 13));
         System.out.println(subarraysDivByK(new int[]{4, 5, 0, -2, -3, 1}, 5));
         System.out.println(heightChecker(new int[]{1, 1, 4, 2, 1, 3}));
-        System.out.println(Arrays.toString(relativeSortArray(new int[]{2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19}, new int[]{2, 1, 4, 3, 9, 6})));
+        System.out.println(Arrays.toString(relativeSortArray(new int[]{2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19},
+                new int[]{2, 1, 4, 3, 9, 6})));
 
         int[] sortingColors = new int[]{2, 0, 2, 1, 1, 0};
         sortColors(sortingColors);
@@ -837,7 +855,9 @@ public class Main {
         System.out.println(minIncrementForUnique(new int[]{3, 2, 1, 2, 1, 7}));
         System.out.println(findMaximizedCapital(2, 0, new int[]{1, 2, 3}, new int[]{0, 1, 1}));
         System.out.println(minPatches(new int[]{1, 5, 10}, 20));
-        System.out.println(maxProfitAssignment(new int[]{2, 4, 6, 8, 10}, new int[]{10, 20, 30, 40, 50}, new int[]{4, 5, 6, 7}));
+        System.out.println(maxProfitAssignment(new int[]{2, 4, 6, 8, 10}, new int[]{10, 20, 30, 40, 50},
+                new int[]{4, 5, 6, 7}));
+        System.out.println(minDays(new int[]{1, 10, 3, 10, 2}, 3, 1));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
