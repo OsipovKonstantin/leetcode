@@ -71,6 +71,7 @@ import static org.example.SolutionDay154.findMaximizedCapital;
 import static org.example.SolutionDay155.minPatches;
 import static org.example.SolutionDay156.maxProfitAssignment;
 import static org.example.SolutionDay157.minDays;
+import static org.example.SolutionDay158.maxDistance;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
@@ -778,13 +779,13 @@ public class Main {
         System.out.println(findMinArrowShots(new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}}));
         System.out.println(leastInterval(new char[]{'A', 'A', 'A', 'B', 'B', 'B'}, 2));
         System.out.println(mergeInBetween(new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3,
-                new ListNode(4, new ListNode(5, new ListNode(6))))))), 2, 5,
+                        new ListNode(4, new ListNode(5, new ListNode(6))))))), 2, 5,
                 new ListNode(1000000,
-                new ListNode(1000001, new ListNode(1000002, new ListNode(1000003,
-                        new ListNode(1000004)))))).asList());
+                        new ListNode(1000001, new ListNode(1000002, new ListNode(1000003,
+                                new ListNode(1000004)))))).asList());
         System.out.println(reverseList(new ListNode(1, new ListNode(2, new ListNode(3,
                 new ListNode(4,
-                new ListNode(5)))))).asList());
+                        new ListNode(5)))))).asList());
         System.out.println(isPalindrome(new ListNode(1, new ListNode(2, new ListNode(2,
                 new ListNode(1))))));
 
@@ -858,6 +859,7 @@ public class Main {
         System.out.println(maxProfitAssignment(new int[]{2, 4, 6, 8, 10}, new int[]{10, 20, 30, 40, 50},
                 new int[]{4, 5, 6, 7}));
         System.out.println(minDays(new int[]{1, 10, 3, 10, 2}, 3, 1));
+        System.out.println(maxDistance(new int[]{1, 2, 3, 4, 7}, 3));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
