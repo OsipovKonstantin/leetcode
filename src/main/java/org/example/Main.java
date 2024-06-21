@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
+import static org.example.Runes.solveExpression;
 import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
@@ -72,6 +73,7 @@ import static org.example.SolutionDay155.minPatches;
 import static org.example.SolutionDay156.maxProfitAssignment;
 import static org.example.SolutionDay157.minDays;
 import static org.example.SolutionDay158.maxDistance;
+import static org.example.SolutionDay159.maxSatisfied;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
@@ -860,6 +862,8 @@ public class Main {
                 new int[]{4, 5, 6, 7}));
         System.out.println(minDays(new int[]{1, 10, 3, 10, 2}, 3, 1));
         System.out.println(maxDistance(new int[]{1, 2, 3, 4, 7}, 3));
+        System.out.println(solveExpression("-?56373--9216=-?47157"));
+        System.out.println(maxSatisfied(new int[]{1, 0, 1, 2, 1, 1, 7, 5}, new int[]{0, 1, 0, 1, 0, 1, 0, 1}, 3));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
