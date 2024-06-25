@@ -75,6 +75,7 @@ import static org.example.SolutionDay157.minDays;
 import static org.example.SolutionDay158.maxDistance;
 import static org.example.SolutionDay159.maxSatisfied;
 import static org.example.SolutionDay16.numRollsToTarget;
+import static org.example.SolutionDay160.bstToGst;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -864,6 +865,7 @@ public class Main {
         System.out.println(maxDistance(new int[]{1, 2, 3, 4, 7}, 3));
         System.out.println(solveExpression("-?56373--9216=-?47157"));
         System.out.println(maxSatisfied(new int[]{1, 0, 1, 2, 1, 1, 7, 5}, new int[]{0, 1, 0, 1, 0, 1, 0, 1}, 3));
+        System.out.println(bstToGst(new TreeNode(0, null, new TreeNode(1))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
