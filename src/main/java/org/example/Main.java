@@ -11,6 +11,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 import static org.example.Runes.solveExpression;
+import static org.example.SolutionDa161.balanceBST;
 import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
@@ -866,6 +867,10 @@ public class Main {
         System.out.println(solveExpression("-?56373--9216=-?47157"));
         System.out.println(maxSatisfied(new int[]{1, 0, 1, 2, 1, 1, 7, 5}, new int[]{0, 1, 0, 1, 0, 1, 0, 1}, 3));
         System.out.println(bstToGst(new TreeNode(0, null, new TreeNode(1))).asList());
+        PokerHand first = new PokerHand("2S 2H 4H 5S 4C");
+        PokerHand second = new PokerHand("AH AC 5H 6H 7S");
+        System.out.println(first.compareWith(second));
+        System.out.println(balanceBST(new TreeNode(2, new TreeNode(1), new TreeNode(3))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
