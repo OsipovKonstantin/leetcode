@@ -78,6 +78,8 @@ import static org.example.SolutionDay159.maxSatisfied;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay160.bstToGst;
 import static org.example.SolutionDay162.findCenter;
+import static org.example.SolutionDay163.intersect;
+import static org.example.SolutionDay163Second.threeConsecutiveOdds;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -870,6 +872,8 @@ public class Main {
         System.out.println(bstToGst(new TreeNode(0, null, new TreeNode(1))).asList());
         System.out.println(balanceBST(new TreeNode(2, new TreeNode(1), new TreeNode(3))).asList());
         System.out.println(findCenter(new int[][]{{1, 2}, {2, 3}, {4, 2}}));
+        System.out.println(Arrays.toString(intersect(new int[]{1, 2, 2, 1}, new int[]{2, 2})));
+        System.out.println(threeConsecutiveOdds(new int[]{1, 2, 34, 3, 4, 5, 7, 23, 12}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
