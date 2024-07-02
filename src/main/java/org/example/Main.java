@@ -874,6 +874,8 @@ public class Main {
         System.out.println(findCenter(new int[][]{{1, 2}, {2, 3}, {4, 2}}));
         System.out.println(Arrays.toString(intersect(new int[]{1, 2, 2, 1}, new int[]{2, 2})));
         System.out.println(threeConsecutiveOdds(new int[]{1, 2, 34, 3, 4, 5, 7, 23, 12}));
+        System.out.println(SolutionDay163Third.maxNumEdgesToRemove(4,
+                new int[][]{{3, 1, 2}, {3, 2, 3}, {1, 1, 3}, {1, 2, 4}, {1, 1, 2}, {2, 3, 4}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
