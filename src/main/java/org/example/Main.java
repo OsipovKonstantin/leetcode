@@ -80,6 +80,7 @@ import static org.example.SolutionDay160.bstToGst;
 import static org.example.SolutionDay162.findCenter;
 import static org.example.SolutionDay163.intersect;
 import static org.example.SolutionDay163Second.threeConsecutiveOdds;
+import static org.example.SolutionDay164.minDifference;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -876,6 +877,7 @@ public class Main {
         System.out.println(threeConsecutiveOdds(new int[]{1, 2, 34, 3, 4, 5, 7, 23, 12}));
         System.out.println(SolutionDay163Third.maxNumEdgesToRemove(4,
                 new int[][]{{3, 1, 2}, {3, 2, 3}, {1, 1, 3}, {1, 2, 4}, {1, 1, 2}, {2, 3, 4}}));
+        System.out.println(minDifference(new int[]{1, 5, 0, 10, 14}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
