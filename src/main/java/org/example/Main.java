@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
+import static org.example.AffordableRent.findMinCost;
+import static org.example.CheapestVacation.findMinimumCost;
 import static org.example.Runes.solveExpression;
 import static org.example.SolutionDa161.balanceBST;
 import static org.example.SolutionDa49.hasCycle;
@@ -81,6 +83,7 @@ import static org.example.SolutionDay162.findCenter;
 import static org.example.SolutionDay163.intersect;
 import static org.example.SolutionDay163Second.threeConsecutiveOdds;
 import static org.example.SolutionDay164.minDifference;
+import static org.example.SolutionDay165.averageWaitingTime;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -878,6 +881,7 @@ public class Main {
         System.out.println(SolutionDay163Third.maxNumEdgesToRemove(4,
                 new int[][]{{3, 1, 2}, {3, 2, 3}, {1, 1, 3}, {1, 2, 4}, {1, 1, 2}, {2, 3, 4}}));
         System.out.println(minDifference(new int[]{1, 5, 0, 10, 14}));
+        System.out.println(averageWaitingTime(new int[][]{{5, 2}, {5, 4}, {10, 3}, {20, 1}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
