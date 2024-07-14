@@ -19,7 +19,7 @@ import java.util.List;
 //    Example 2:
 //    Input: root = [2,1,3]
 //    Output: [2,1,3]
-public class SolutionDa161 {
+public class SolutionDay161 {
     private static List<Integer> ordered = new ArrayList<>();
     private static TreeNode balancedRoot;
 

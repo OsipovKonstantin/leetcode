@@ -11,8 +11,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 import static org.example.Runes.solveExpression;
-import static org.example.SolutionDa161.balanceBST;
-import static org.example.SolutionDa49.hasCycle;
 import static org.example.SolutionDay1.twoSum;
 import static org.example.SolutionDay10.buyChoco;
 import static org.example.SolutionDay100.reverseList;
@@ -77,12 +75,14 @@ import static org.example.SolutionDay158.maxDistance;
 import static org.example.SolutionDay159.maxSatisfied;
 import static org.example.SolutionDay16.numRollsToTarget;
 import static org.example.SolutionDay160.bstToGst;
+import static org.example.SolutionDay161.balanceBST;
 import static org.example.SolutionDay162.findCenter;
 import static org.example.SolutionDay163.intersect;
 import static org.example.SolutionDay163Second.threeConsecutiveOdds;
 import static org.example.SolutionDay164.minDifference;
 import static org.example.SolutionDay165.averageWaitingTime;
 import static org.example.SolutionDay166.survivedRobotsHealths;
+import static org.example.SolutionDay167.maximumGain;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -208,6 +208,7 @@ import static org.example.SolutionDay47Third.reverseBetween;
 import static org.example.SolutionDay48.kInversePairs;
 import static org.example.SolutionDay48Second.splitListToParts;
 import static org.example.SolutionDay48Third.copyRandomList;
+import static org.example.SolutionDay49.hasCycle;
 import static org.example.SolutionDay49Fourth.numSubmatrixSumTarget;
 import static org.example.SolutionDay49Second.uniquePaths;
 import static org.example.SolutionDay49Third.subarraySum;
@@ -882,6 +883,7 @@ public class Main {
         System.out.println(minDifference(new int[]{1, 5, 0, 10, 14}));
         System.out.println(averageWaitingTime(new int[][]{{5, 2}, {5, 4}, {10, 3}, {20, 1}}));
         System.out.println(survivedRobotsHealths(new int[]{3, 5, 2, 6}, new int[]{10, 10, 15, 12}, "RLRL"));
+        System.out.println(maximumGain("cdbcbbaaabab", 4, 5));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",

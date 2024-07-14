@@ -21,7 +21,7 @@ import org.example.datastructures.ListNode;
 //    Input: head = [1], pos = -1
 //    Output: false
 //    Explanation: There is no cycle in the linked list.
-public class SolutionDa49 {
+public class SolutionDay49 {
     public static boolean hasCycle(ListNode head) {
         ListNode tortoise = head;
         ListNode hare = head;
