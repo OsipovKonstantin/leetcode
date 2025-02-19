@@ -83,6 +83,7 @@ import static org.example.SolutionDay164.minDifference;
 import static org.example.SolutionDay165.averageWaitingTime;
 import static org.example.SolutionDay166.survivedRobotsHealths;
 import static org.example.SolutionDay167.maximumGain;
+import static org.example.SolutionDay168Second.removeElement;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -888,6 +889,8 @@ public class Main {
         int[] nums168 = new int[]{1,2,3,0,0,0};
         SolutionDay168.merge(nums168, 3, new int[]{2,5,6}, 3);
         System.out.println(Arrays.toString(nums168));
+
+        System.out.println(removeElement(new int[]{3,2,2,3}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
