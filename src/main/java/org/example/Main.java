@@ -84,6 +84,7 @@ import static org.example.SolutionDay165.averageWaitingTime;
 import static org.example.SolutionDay166.survivedRobotsHealths;
 import static org.example.SolutionDay167.maximumGain;
 import static org.example.SolutionDay168Second.removeElement;
+import static org.example.SolutionDay168Third.removeDuplicates;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
@@ -886,11 +887,12 @@ public class Main {
         System.out.println(survivedRobotsHealths(new int[]{3, 5, 2, 6}, new int[]{10, 10, 15, 12}, "RLRL"));
         System.out.println(maximumGain("cdbcbbaaabab", 4, 5));
 
-        int[] nums168 = new int[]{1,2,3,0,0,0};
-        SolutionDay168.merge(nums168, 3, new int[]{2,5,6}, 3);
+        int[] nums168 = new int[]{1, 2, 3, 0, 0, 0};
+        SolutionDay168.merge(nums168, 3, new int[]{2, 5, 6}, 3);
         System.out.println(Arrays.toString(nums168));
 
-        System.out.println(removeElement(new int[]{3,2,2,3}, 2));
+        System.out.println(removeElement(new int[]{3, 2, 2, 3}, 2));
+        System.out.println(removeDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
