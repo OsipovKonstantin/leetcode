@@ -885,6 +885,10 @@ public class Main {
         System.out.println(survivedRobotsHealths(new int[]{3, 5, 2, 6}, new int[]{10, 10, 15, 12}, "RLRL"));
         System.out.println(maximumGain("cdbcbbaaabab", 4, 5));
 
+        int[] nums168 = new int[]{1,2,3,0,0,0};
+        SolutionDay168.merge(nums168, 3, new int[]{2,5,6}, 3);
+        System.out.println(Arrays.toString(nums168));
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
