@@ -893,6 +893,7 @@ public class Main {
 
         System.out.println(removeElement(new int[]{3, 2, 2, 3}, 2));
         System.out.println(removeDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
+        System.out.println(SolutionDay169.removeDuplicates(new int[]{0,0,1,1,1,1,2,3,3}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
