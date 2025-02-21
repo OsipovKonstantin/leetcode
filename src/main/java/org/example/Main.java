@@ -904,6 +904,7 @@ public class Main {
         System.out.println(findElements.find(1) + ", " + findElements.find(2));
 
         System.out.println(SolutionDay170Second.maxProfit(new int[]{7,1,5,3,6,4}));
+        System.out.println(SolutionDay170Third.maxProfit(new int[]{7,1,5,3,6,4}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
