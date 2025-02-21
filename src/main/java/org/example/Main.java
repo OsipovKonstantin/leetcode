@@ -900,6 +900,9 @@ public class Main {
         rotate(nums169, 3);
         System.out.println(Arrays.toString(nums169));
 
+        SolutionDay170 findElements = new SolutionDay170(new TreeNode(-1, null, new TreeNode(-1)));
+        System.out.println(findElements.find(1) + ", " + findElements.find(2));
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
