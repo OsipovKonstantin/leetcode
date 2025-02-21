@@ -903,6 +903,8 @@ public class Main {
         SolutionDay170 findElements = new SolutionDay170(new TreeNode(-1, null, new TreeNode(-1)));
         System.out.println(findElements.find(1) + ", " + findElements.find(2));
 
+        System.out.println(SolutionDay170Second.maxProfit(new int[]{7,1,5,3,6,4}));
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
