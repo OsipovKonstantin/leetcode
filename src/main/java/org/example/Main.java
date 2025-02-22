@@ -87,6 +87,7 @@ import static org.example.SolutionDay168Second.removeElement;
 import static org.example.SolutionDay168Third.removeDuplicates;
 import static org.example.SolutionDay169Second.rotate;
 import static org.example.SolutionDay17.minCost;
+import static org.example.SolutionDay171.canJump;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -894,17 +895,18 @@ public class Main {
 
         System.out.println(removeElement(new int[]{3, 2, 2, 3}, 2));
         System.out.println(removeDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
-        System.out.println(SolutionDay169.removeDuplicates(new int[]{0,0,1,1,1,1,2,3,3}));
+        System.out.println(SolutionDay169.removeDuplicates(new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3}));
 
-        int[] nums169 = new int[]{1,2,3,4,5,6,7};
+        int[] nums169 = new int[]{1, 2, 3, 4, 5, 6, 7};
         rotate(nums169, 3);
         System.out.println(Arrays.toString(nums169));
 
         SolutionDay170 findElements = new SolutionDay170(new TreeNode(-1, null, new TreeNode(-1)));
         System.out.println(findElements.find(1) + ", " + findElements.find(2));
 
-        System.out.println(SolutionDay170Second.maxProfit(new int[]{7,1,5,3,6,4}));
-        System.out.println(SolutionDay170Third.maxProfit(new int[]{7,1,5,3,6,4}));
+        System.out.println(SolutionDay170Second.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println(SolutionDay170Third.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println(canJump(new int[]{3, 2, 1, 0, 4}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
