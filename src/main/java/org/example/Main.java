@@ -89,6 +89,7 @@ import static org.example.SolutionDay169Second.rotate;
 import static org.example.SolutionDay17.minCost;
 import static org.example.SolutionDay171.canJump;
 import static org.example.SolutionDay171Second.recoverFromPreorder;
+import static org.example.SolutionDay172.jump;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -910,6 +911,11 @@ public class Main {
         System.out.println(canJump(new int[]{3, 2, 1, 0, 4}));
 
         System.out.println(recoverFromPreorder("1-2--3--4-5--6--7").asList());
+
+        Square square = new Square(5);
+        square.setHeight(10);
+        System.out.println(square.getArea());
+        System.out.println(jump(new int[]{2, 3, 1, 1, 4}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
