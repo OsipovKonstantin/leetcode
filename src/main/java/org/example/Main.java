@@ -91,6 +91,7 @@ import static org.example.SolutionDay171.canJump;
 import static org.example.SolutionDay171Second.recoverFromPreorder;
 import static org.example.SolutionDay172.jump;
 import static org.example.SolutionDay172Second.constructFromPrePost;
+import static org.example.SolutionDay173.hIndex;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -919,6 +920,7 @@ public class Main {
         System.out.println(jump(new int[]{2, 3, 1, 1, 4}));
         System.out.println(constructFromPrePost(new int[]{1, 2, 4, 5, 3, 6, 7},
                 new int[]{4, 5, 2, 6, 7, 3, 1}).asList());
+        System.out.println(hIndex(new int[]{3, 0, 6, 1, 5}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
