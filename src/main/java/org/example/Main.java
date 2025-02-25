@@ -94,6 +94,7 @@ import static org.example.SolutionDay172Second.constructFromPrePost;
 import static org.example.SolutionDay173.hIndex;
 import static org.example.SolutionDay173Second.mostProfitablePath;
 import static org.example.SolutionDay174.canCompleteCircuit;
+import static org.example.SolutionDay174Second.numOfSubarrays;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -925,6 +926,7 @@ public class Main {
         System.out.println(hIndex(new int[]{3, 0, 6, 1, 5}));
         System.out.println(mostProfitablePath(new int[][]{{0, 1}, {1, 2}, {1, 3}, {3, 4}}, 3, new int[]{-2, 4, 2, -4, 6}));
         System.out.println(canCompleteCircuit(new int[]{1, 2, 3, 4, 5}, new int[]{3, 4, 5, 1, 2}));
+        System.out.println(numOfSubarrays(new int[]{1, 3, 5}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
