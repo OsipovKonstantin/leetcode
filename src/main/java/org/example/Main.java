@@ -97,6 +97,7 @@ import static org.example.SolutionDay174.canCompleteCircuit;
 import static org.example.SolutionDay174Second.numOfSubarrays;
 import static org.example.SolutionDay175.romanToInt;
 import static org.example.SolutionDay175Second.maxAbsoluteSum;
+import static org.example.SolutionDay175Third.intToRoman;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -931,6 +932,7 @@ public class Main {
         System.out.println(numOfSubarrays(new int[]{1, 3, 5}));
         System.out.println(romanToInt("MCMXCIV"));
         System.out.println(maxAbsoluteSum(new int[]{2, -5, 1, -4, 3, -2}));
+        System.out.println(intToRoman(1994));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
