@@ -99,6 +99,7 @@ import static org.example.SolutionDay175.romanToInt;
 import static org.example.SolutionDay175Second.maxAbsoluteSum;
 import static org.example.SolutionDay175Third.intToRoman;
 import static org.example.SolutionDay176.longestCommonPrefix;
+import static org.example.SolutionDay176Third.lenLongestFibSubseq;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -936,6 +937,7 @@ public class Main {
         System.out.println(intToRoman(1994));
         System.out.println(longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
         System.out.println(SolutionDay176Second.reverseWords("a good   example"));
+        System.out.println(lenLongestFibSubseq(new int[]{1, 2, 3, 4, 5, 6, 7, 8}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
