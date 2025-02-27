@@ -935,6 +935,7 @@ public class Main {
         System.out.println(maxAbsoluteSum(new int[]{2, -5, 1, -4, 3, -2}));
         System.out.println(intToRoman(1994));
         System.out.println(longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
+        System.out.println(SolutionDay176Second.reverseWords("a good   example"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
