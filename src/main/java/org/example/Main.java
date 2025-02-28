@@ -102,6 +102,7 @@ import static org.example.SolutionDay176.longestCommonPrefix;
 import static org.example.SolutionDay176Third.lenLongestFibSubseq;
 import static org.example.SolutionDay177.convert;
 import static org.example.SolutionDay177Second.strStr;
+import static org.example.SolutionDay177Third.shortestCommonSupersequence;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -942,6 +943,7 @@ public class Main {
         System.out.println(lenLongestFibSubseq(new int[]{1, 2, 3, 4, 5, 6, 7, 8}));
         System.out.println(convert("PAYPALISHIRING", 3));
         System.out.println(strStr("sadbutsad", "sad"));
+        System.out.println(shortestCommonSupersequence("abac", "cab"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
