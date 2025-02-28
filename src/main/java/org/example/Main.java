@@ -101,6 +101,7 @@ import static org.example.SolutionDay175Third.intToRoman;
 import static org.example.SolutionDay176.longestCommonPrefix;
 import static org.example.SolutionDay176Third.lenLongestFibSubseq;
 import static org.example.SolutionDay177.convert;
+import static org.example.SolutionDay177Second.strStr;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -940,6 +941,7 @@ public class Main {
         System.out.println(SolutionDay176Second.reverseWords("a good   example"));
         System.out.println(lenLongestFibSubseq(new int[]{1, 2, 3, 4, 5, 6, 7, 8}));
         System.out.println(convert("PAYPALISHIRING", 3));
+        System.out.println(strStr("sadbutsad", "sad"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
