@@ -944,6 +944,7 @@ public class Main {
         System.out.println(convert("PAYPALISHIRING", 3));
         System.out.println(strStr("sadbutsad", "sad"));
         System.out.println(shortestCommonSupersequence("abac", "cab"));
+        System.out.println(SolutionDay178.isPalindrome("A man, a plan, a canal: Panama"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
