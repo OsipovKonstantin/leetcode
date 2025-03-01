@@ -945,6 +945,7 @@ public class Main {
         System.out.println(strStr("sadbutsad", "sad"));
         System.out.println(shortestCommonSupersequence("abac", "cab"));
         System.out.println(SolutionDay178.isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(Arrays.toString(SolutionDay178Second.twoSum(new int[]{2,7,11,15}, 9)));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
