@@ -105,6 +105,7 @@ import static org.example.SolutionDay177Second.strStr;
 import static org.example.SolutionDay177Third.shortestCommonSupersequence;
 import static org.example.SolutionDay178Third.applyOperations;
 import static org.example.SolutionDay179.maxArea;
+import static org.example.SolutionDay179Second.mergeArrays;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
@@ -950,6 +951,8 @@ public class Main {
         System.out.println(Arrays.toString(SolutionDay178Second.twoSum(new int[]{2, 7, 11, 15}, 9)));
         System.out.println(Arrays.toString(applyOperations(new int[]{1, 2, 2, 1, 1, 0})));
         System.out.println(maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+        System.out.println(Arrays.deepToString(mergeArrays(new int[][]{{1, 2}, {2, 3}, {4, 5}},
+                new int[][]{{1, 4}, {3, 2}, {4, 1}})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
