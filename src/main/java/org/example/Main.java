@@ -108,6 +108,7 @@ import static org.example.SolutionDay179.maxArea;
 import static org.example.SolutionDay179Second.mergeArrays;
 import static org.example.SolutionDay179Third.threeSum;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
+import static org.example.SolutionDay180.lengthOfLongestSubstring;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -955,6 +956,7 @@ public class Main {
         System.out.println(Arrays.deepToString(mergeArrays(new int[][]{{1, 2}, {2, 3}, {4, 5}},
                 new int[][]{{1, 4}, {3, 2}, {4, 1}})));
         System.out.println(threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+        System.out.println(lengthOfLongestSubstring("abcabcbb"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
