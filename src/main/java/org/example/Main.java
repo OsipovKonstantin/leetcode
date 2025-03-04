@@ -110,6 +110,7 @@ import static org.example.SolutionDay179Third.threeSum;
 import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay180.lengthOfLongestSubstring;
 import static org.example.SolutionDay180Second.pivotArray;
+import static org.example.SolutionDay181.checkPowersOfThree;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -959,6 +960,7 @@ public class Main {
         System.out.println(threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
         System.out.println(lengthOfLongestSubstring("abcabcbb"));
         System.out.println(Arrays.toString(pivotArray(new int[]{9, 12, 5, 10, 14, 3, 10}, 10)));
+        System.out.println(checkPowersOfThree(12));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
