@@ -111,6 +111,7 @@ import static org.example.SolutionDay18.getLengthOfOptimalCompression;
 import static org.example.SolutionDay180.lengthOfLongestSubstring;
 import static org.example.SolutionDay180Second.pivotArray;
 import static org.example.SolutionDay181.checkPowersOfThree;
+import static org.example.SolutionDay181Second.isValidSudoku;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -961,6 +962,15 @@ public class Main {
         System.out.println(lengthOfLongestSubstring("abcabcbb"));
         System.out.println(Arrays.toString(pivotArray(new int[]{9, 12, 5, 10, 14, 3, 10}, 10)));
         System.out.println(checkPowersOfThree(12));
+        System.out.println(isValidSudoku(new char[][]{{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
