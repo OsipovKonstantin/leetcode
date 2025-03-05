@@ -112,6 +112,7 @@ import static org.example.SolutionDay180.lengthOfLongestSubstring;
 import static org.example.SolutionDay180Second.pivotArray;
 import static org.example.SolutionDay181.checkPowersOfThree;
 import static org.example.SolutionDay181Second.isValidSudoku;
+import static org.example.SolutionDay182.coloredCells;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -971,6 +972,7 @@ public class Main {
                 {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
                 {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}}));
+        System.out.println(coloredCells(2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
