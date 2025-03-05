@@ -113,6 +113,7 @@ import static org.example.SolutionDay180Second.pivotArray;
 import static org.example.SolutionDay181.checkPowersOfThree;
 import static org.example.SolutionDay181Second.isValidSudoku;
 import static org.example.SolutionDay182.coloredCells;
+import static org.example.SolutionDay182Second.spiralOrder;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -973,6 +974,7 @@ public class Main {
                 {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}}));
         System.out.println(coloredCells(2));
+        System.out.println(spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
