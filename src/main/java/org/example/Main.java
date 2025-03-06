@@ -976,6 +976,10 @@ public class Main {
         System.out.println(coloredCells(2));
         System.out.println(spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
 
+        int[][] matrix = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        SolutionDay183.rotate(matrix);
+        System.out.println(Arrays.deepToString(matrix));
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
