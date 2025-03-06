@@ -114,6 +114,7 @@ import static org.example.SolutionDay181.checkPowersOfThree;
 import static org.example.SolutionDay181Second.isValidSudoku;
 import static org.example.SolutionDay182.coloredCells;
 import static org.example.SolutionDay182Second.spiralOrder;
+import static org.example.SolutionDay183Second.findMissingAndRepeatedValues;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -979,6 +980,8 @@ public class Main {
         int[][] matrix = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         SolutionDay183.rotate(matrix);
         System.out.println(Arrays.deepToString(matrix));
+
+        System.out.println(Arrays.toString(findMissingAndRepeatedValues(new int[][]{{1, 3}, {2, 2}})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
