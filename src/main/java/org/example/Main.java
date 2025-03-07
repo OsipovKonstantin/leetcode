@@ -116,6 +116,7 @@ import static org.example.SolutionDay182.coloredCells;
 import static org.example.SolutionDay182Second.spiralOrder;
 import static org.example.SolutionDay183Second.findMissingAndRepeatedValues;
 import static org.example.SolutionDay183Third.setZeroes;
+import static org.example.SolutionDay184.closestPrimes;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -987,6 +988,8 @@ public class Main {
         int[][] matrix183Third = new int[][]{{1,1,1}, {1,0,1}, {1,1,1}};
         setZeroes(matrix183Third);
         System.out.println(Arrays.deepToString(matrix183Third));
+
+        System.out.println(Arrays.toString(closestPrimes(10, 19)));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
