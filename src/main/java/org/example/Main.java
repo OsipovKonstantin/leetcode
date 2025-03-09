@@ -121,6 +121,7 @@ import static org.example.SolutionDay184Second.gameOfLife;
 import static org.example.SolutionDay185.minimumRecolors;
 import static org.example.SolutionDay185Second.canConstruct;
 import static org.example.SolutionDay185Third.wordPattern;
+import static org.example.SolutionDay186.numberOfAlternatingGroups;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -1002,6 +1003,7 @@ public class Main {
         System.out.println(minimumRecolors("WBBWWBBWBW", 7));
         System.out.println(canConstruct("aa", "aab"));
         System.out.println(wordPattern("abba", "dog cat cat dog"));
+        System.out.println(numberOfAlternatingGroups(new int[]{0, 1, 0, 1, 0}, 3));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
