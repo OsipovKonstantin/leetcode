@@ -1023,6 +1023,7 @@ public class Main {
         System.out.println(numberOfSubstrings("abcabc"));
         System.out.println(summaryRanges(new int[]{0, 1, 2, 4, 5, 7}));
         SqlExecutor.execute("SolutionDay188Third.sql");
+        SqlExecutor.execute("SolutionDay188Fourth.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
