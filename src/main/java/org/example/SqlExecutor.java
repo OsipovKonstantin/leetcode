@@ -41,9 +41,7 @@ public class SqlExecutor {
 
     private static void initializeTable(BufferedReader reader, Statement statement) throws IOException, SQLException {
         String line;
-        while ((line = reader.readLine()) != null && !line.startsWith("-- init")) {
-            continue;
-        }
+        while ((line = reader.readLine()) != null && !line.startsWith("-- init")) {}
         while (!(line = reader.readLine()).startsWith("-- solution")) {
             statement.execute(line);
         }
