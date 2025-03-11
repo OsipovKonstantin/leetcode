@@ -22,23 +22,6 @@ public class SqlExecutor {
         }
     }
 
-    private static void executeQuery(Statement statement, String query) throws SQLException {
-        try (ResultSet rs = statement.executeQuery(query)) {
-            int columns = rs.getMetaData().getColumnCount();
-            while (rs.next()) {
-                StringBuilder curRow = new StringBuilder();
-                IntStream.range(1, columns + 1).forEach(i -> {
-                    try {
-                        curRow.append(rs.getString(i));
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
-                });
-                System.out.print(curRow + (rs.isLast() ? "\n" : "; "));
-            }
-        }
-    }
-
     private static void initializeTable(BufferedReader reader, Statement statement) throws IOException, SQLException {
         String line;
         while ((line = reader.readLine()) != null && !line.startsWith("-- init")) {}
@@ -54,5 +37,22 @@ public class SqlExecutor {
             query.append(line).append(" ");
         }
         return query.toString();
+    }
+
+    private static void executeQuery(Statement statement, String query) throws SQLException {
+        try (ResultSet rs = statement.executeQuery(query)) {
+            int columns = rs.getMetaData().getColumnCount();
+            while (rs.next()) {
+                StringBuilder curRow = new StringBuilder();
+                IntStream.range(1, columns + 1).forEach(i -> {
+                    try {
+                        curRow.append(rs.getString(i));
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                });
+                System.out.print(curRow + (rs.isLast() ? "\n" : "; "));
+            }
+        }
     }
 }
