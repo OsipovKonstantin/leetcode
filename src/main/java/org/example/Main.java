@@ -126,6 +126,7 @@ import static org.example.SolutionDay186Second.isHappy;
 import static org.example.SolutionDay186Third.containsNearbyDuplicate;
 import static org.example.SolutionDay187.countOfSubstrings;
 import static org.example.SolutionDay187Second.longestConsecutive;
+import static org.example.SolutionDay188.numberOfSubstrings;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -1012,6 +1013,7 @@ public class Main {
         System.out.println(containsNearbyDuplicate(new int[]{1, 2, 3, 1}, 3));
         System.out.println(countOfSubstrings("ieaouqqieaouqq", 1));
         System.out.println(longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}));
+        System.out.println(numberOfSubstrings("abcabc"));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
