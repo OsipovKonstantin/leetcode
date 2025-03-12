@@ -46,7 +46,7 @@ public class SqlExecutor {
                 StringBuilder curRow = new StringBuilder();
                 IntStream.range(1, columns + 1).forEach(i -> {
                     try {
-                        curRow.append(rs.getString(i));
+                        curRow.append(rs.getString(i)).append(i==columns?"":" ");
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }

@@ -1022,6 +1022,7 @@ public class Main {
         SqlExecutor.execute("SolutionDay188Fourth.sql");
         System.out.println(maximumCount(new int[]{-2, -1, -1, 1, 2, 3}));
         System.out.println(Arrays.deepToString(merge(new int[][]{{1,3},{2,6},{8,10},{15,18}})));
+        SqlExecutor.execute("SolutionDay189Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
