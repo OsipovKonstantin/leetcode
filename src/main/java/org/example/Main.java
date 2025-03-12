@@ -2,11 +2,6 @@ package org.example;
 
 import org.example.datastructures.*;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.sql.*;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -14,7 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 import static org.example.Runes.solveExpression;
 import static org.example.SolutionDay1.twoSum;
@@ -134,6 +128,7 @@ import static org.example.SolutionDay187.countOfSubstrings;
 import static org.example.SolutionDay187Second.longestConsecutive;
 import static org.example.SolutionDay188.numberOfSubstrings;
 import static org.example.SolutionDay188Second.summaryRanges;
+import static org.example.SolutionDay189.maximumCount;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -1024,6 +1019,7 @@ public class Main {
         System.out.println(summaryRanges(new int[]{0, 1, 2, 4, 5, 7}));
         SqlExecutor.execute("SolutionDay188Third.sql");
         SqlExecutor.execute("SolutionDay188Fourth.sql");
+        System.out.println(maximumCount(new int[]{-2, -1, -1, 1, 2, 3}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
