@@ -129,6 +129,7 @@ import static org.example.SolutionDay187Second.longestConsecutive;
 import static org.example.SolutionDay188.numberOfSubstrings;
 import static org.example.SolutionDay188Second.summaryRanges;
 import static org.example.SolutionDay189.maximumCount;
+import static org.example.SolutionDay189Second.merge;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
@@ -1020,6 +1021,7 @@ public class Main {
         SqlExecutor.execute("SolutionDay188Third.sql");
         SqlExecutor.execute("SolutionDay188Fourth.sql");
         System.out.println(maximumCount(new int[]{-2, -1, -1, 1, 2, 3}));
+        System.out.println(Arrays.deepToString(merge(new int[][]{{1,3},{2,6},{8,10},{15,18}})));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
