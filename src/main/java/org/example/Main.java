@@ -1027,6 +1027,7 @@ public class Main {
         SqlExecutor.execute("SolutionDay189Third.sql");
         System.out.println(minZeroArray(new int[]{2, 0, 2}, new int[][]{{0, 2, 1}, {0, 2, 1}, {1, 1, 3}}));
         System.out.println(isValid("()[]{}"));
+        SqlExecutor.execute("SolutionDay190Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
