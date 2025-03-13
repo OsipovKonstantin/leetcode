@@ -131,6 +131,7 @@ import static org.example.SolutionDay188Second.summaryRanges;
 import static org.example.SolutionDay189.maximumCount;
 import static org.example.SolutionDay189Second.merge;
 import static org.example.SolutionDay19.minDifficulty;
+import static org.example.SolutionDay190.minZeroArray;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1021,8 +1022,9 @@ public class Main {
         SqlExecutor.execute("SolutionDay188Third.sql");
         SqlExecutor.execute("SolutionDay188Fourth.sql");
         System.out.println(maximumCount(new int[]{-2, -1, -1, 1, 2, 3}));
-        System.out.println(Arrays.deepToString(merge(new int[][]{{1,3},{2,6},{8,10},{15,18}})));
+        System.out.println(Arrays.deepToString(merge(new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}})));
         SqlExecutor.execute("SolutionDay189Third.sql");
+        System.out.println(minZeroArray(new int[]{2, 0, 2}, new int[][]{{0, 2, 1}, {0, 2, 1}, {1, 1, 3}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
