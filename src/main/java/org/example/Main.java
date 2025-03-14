@@ -1032,6 +1032,7 @@ public class Main {
         SqlExecutor.execute("SolutionDay190Third.sql");
         System.out.println(maximumCandies(new int[]{5, 8, 6}, 3));
         System.out.println(simplifyPath("/home/user/Documents///..//Pictures/"));
+        SqlExecutor.execute("SolutionDay191Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
