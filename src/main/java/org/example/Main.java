@@ -133,6 +133,7 @@ import static org.example.SolutionDay189Second.merge;
 import static org.example.SolutionDay19.minDifficulty;
 import static org.example.SolutionDay190.minZeroArray;
 import static org.example.SolutionDay190Second.isValid;
+import static org.example.SolutionDay191.maximumCandies;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1028,6 +1029,7 @@ public class Main {
         System.out.println(minZeroArray(new int[]{2, 0, 2}, new int[][]{{0, 2, 1}, {0, 2, 1}, {1, 1, 3}}));
         System.out.println(isValid("()[]{}"));
         SqlExecutor.execute("SolutionDay190Third.sql");
+        System.out.println(maximumCandies(new int[]{5, 8, 6}, 3));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
