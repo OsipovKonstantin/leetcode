@@ -1036,6 +1036,15 @@ public class Main {
         SqlExecutor.execute("SolutionDay191Third.sql");
         System.out.println(minCapability(new int[]{2, 3, 5, 9}, 2));
 
+        MinStack minStack = new MinStack();
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.top());
+        System.out.println(minStack.getMin());
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
