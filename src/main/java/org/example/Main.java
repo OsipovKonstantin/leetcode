@@ -1045,6 +1045,8 @@ public class Main {
         System.out.println(minStack.top());
         System.out.println(minStack.getMin());
 
+        SqlExecutor.execute("SolutionDay192Third.sql");
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
