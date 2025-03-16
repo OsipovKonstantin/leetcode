@@ -1049,6 +1049,8 @@ public class Main {
         SqlExecutor.execute("SolutionDay192Third.sql");
         SqlExecutor.execute("SolutionDay193.sql");
         System.out.println(repairCars(new int[]{4, 2, 3, 1}, 10));
+        System.out.println(SolutionDay193Third.addTwoNumbers(new ListNode(2, new ListNode(4, new ListNode(3))),
+                new ListNode(5, new ListNode(6, new ListNode(4)))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
