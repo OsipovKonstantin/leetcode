@@ -136,6 +136,7 @@ import static org.example.SolutionDay190Second.isValid;
 import static org.example.SolutionDay191.maximumCandies;
 import static org.example.SolutionDay191Second.simplifyPath;
 import static org.example.SolutionDay192.minCapability;
+import static org.example.SolutionDay193Second.repairCars;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1047,6 +1048,7 @@ public class Main {
 
         SqlExecutor.execute("SolutionDay192Third.sql");
         SqlExecutor.execute("SolutionDay193.sql");
+        System.out.println(repairCars(new int[]{4, 2, 3, 1}, 10));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
