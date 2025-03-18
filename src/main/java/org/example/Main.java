@@ -137,6 +137,7 @@ import static org.example.SolutionDay191.maximumCandies;
 import static org.example.SolutionDay191Second.simplifyPath;
 import static org.example.SolutionDay192.minCapability;
 import static org.example.SolutionDay193Second.repairCars;
+import static org.example.SolutionDay194.longestNiceSubarray;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1051,6 +1052,7 @@ public class Main {
         System.out.println(repairCars(new int[]{4, 2, 3, 1}, 10));
         System.out.println(SolutionDay193Third.addTwoNumbers(new ListNode(2, new ListNode(4, new ListNode(3))),
                 new ListNode(5, new ListNode(6, new ListNode(4)))).asList());
+        System.out.println(longestNiceSubarray(new int[]{1, 3, 8, 48, 10}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
