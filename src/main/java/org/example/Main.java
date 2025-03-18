@@ -1056,6 +1056,7 @@ public class Main {
         System.out.println(longestNiceSubarray(new int[]{1, 3, 8, 48, 10}));
         System.out.println(mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))),
                 new ListNode(1, new ListNode(3, new ListNode(4)))).asList());
+        SqlExecutor.execute("SolutionDay194Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
