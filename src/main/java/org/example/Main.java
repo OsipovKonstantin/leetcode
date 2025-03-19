@@ -139,6 +139,7 @@ import static org.example.SolutionDay192.minCapability;
 import static org.example.SolutionDay193Second.repairCars;
 import static org.example.SolutionDay194.longestNiceSubarray;
 import static org.example.SolutionDay194Second.mergeTwoLists;
+import static org.example.SolutionDay195Second.deleteDuplicates;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1058,6 +1059,8 @@ public class Main {
                 new ListNode(1, new ListNode(3, new ListNode(4)))).asList());
         SqlExecutor.execute("SolutionDay194Third.sql");
         System.out.println(SolutionDay195.minOperations(new int[]{0, 1, 1, 1, 0, 0}));
+        System.out.println(deleteDuplicates(new ListNode(1, new ListNode(1, new ListNode(1,
+                new ListNode(2, new ListNode(3)))))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
