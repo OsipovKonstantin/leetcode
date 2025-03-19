@@ -1061,6 +1061,7 @@ public class Main {
         System.out.println(SolutionDay195.minOperations(new int[]{0, 1, 1, 1, 0, 0}));
         System.out.println(deleteDuplicates(new ListNode(1, new ListNode(1, new ListNode(1,
                 new ListNode(2, new ListNode(3)))))).asList());
+        SqlExecutor.execute("SolutionDay195Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
