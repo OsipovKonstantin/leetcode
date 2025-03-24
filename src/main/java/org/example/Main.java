@@ -142,6 +142,7 @@ import static org.example.SolutionDay194.longestNiceSubarray;
 import static org.example.SolutionDay194Second.mergeTwoLists;
 import static org.example.SolutionDay195Second.deleteDuplicates;
 import static org.example.SolutionDay196.countDays;
+import static org.example.SolutionDay196Second.rotateRight;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1066,6 +1067,8 @@ public class Main {
         SqlExecutor.execute("SolutionDay195Third.sql");
 
         System.out.println(countDays(10, new int[][]{{5,7},{1,3},{9,10}}));
+        System.out.println(rotateRight(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
+                new ListNode(5))))), 2).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
