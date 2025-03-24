@@ -1069,6 +1069,7 @@ public class Main {
         System.out.println(countDays(10, new int[][]{{5,7},{1,3},{9,10}}));
         System.out.println(rotateRight(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4,
                 new ListNode(5))))), 2).asList());
+        SqlExecutor.execute("SolutionDay196Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
