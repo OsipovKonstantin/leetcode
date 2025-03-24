@@ -7,6 +7,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
@@ -140,6 +141,7 @@ import static org.example.SolutionDay193Second.repairCars;
 import static org.example.SolutionDay194.longestNiceSubarray;
 import static org.example.SolutionDay194Second.mergeTwoLists;
 import static org.example.SolutionDay195Second.deleteDuplicates;
+import static org.example.SolutionDay196.countDays;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1062,6 +1064,8 @@ public class Main {
         System.out.println(deleteDuplicates(new ListNode(1, new ListNode(1, new ListNode(1,
                 new ListNode(2, new ListNode(3)))))).asList());
         SqlExecutor.execute("SolutionDay195Third.sql");
+
+        System.out.println(countDays(10, new int[][]{{5,7},{1,3},{9,10}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
