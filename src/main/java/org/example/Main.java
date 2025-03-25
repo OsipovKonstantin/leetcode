@@ -1072,6 +1072,8 @@ public class Main {
                 new ListNode(5))))), 2).asList());
         SqlExecutor.execute("SolutionDay196Third.sql");
         System.out.println(checkValidCuts(5, new int[][]{{1,0,5,2},{0,2,2,4},{3,2,5,3},{0,4,4,5}}));
+        System.out.println(SolutionDay197Second.maxDepth(new TreeNode(3, new TreeNode(9),
+                new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
