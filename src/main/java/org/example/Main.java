@@ -143,6 +143,7 @@ import static org.example.SolutionDay195Second.deleteDuplicates;
 import static org.example.SolutionDay196.countDays;
 import static org.example.SolutionDay196Second.rotateRight;
 import static org.example.SolutionDay197.checkValidCuts;
+import static org.example.SolutionDay198Second.invertTree;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1075,6 +1076,8 @@ public class Main {
                 new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
         SqlExecutor.execute("SolutionDay197Third.sql");
         System.out.println(SolutionDay198.minOperations(new int[][]{{2, 4}, {6, 8}}, 2));
+        System.out.println(invertTree(new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)),
+                new TreeNode(7, new TreeNode(6), new TreeNode(9)))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
