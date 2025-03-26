@@ -1074,6 +1074,7 @@ public class Main {
         System.out.println(SolutionDay197Second.maxDepth(new TreeNode(3, new TreeNode(9),
                 new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
         SqlExecutor.execute("SolutionDay197Third.sql");
+        System.out.println(SolutionDay198.minOperations(new int[][]{{2, 4}, {6, 8}}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
