@@ -145,6 +145,7 @@ import static org.example.SolutionDay196Second.rotateRight;
 import static org.example.SolutionDay197.checkValidCuts;
 import static org.example.SolutionDay198Second.invertTree;
 import static org.example.SolutionDay199.minimumIndex;
+import static org.example.SolutionDay199Second.isSymmetric;
 import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
@@ -1081,6 +1082,8 @@ public class Main {
                 new TreeNode(7, new TreeNode(6), new TreeNode(9)))).asList());
         SqlExecutor.execute("SolutionDay198Third.sql");
         System.out.println(minimumIndex(List.of(1, 2, 2, 2)));
+        System.out.println(isSymmetric(new TreeNode(1, new TreeNode(2, new TreeNode(3),
+                new TreeNode(4)), new TreeNode(2, new TreeNode(4), new TreeNode(3)))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
