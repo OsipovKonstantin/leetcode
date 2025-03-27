@@ -1084,6 +1084,7 @@ public class Main {
         System.out.println(minimumIndex(List.of(1, 2, 2, 2)));
         System.out.println(isSymmetric(new TreeNode(1, new TreeNode(2, new TreeNode(3),
                 new TreeNode(4)), new TreeNode(2, new TreeNode(4), new TreeNode(3)))));
+        SqlExecutor.execute("SolutionDay199Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
