@@ -1090,6 +1090,7 @@ public class Main {
         System.out.println(Arrays.toString(maxPoints(new int[][]{{1, 2, 3}, {2, 5, 7}, {3, 5, 1}}, new int[]{5, 6, 2})));
         System.out.println(buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7}).asList());
         SqlExecutor.execute("SolutionDay200Third.sql");
+        System.out.println(SolutionDay201.maximumScore(List.of(8, 3, 9, 3, 8), 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
