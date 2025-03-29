@@ -1092,6 +1092,7 @@ public class Main {
         SqlExecutor.execute("SolutionDay200Third.sql");
         System.out.println(SolutionDay201.maximumScore(List.of(8, 3, 9, 3, 8), 2));
         System.out.println(SolutionDay201Second.buildTree(new int[]{9, 3, 15, 20, 7}, new int[]{9, 15, 7, 20, 3}).asList());
+        SqlExecutor.execute("SolutionDay201Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
