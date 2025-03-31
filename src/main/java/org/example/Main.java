@@ -150,6 +150,7 @@ import static org.example.SolutionDay2.findSpecialInteger;
 import static org.example.SolutionDay20.makeEqual;
 import static org.example.SolutionDay200.maxPoints;
 import static org.example.SolutionDay200Second.buildTree;
+import static org.example.SolutionDay202Second.connect;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
 import static org.example.SolutionDay20Fifth.largestOddNumber;
 import static org.example.SolutionDay20Fourth.tree2str;
@@ -1094,6 +1095,9 @@ public class Main {
         System.out.println(SolutionDay201Second.buildTree(new int[]{9, 3, 15, 20, 7}, new int[]{9, 15, 7, 20, 3}).asList());
         SqlExecutor.execute("SolutionDay201Third.sql");
         System.out.println(SolutionDay202.putMarbles(new int[]{1,3,5,1}, 2));
+        System.out.println(connect(new TreeNodeWithNext(1,
+                new TreeNodeWithNext(2, new TreeNodeWithNext(4), new TreeNodeWithNext(5), null),
+                new TreeNodeWithNext(3, null, new TreeNodeWithNext(7), null), null)).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
