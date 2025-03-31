@@ -1098,6 +1098,7 @@ public class Main {
         System.out.println(connect(new TreeNodeWithNext(1,
                 new TreeNodeWithNext(2, new TreeNodeWithNext(4), new TreeNodeWithNext(5), null),
                 new TreeNodeWithNext(3, null, new TreeNodeWithNext(7), null), null)).asList());
+        SqlExecutor.execute("SolutionDay202Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
