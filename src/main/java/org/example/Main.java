@@ -152,6 +152,7 @@ import static org.example.SolutionDay200.maxPoints;
 import static org.example.SolutionDay200Second.buildTree;
 import static org.example.SolutionDay202Second.connect;
 import static org.example.SolutionDay203.mostPoints;
+import static org.example.SolutionDay203Second.flatten;
 import static org.example.SolutionDay20Eighth.largestGoodInteger;
 import static org.example.SolutionDay20Fifth.largestOddNumber;
 import static org.example.SolutionDay20Fourth.tree2str;
@@ -1101,6 +1102,11 @@ public class Main {
                 new TreeNodeWithNext(3, null, new TreeNodeWithNext(7), null), null)).asList());
         SqlExecutor.execute("SolutionDay202Third.sql");
         System.out.println(mostPoints(new int[][]{{3, 2}, {4, 3}, {4, 4}, {2, 5}}));
+
+        TreeNode treeNode203Second = new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)),
+                new TreeNode(5, null,new TreeNode(6)));
+        flatten(treeNode203Second);
+        System.out.println(treeNode203Second.asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
