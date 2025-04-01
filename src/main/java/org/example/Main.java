@@ -1108,6 +1108,8 @@ public class Main {
         flatten(treeNode203Second);
         System.out.println(treeNode203Second.asList());
 
+        SqlExecutor.execute("SolutionDay203Third.sql");
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
