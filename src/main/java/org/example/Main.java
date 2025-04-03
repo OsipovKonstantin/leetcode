@@ -1109,6 +1109,7 @@ public class Main {
         System.out.println(treeNode203Second.asList());
 
         SqlExecutor.execute("SolutionDay203Third.sql");
+        System.out.println(SolutionDay204.Companion.maximumTripletValue(new int[]{12,6,1,2,7}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
