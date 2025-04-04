@@ -1112,6 +1112,8 @@ public class Main {
         System.out.println(SolutionDay204.Companion.maximumTripletValue(new int[]{12, 6, 1, 2, 7}));
         System.out.println(SolutionDay205.Companion.lcaDeepestLeaves(new TreeNode(0,
                 new TreeNode(1, null, new TreeNode(2)), new TreeNode(3))).asList());
+        System.out.println(SolutionDay205Second.Companion.hasPathSum(new TreeNode(1, new TreeNode(2),
+                new TreeNode(3)), 5));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
