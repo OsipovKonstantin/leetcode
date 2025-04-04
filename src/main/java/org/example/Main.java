@@ -1104,12 +1104,14 @@ public class Main {
         System.out.println(mostPoints(new int[][]{{3, 2}, {4, 3}, {4, 4}, {2, 5}}));
 
         TreeNode treeNode203Second = new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)),
-                new TreeNode(5, null,new TreeNode(6)));
+                new TreeNode(5, null, new TreeNode(6)));
         flatten(treeNode203Second);
         System.out.println(treeNode203Second.asList());
 
         SqlExecutor.execute("SolutionDay203Third.sql");
-        System.out.println(SolutionDay204.Companion.maximumTripletValue(new int[]{12,6,1,2,7}));
+        System.out.println(SolutionDay204.Companion.maximumTripletValue(new int[]{12, 6, 1, 2, 7}));
+        System.out.println(SolutionDay205.Companion.lcaDeepestLeaves(new TreeNode(0,
+                new TreeNode(1, null, new TreeNode(2)), new TreeNode(3))).asList());
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
