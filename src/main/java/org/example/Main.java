@@ -1114,6 +1114,7 @@ public class Main {
                 new TreeNode(1, null, new TreeNode(2)), new TreeNode(3))).asList());
         System.out.println(SolutionDay205Second.Companion.hasPathSum(new TreeNode(1, new TreeNode(2),
                 new TreeNode(3)), 5));
+        SqlExecutor.execute("SolutionDay205Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
