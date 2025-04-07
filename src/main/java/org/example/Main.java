@@ -1119,6 +1119,7 @@ public class Main {
         System.out.println(SolutionDay206Second.Companion.countNodes(new TreeNode(1,
                 new TreeNode(2, new TreeNode(4), new TreeNode(5)),
                 new TreeNode(3, new TreeNode(6), null))));
+        SqlExecutor.execute("SolutionDay206Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
