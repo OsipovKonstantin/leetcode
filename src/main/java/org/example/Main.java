@@ -1116,6 +1116,9 @@ public class Main {
                 new TreeNode(3)), 5));
         SqlExecutor.execute("SolutionDay205Third.sql");
         System.out.println(SolutionDay206.Companion.canPartition(new int[]{1, 5, 11, 5}));
+        System.out.println(SolutionDay206Second.Companion.countNodes(new TreeNode(1,
+                new TreeNode(2, new TreeNode(4), new TreeNode(5)),
+                new TreeNode(3, new TreeNode(6), null))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
