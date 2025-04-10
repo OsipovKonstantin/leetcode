@@ -1121,6 +1121,17 @@ public class Main {
                 new TreeNode(3, new TreeNode(6), null))));
         SqlExecutor.execute("SolutionDay206Third.sql");
 
+        TreeNode treeNode207 = new TreeNode(7, new TreeNode(3), new TreeNode(15, new TreeNode(9),
+                new TreeNode(20)));
+        InOrderBSTIterator iterator207 = new InOrderBSTIterator(treeNode207);
+        System.out.println(iterator207.next());
+        System.out.println(iterator207.next());
+        System.out.println(iterator207.hasNext());
+        System.out.println(iterator207.next());
+        System.out.println(iterator207.hasNext());
+        System.out.println(iterator207.next());
+        System.out.println(iterator207.hasNext());
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
