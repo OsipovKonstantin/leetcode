@@ -1133,6 +1133,7 @@ public class Main {
         System.out.println(iterator207.hasNext());
 
         SqlExecutor.execute("SolutionDay207Second.sql");
+        System.out.println(SolutionDay207Third.Companion.minOperations(new int[]{5, 2, 5, 4, 5}, 2));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
