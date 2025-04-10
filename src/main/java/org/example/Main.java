@@ -1132,6 +1132,8 @@ public class Main {
         System.out.println(iterator207.next());
         System.out.println(iterator207.hasNext());
 
+        SqlExecutor.execute("SolutionDay207Second.sql");
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
