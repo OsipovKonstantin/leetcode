@@ -1141,6 +1141,8 @@ public class Main {
         System.out.println(Objects.requireNonNull(SolutionDay208Second.Companion.lowestCommonAncestor(treeNode208Second,
                 treeNode208Second.left, treeNode208Second)).val);
 
+        SqlExecutor.execute("SolutionDay208Third.sql");
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
