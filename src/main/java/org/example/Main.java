@@ -7,6 +7,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
@@ -1135,6 +1136,10 @@ public class Main {
         SqlExecutor.execute("SolutionDay207Second.sql");
         System.out.println(SolutionDay207Third.Companion.minOperations(new int[]{5, 2, 5, 4, 5}, 2));
         System.out.println(SolutionDay208.Companion.countSymmetricIntegers(1, 100));
+
+        TreeNode treeNode208Second = new TreeNode(1, new TreeNode(2), null);
+        System.out.println(Objects.requireNonNull(SolutionDay208Second.Companion.lowestCommonAncestor(treeNode208Second,
+                treeNode208Second.left, treeNode208Second)).val);
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
