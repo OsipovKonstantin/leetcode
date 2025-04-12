@@ -1143,6 +1143,9 @@ public class Main {
 
         SqlExecutor.execute("SolutionDay208Third.sql");
         System.out.println(SolutionDay209.Companion.minimumOperations(new int[]{1, 2, 3, 4, 2, 3, 3, 5, 7}));
+        System.out.println(SolutionDay209Second.Companion.rightSideView(new TreeNode(1,
+                new TreeNode(2, null, new TreeNode(5)),
+                new TreeNode(3, null, new TreeNode(4)))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
