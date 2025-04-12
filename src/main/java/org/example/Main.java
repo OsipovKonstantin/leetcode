@@ -1142,6 +1142,7 @@ public class Main {
                 treeNode208Second.left, treeNode208Second)).val);
 
         SqlExecutor.execute("SolutionDay208Third.sql");
+        System.out.println(SolutionDay209.Companion.minimumOperations(new int[]{1, 2, 3, 4, 2, 3, 3, 5, 7}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
