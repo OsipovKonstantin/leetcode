@@ -1148,6 +1148,8 @@ public class Main {
                 new TreeNode(3, null, new TreeNode(4)))));
         SqlExecutor.execute("SolutionDay209Third.sql");
         System.out.println(SolutionDay210.Companion.countGoodNumbers(1));
+        System.out.println(Arrays.toString(SolutionDay210Second.Companion.averageOfLevels(new TreeNode(3,
+                new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7))))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
