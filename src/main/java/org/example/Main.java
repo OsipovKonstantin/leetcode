@@ -1157,6 +1157,8 @@ public class Main {
         SqlExecutor.execute("SolutionDay211Third.sql");
         System.out.println(SolutionDay212.Companion.zigzagLevelOrder(new TreeNode(3,
                 new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
+        System.out.println(SolutionDay212Second.Companion.getMinimumDifference(new TreeNode(4,
+                new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(6))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
