@@ -1155,6 +1155,8 @@ public class Main {
         System.out.println(SolutionDay211Second.Companion.levelOrder(new TreeNode(3,
                 new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
         SqlExecutor.execute("SolutionDay211Third.sql");
+        System.out.println(SolutionDay212.Companion.zigzagLevelOrder(new TreeNode(3,
+                new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
