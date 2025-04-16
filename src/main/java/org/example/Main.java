@@ -1163,6 +1163,7 @@ public class Main {
         System.out.println(SolutionDay213.Companion.countGood(new int[]{3, 1, 4, 3, 2, 2, 4}, 2));
         System.out.println(SolutionDay213Second.Companion.kthSmallest(new TreeNode(3,
                 new TreeNode(1, null, new TreeNode(2)), new TreeNode(4)), 1));
+        SqlExecutor.execute("SolutionDay213Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
