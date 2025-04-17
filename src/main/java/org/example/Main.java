@@ -1166,6 +1166,7 @@ public class Main {
         SqlExecutor.execute("SolutionDay213Third.sql");
         System.out.println(SolutionDay214.Companion.countPairs(new int[]{3, 1, 2, 2, 2, 1, 3}, 2));
         System.out.println(SolutionDay214Second.Companion.isValidBST(new TreeNode(2, new TreeNode(1), new TreeNode(3))));
+        SqlExecutor.execute("SolutionDay214Third.sql");
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
