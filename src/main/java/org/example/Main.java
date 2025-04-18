@@ -1168,6 +1168,8 @@ public class Main {
         System.out.println(SolutionDay214Second.Companion.isValidBST(new TreeNode(2, new TreeNode(1), new TreeNode(3))));
         SqlExecutor.execute("SolutionDay214Third.sql");
         System.out.println(SolutionDay215.Companion.countAndSay(4));
+        System.out.println(SolutionDay215Second.Companion.numIslands(new char[][]{{'1','1','1','1','0'},
+                {'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
