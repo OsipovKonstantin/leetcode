@@ -1171,6 +1171,7 @@ public class Main {
         System.out.println(SolutionDay215Second.Companion.numIslands(new char[][]{{'1', '1', '1', '1', '0'},
                 {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}));
         SqlExecutor.execute("SolutionDay215Third.sql");
+        System.out.println(SolutionDay216.Companion.countFairPairs(new int[]{0, 1, 7, 4, 4, 5}, 3, 6));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
