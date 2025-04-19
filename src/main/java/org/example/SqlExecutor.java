@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 public class SqlExecutor {
     private static final String URL = "jdbc:h2:mem:testdb;MODE=MySQL;DB_CLOSE_DELAY=-1";
-    private static final String FOLDER_PATH = System.getProperty("user.dir") + "/src/main/java/org/example/";
+    private static final String FOLDER_PATH = System.getProperty("user.dir") + "/src/main/java/org/example/sql/";
 
     public static void execute(String fileName) {
         try (Connection connection = DriverManager.getConnection(URL);
