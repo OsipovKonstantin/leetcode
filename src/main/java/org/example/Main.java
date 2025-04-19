@@ -1173,6 +1173,10 @@ public class Main {
         SqlExecutor.execute("SolutionDay215Third.sql");
         System.out.println(SolutionDay216.Companion.countFairPairs(new int[]{0, 1, 7, 4, 4, 5}, 3, 6));
 
+        char[][] matrix216Second = new char[][]{{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
+        SolutionDay216Second.Companion.solve(matrix216Second);
+        System.out.println(Arrays.deepToString(matrix216Second));
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
