@@ -1177,6 +1177,8 @@ public class Main {
         SolutionDay216Second.Companion.solve(matrix216Second);
         System.out.println(Arrays.deepToString(matrix216Second));
 
+        SqlExecutor.execute("SolutionDay216Third.sql");
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
