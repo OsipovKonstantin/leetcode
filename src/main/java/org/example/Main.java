@@ -1187,6 +1187,8 @@ public class Main {
         GraphNode newGraphNode1 = SolutionDay217Second.Companion.cloneGraph(graphNode1);
         System.out.println(newGraphNode1==graphNode1);
 
+        SqlExecutor.execute("SolutionDay217Third.sql");
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
