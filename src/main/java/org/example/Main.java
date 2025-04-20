@@ -1174,6 +1174,7 @@ public class Main {
         System.out.println(Arrays.deepToString(matrix216Second));
 
         SqlExecutor.execute("SolutionDay216Third.sql");
+        System.out.println(SolutionDay217.Companion.numRabbits(new int[]{1, 1, 2}));
 
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
