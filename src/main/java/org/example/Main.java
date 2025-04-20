@@ -1176,6 +1176,17 @@ public class Main {
         SqlExecutor.execute("SolutionDay216Third.sql");
         System.out.println(SolutionDay217.Companion.numRabbits(new int[]{1, 1, 2}));
 
+        GraphNode graphNode1 = new GraphNode(1);
+        GraphNode graphNode2 = new GraphNode(2);
+        GraphNode graphNode3 = new GraphNode(3);
+        GraphNode graphNode4 = new GraphNode(4);
+        graphNode1.neighbors = List.of(graphNode2, graphNode4);
+        graphNode2.neighbors = List.of(graphNode1, graphNode3);
+        graphNode3.neighbors = List.of(graphNode2, graphNode4);
+        graphNode4.neighbors = List.of(graphNode1, graphNode3);
+        GraphNode newGraphNode1 = SolutionDay217Second.Companion.cloneGraph(graphNode1);
+        System.out.println(newGraphNode1==graphNode1);
+
         Instant end = Instant.now();
         System.out.println(String.format("длительность всех задач в миллисекундах %d",
                 Duration.between(start, end).toMillis()));
